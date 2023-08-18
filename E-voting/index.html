@@ -1,57 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Old Student's Login</title>
-    <link rel="stylesheet" href="./output.css">
-</head>
-<body
-class="flex justify-center items-center container mx-auto py-10 bg-Grey-400 relative h-screen "
->
-<main
-  class="w-screen h-fit flex flex-col justify-evenly overflow-y-hidden lg:w-96 lg:h-[600px] lg:rounded-lg lg:flex lg:justify-items-center"
->
-  <div class="w-full flex justify-center mt-5 my-3">
-    <img
-      class="w-20 lg:flex lg:w-32 lg:text-center"
-      src="./image/Log3.png"
-      alt=""
-    />
-  </div>
-  <div class="w-full h-56 flex flex-col gap-4 px-6 lg:h-[400px]">
-    <input
-      class="w-full h-16 lg:w-full lg:h-12 border border-Success-500 bg-Grey-100 rounded-lg text-center"
-      type="text"
-      placeholder="Enter Registration Number"
-    />
-    <input
-      class="w-full h-16 lg:w-full lg:h-12 border border-Success-500 bg-Grey-100 rounded-lg text-center"
-      type="text"
-      placeholder="Enter Password"
-    />
-    <a href="OTP.html">
-      <button
-        class="w-full h-16 rounded-lg text-Gray-100 bg-Success-500 cursor-pointer lg:w-full lg:h-12"
-      >
-        Login
-      </button>
-    </a>
-    <div class="flex flex-col text-center justify-between gap-2">
-      <a class="text-Danger-500"  href="LoginNS.html">
-        New Student
-      </a>
-      <a class="text-Danger-500"  href="">
-        Forgot Password?
-      </a>
-      <a class="text-Danger-500" href="">
-        Already have an account.
-      </a>
-    </div>
-  </div>
-</main>
-<footer class="text-Danger-500 text-center absolute bottom-5 font-semibold text-sm">
-  MIU ELECTIONS <span>&copy;2023</span>
-</footer>
-</body>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body
+    class="flex justify-center items-center container mx-auto py-10 bg-Grey-400 relative h-screen"
+  >
+    <main
+      class="w-screen h-fit flex flex-col justify-evenly overflow-y-hidden lg:w-96 lg:h-[600px] lg:rounded-lg lg:flex lg:justify-items-center"
+    >
+      <div class="w-full h-fit flex flex-col gap-4 px-6 items-center">
+        <img
+          class="w-20 lg:flex lg:w-32 lg:text-center"
+          src="./image/Log3.png"
+          alt=""
+        />
+        <input
+          class="w-full h-12 lg:w-full md:h-12 border border-Success-500 bg-Grey-100 rounded-lg text-center"
+          type="text"
+          placeholder="Enter Registration Number"
+        />
+        <input
+          class="w-full h-12 lg:w-full lg:h-12 border border-Success-500 bg-Grey-100 rounded-lg text-center"
+          type="text"
+          placeholder="Enter Password"
+        />
+
+        <button
+          class="w-full h-16 rounded-lg text-Gray-100 bg-Success-500 cursor-pointer lg:w-full lg:h-12"
+          id="login-cta"
+        >
+          Login
+        </button>
+
+        <div class="flex flex-col text-center justify-between gap-2">
+          <a class="text-Danger-500" href="LoginNS.html"> New Student </a>
+          <a class="text-Danger-500" href=""> Forgot Password? </a>
+          <a class="text-Danger-500" href=""> Already have an account. </a>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="text-Danger-500 text-center absolute bottom-5 font-semibold text-sm"
+    >
+      MIU ELECTIONS <span>&copy;2023</span>
+    </footer>
+  </body>
+  <script>
+    document.getElementById("login-cta").addEventListener("click", () => {
+      // Check if the credentials are valid
+      // Define the logic to check the database and return the appropriate information
+      const login = true;
+      if (login) {
+        console.log("Voila! logging In User ...");
+        // Navigate the user to the login page
+        window.location.href = "SDashboard.html";
+      }
+    });
+  </script>
 </html>
