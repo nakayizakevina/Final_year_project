@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NOTIFICATION</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESULTS</title>
     <link rel="stylesheet" href="./output.css" />
-  </head>
-  <body>
+</head>
+<body>
     <main
       class="w-screen h-screen overflow-hidden bg-Grey-400 flex flex-col gap-2 lg:flex lg:flex-row"
     >
@@ -153,193 +153,35 @@
       <section
         class="w-full h-screen flex flex-col gap-2 lg:flex lg:flex-col lg:items-center"
       >
-        <div
-          class="flex flex-row justify-between w-full"
-        >
-          <div class="flex flex-col gap-3 pl-2">
-            <p class="text-xl font-bold lg:text-2xl cursor-pointer  hover:text-Danger-500">Notifications</p>
-            <p class="text-lg font-semibold lg:text-xl text-Danger-600 cursor-pointer  hover:text-Danger-500">All</p>
-          </div>
-          <div class="flex flex-col gap-3 pr-2">
-            <p class="text-xl font-bold lg:text-2xl cursor-pointer  hover:text-Danger-500">Mark all as read</p>
-            <p class="text-lg font-semibold lg:text-xl cursor-pointer hover:text-Danger-500">Achieved</p>
-          </div>
-        </div>
-        <div class="w-full overflow-y-scroll flex flex-col gap-2 lg:w-11/12" >
-          <div class="bg-Popup1-50 flex gap-2 items-center px-2 rounded-lg w-full h-24 lg:h-28 lg:justify-between">
-            <div class="flex gap-4">
+        <P class="w-full text-lg font-bold text-Gray-400 flex justify-center">Let's see who the winner is!</P>
+        <div class="w-full overflow-y-scroll flex flex-col gap-2 lg:w-11/12 border border-blue-500">
+            <div class="bg-Grey-100 flex flex-col gap-2 items-center px-2 rounded-lg w-full h-fit lg:h-fit lg:flex lg:flex-row ">
               <label
               for="Photo"
-              class="border border-Danger-600 h-20 w-24 my-3 rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 lg:h-24 lg:w-24  "
-            >
+              class="border border-Danger-600 h-24 w-24 my-2 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 lg:h-24 lg:w-24  "
+             >
               <input type="file" id="Photo" name="Photo" class="hidden" />
               <span class="text-xs text-center"
                 >Upload <br />
                 Photo</span
               >
-            </label>
-            <p class="text-sm lg:text-xl py-6 align-middle">
-              <span class="font-bold ">Babirye Margret</span>
-              canceled Candidate 
-              Opio Jesca <br />
-              5min ago
-            </p>
-            </div>
-          
-            <svg class="w-8 h-full flex items-center lg:w-12"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-             
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
-              />
-            </svg>
+              </label>
+              
+              <div class="flex flex-col gap-3 lg:flex lg:flex-row lg:w-full lg:justify-between border border-Popup1-600">
+                <div>
+                 <p class="font-bold text-Gray-400">Nakato Karen</p>
+                 <p class="text-Gray-400">Faculty of Science and Technology</p>
+                 <p class="text-Gray-400">Year:2 Sem:2</p>
+                </div>
+                
+                <div class="w-full flex flex-col pl-10 gap-2">
+                    <p class="font-bold text-Danger-500">Votes</p>
+                    <p class="font-blod text-Success-500">500</p>
+                </div>
+             </div>
+
           </div>
-          <div class="bg-Popup1-50 flex gap-2 items-center px-2 rounded-lg w-full h-24 lg:h-28 lg:justify-between">
-            <div class="flex gap-4">
-              <label
-              for="Photo"
-              class="border border-Danger-600 h-20 w-24 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 lg:h-24 lg:w-24  "
-            >
-              <input type="file" id="Photo" name="Photo" class="hidden" />
-              <span class="text-xs text-center"
-                >Upload <br />
-                Photo</span
-              >
-            </label>
-            <p class="text-sm lg:text-xl py-6 align-middle">
-              <span class="font-bold ">Nakakande Prossy</span>
-              updated her manifesto
-               <br />
-              1hr ago
-            </p>
-            </div>
           
-            <svg class="w-8 h-full flex items-center lg:w-12"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-             
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
-              />
-            </svg>
-          </div>
-          <div class="bg-Popup1-50 flex gap-2 items-center px-2 rounded-lg w-full h-24 lg:h-28 lg:justify-between">
-            <div class="flex gap-4">
-              <label
-              for="Photo"
-              class="border border-Danger-600 h-20 w-24 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 lg:h-24 lg:w-24  "
-            >
-              <input type="file" id="Photo" name="Photo" class="hidden" />
-              <span class="text-xs text-center"
-                >Upload <br />
-                Photo</span
-              >
-            </label>
-            <p class="text-sm lg:text-xl py-6 align-middle">
-              <span class="font-bold ">Obey Africa</span>
-              was registered successfully<br/>
-              2days ago
-            </p>
-            </div>
-          
-            <svg class="w-8 h-full flex items-center lg:w-12"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-             
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
-              />
-            </svg>
-          </div>
-          <div class="bg-Grey-100 flex gap-2 items-center px-2 rounded-lg w-full h-24 lg:h-28 lg:justify-between">
-            <div class="flex gap-4">
-              <label
-              for="Photo"
-              class="border border-Danger-600 h-20 w-24 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 lg:h-24 lg:w-24  "
-            >
-              <input type="file" id="Photo" name="Photo" class="hidden" />
-              <span class="text-xs text-center"
-                >Upload <br />
-                Photo</span
-              >
-            </label>
-            <p class="text-sm lg:text-xl py-6 align-middle">
-              <span class="font-bold ">Nakato Karen</span>
-              was registered successfully
-              <br />
-              3days ago
-            </p>
-            </div>
-          
-            <svg class="w-8 h-full flex items-center lg:w-12"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-             
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
-              />
-            </svg>
-          </div>
-          <div class="bg-Grey-100 flex gap-2 items-center px-2 rounded-lg w-full h-24 lg:h-28 lg:justify-between">
-            <div class="flex gap-4">
-              <label
-              for="Photo"
-              class="border border-Danger-600 h-20 w-24 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 lg:h-24 lg:w-24  "
-            >
-              <input type="file" id="Photo" name="Photo" class="hidden" />
-              <span class="text-xs text-center"
-                >Upload <br />
-                Photo</span
-              >
-            </label>
-            <p class="text-sm lg:text-xl py-6 align-middle">
-              <span class="font-bold ">Kasamu Jeydean</span>
-              was registered successfully
-              <br />
-              3days ago
-            </p>
-            </div>
-          
-            <svg class="w-8 h-full flex items-center lg:w-12"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-             
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
-              />
-            </svg>
-          </div>
         </div>
         <footer
         class="text-Danger-500 w-full text-center  absolute bottom-5 font-semibold text-sm"
@@ -349,5 +191,5 @@
       </section>
       
     </main>
-  </body>
+</body>
 </html>
