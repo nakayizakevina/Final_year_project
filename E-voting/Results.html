@@ -11,27 +11,25 @@
       class="w-screen h-screen overflow-hidden bg-Grey-400 flex flex-col gap-2 lg:flex lg:flex-row"
     >
       <section
-        class="w-full flex h-16 overflow-hidden px-2 bg-Success-500 lg:w-64 md:h-20 md:flex lg:h-full lg:flex lg:flex-col lg:gap-1 lg:justify-between"
+        class="w-full flex h-16 overflow-hidden px-2 bg-Success-500 lg:w-64 md:h-24 md:flex lg:h-full lg:flex lg:flex-col lg:gap-1 lg:justify-between"
       >
         <div class="flex w-full justify-between">
           <div class="w-full h-fit flex">
-            <img class="w-12 h-12" src="./image/Log3.png" alt="" />
+            <img class="w-12 h-12 md:w-20 md:h-20 lg:w-14 lg:h-14" src="./image/Log3.png" alt="" />
             <p class="text-Grey-100 w-fit">
-              <span class="text-2xl font-bold w-full text-center lg:text-lg"
+              <span class="text-2xl font-bold w-full text-center lg:text-lg  md:text-3xl"
                 >METROPOLITAN</span
               ><br />
-              <span class="text-sm font-semibold text-center lg:text-[10px]"
+              <span class="text-sm font-semibold text-center md:text-[17px] lg:text-[10px]"
                 >INTERNATIONAL UNIVERSITY</span
               >
             </p>
           </div>
           <span
-            class="text-Grey-100 flex justify-center items-center lg:hidden"
+            class="text-Grey-100 flex justify-center items-center w-8 h-full md:w-16 md:h-full md:flex md:items-center lg:hidden"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
               viewBox="0 0 448 512"
             >
               <path
@@ -151,40 +149,38 @@
         </p>
       </section>
       <section
-        class="w-full h-screen flex flex-col gap-2 lg:flex lg:flex-col lg:items-center"
+        class="w-full h-screen flex flex-col gap-2 md:flex md:items-center lg:flex lg:flex-col lg:items-center"
       >
-        <P class="w-full text-lg font-bold text-Gray-400 flex justify-center">Let's see who the winner is!</P>
-        <div class="w-full overflow-y-scroll flex flex-col gap-2 lg:w-11/12 border border-blue-500">
-            <div class="bg-Grey-100 flex flex-col gap-2 items-center px-2 rounded-lg w-full h-fit lg:h-fit lg:flex lg:flex-row ">
+        <P class="w-full text-lg font-bold text-Gray-400 flex justify-center md:text-3xl">Let's see who the winner is!</P>
+        <div class="w-full h-fit overflow-y-scroll mx-4 md:mx-5 flex justify-center">
+          <div class="w-3/2 bg-Grey-100 rounded-lg  flex flex-row  gap-2 md:w-3/4  md:flex md:justify-center md:items-center  lg:w-11/12 lg:flex lg:flex-row border border-Popup1-500">
+            <div class="flex flex-row  gap-2 items-center  w-full h-fit md:w-4/6  lg:h-fit lg:flex lg:flex-row lg:gap-3 ">
               <label
-              for="Photo"
-              class="border border-Danger-600 h-24 w-24 my-2 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 lg:h-24 lg:w-24  "
-             >
-              <input type="file" id="Photo" name="Photo" class="hidden" />
-              <span class="text-xs text-center"
+                for="Photo"
+                class="border border-Danger-600 h-20 w-20 my-2 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 md:w-28 md:h-28 lg:h-30 lg:w-32  "
+               >
+               <input type="file" id="Photo" name="Photo" class="hidden" />
+               <span class="text-xs text-center md:text-lg"
                 >Upload <br />
                 Photo</span
-              >
+               >
               </label>
-              
-              <div class="flex flex-col gap-3 lg:flex lg:flex-row lg:w-full lg:justify-between border border-Popup1-600">
-                <div>
-                 <p class="font-bold text-Gray-400">Nakato Karen</p>
-                 <p class="text-Gray-400">Faculty of Science and Technology</p>
-                 <p class="text-Gray-400">Year:2 Sem:2</p>
-                </div>
-                
-                <div class="w-full flex flex-col pl-10 gap-2">
-                    <p class="font-bold text-Danger-500">Votes</p>
-                    <p class="font-blod text-Success-500">500</p>
-                </div>
-             </div>
-
-          </div>
+              <div class="flex flex-col gap-1 md:w-full  md:flex md:flex-col md:gap-3  lg:gap-2">
+                <p class="font-bold text-lg text-Gray-400 md:text-2xl">Nakato Karen</p>
+                <p class="text-Gray-400 text-sm md:text-2xl">Faculty of Sceince and  Technology</p>
+                <p class="text-Gray-400 text-sm md:text-2xl">Year:2 Sem:2</p>
+              </div>
+            </div>
+            <div class="w-1/2 h-fit flex flex-col gap-2 items-center md:w-1/2 md:flex md:flex-col md:items-start lg:flex lg:flex-col lg:items-end lg:pr-4">
+              <P class="font-bold text-Danger-500 md:text-2xl">Votes</P>
+              <P class="font-bold text-Success-500 md:text-2xl">500</P>
+            </div>
           
         </div>
+        </div>
+       
         <footer
-        class="text-Danger-500 w-full text-center  absolute bottom-5 font-semibold text-sm"
+        class="text-Danger-500 w-full text-center  absolute bottom-5 font-semibold text-sm md:text-2xl"
       >
         MIU ELECTIONS <span>&copy;2023</span>
       </footer>
