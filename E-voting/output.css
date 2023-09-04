@@ -719,6 +719,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -906,6 +910,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-16 {
+  width: 4rem;
 }
 
 .flex-shrink {
@@ -1906,6 +1914,11 @@ video {
   border-color: rgb(220 38 38 / var(--tw-border-opacity));
 }
 
+.border-Popup1-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(81 203 80 / var(--tw-border-opacity));
+}
+
 .bg-Grey-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 251 252 / var(--tw-bg-opacity));
@@ -2724,6 +2737,11 @@ video {
     margin-bottom: 0.5rem;
   }
 
+  .md\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
   .md\:mt-3 {
     margin-top: 0.75rem;
   }
@@ -2837,6 +2855,10 @@ video {
     width: 100%;
   }
 
+  .md\:w-28 {
+    width: 7rem;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -2847,6 +2869,10 @@ video {
 
   .md\:items-start {
     align-items: flex-start;
+  }
+
+  .md\:items-end {
+    align-items: flex-end;
   }
 
   .md\:items-center {
@@ -2877,6 +2903,14 @@ video {
     gap: 1.5rem;
   }
 
+  .md\:pr-2 {
+    padding-right: 0.5rem;
+  }
+
+  .md\:pr-4 {
+    padding-right: 1rem;
+  }
+
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -2899,6 +2933,11 @@ video {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .md\:font-bold {
