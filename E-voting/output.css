@@ -888,6 +888,14 @@ video {
   height: 100vh;
 }
 
+.h-1\/2 {
+  height: 50%;
+}
+
+.h-14 {
+  height: 3.5rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1957,6 +1965,11 @@ video {
 .border-red-600 {
   --tw-border-opacity: 1;
   border-color: rgb(220 38 38 / var(--tw-border-opacity));
+}
+
+.border-Popup1-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(34 173 33 / var(--tw-border-opacity));
 }
 
 .bg-Danger-300 {
