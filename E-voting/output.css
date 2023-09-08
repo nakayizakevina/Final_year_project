@@ -896,6 +896,10 @@ video {
   height: 3.5rem;
 }
 
+.h-7 {
+  height: 1.75rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -951,6 +955,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-7 {
+  width: 1.75rem;
 }
 
 .flex-shrink {
@@ -3225,12 +3233,20 @@ video {
     flex-direction: column;
   }
 
+  .lg\:items-start {
+    align-items: flex-start;
+  }
+
   .lg\:items-end {
     align-items: flex-end;
   }
 
   .lg\:items-center {
     align-items: center;
+  }
+
+  .lg\:justify-start {
+    justify-content: flex-start;
   }
 
   .lg\:justify-center {
