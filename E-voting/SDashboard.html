@@ -8,26 +8,34 @@
   </head>
   <body>
     <main
-      class="w-screen h-screen  bg-Grey-400 flex flex-col gap-2 lg:flex lg:flex-row"
+      class="w-screen h-screen bg-Grey-400 flex flex-col gap-2 lg:flex lg:flex-row"
     >
       <section
         class="w-full flex h-16 overflow-hidden px-2 bg-Success-500 lg:w-64 md:h-24 md:flex lg:h-full lg:flex lg:flex-col lg:gap-1 lg:justify-between"
       >
         <div class="flex w-full justify-between">
           <div class="w-full h-fit flex">
-            <img class="w-12 h-12 md:w-20 md:h-20 lg:w-14 lg:h-14" src="./image/Log3.png" alt="" />
+            <img
+              class="w-12 h-12 md:w-20 md:h-20 lg:w-14 lg:h-14"
+              src="./image/Log3.png"
+              alt=""
+            />
             <p class="text-Grey-100 w-fit md:my-2 lg:my-1">
-              <span class="text-2xl font-bold w-full text-center md:text-3xl lg:text-lg ">METROPOLITAN</span><br />
-              <span class="text-sm font-semibold text-center md:text-[17px] lg:text-[10px]">INTERNATIONAL UNIVERSITY</span>
+              <span
+                class="text-2xl font-bold w-full text-center md:text-3xl lg:text-lg"
+                >METROPOLITAN</span
+              ><br />
+              <span
+                class="text-sm font-semibold text-center md:text-[17px] lg:text-[10px]"
+                >INTERNATIONAL UNIVERSITY</span
+              >
             </p>
           </div>
           <span
-            class="text-Grey-100 flex justify-center items-center w-8 h-full md:w-16 md:h-full md:flex md:items-center lg:hidden"
+            id="menu"
+            class="text-Grey-100 flex justify-center items-center cursor-pointer w-8 h-full md:w-16 md:h-full md:flex md:items-center lg:hidden"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
-            >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
               <path
                 fill="currentColor"
                 d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm448 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32z"
@@ -52,84 +60,81 @@
         </div>
         <div class="hidden lg:w-full lg:h-96 md:block">
           <div
-            class="hidden lg:w-full lg:h-72 lg:flex lg:flex-col lg:justify-evenly"
+            id="items"
+            class="hidden lg:w-full lg:h-fit lg:flex lg:flex-col lg:gap-6"
           >
-          <a href="./SDashboard.html">
-            <span class="text-Popup1-200 w-full flex gap-4 cursor-pointer" >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="40"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="currentColor"
-                  d="M5.175 16h13.65l-1.95-2.2l1.425-1.425L21 15.45V22H3v-6.55l2.75-3.125l1.425 1.425l-2 2.25Zm6.85-.175L5.7 9.45l7.75-7.75l6.375 6.325l-7.8 7.8Zm.025-2.875L17 8l-3.55-3.5L8.5 9.45l3.55 3.5Z"
-                />
-              </svg>
-              <p class="flex justify-center items-center">Elections</p>
-            </span>
-          </a>
-            
-            <span class="text-Grey-100 flex gap-4 cursor-pointer">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="40"
-                viewBox="0 0 100 100"
-              >
-                <path
-                  fill="currentColor"
-                  d="m80.161 60.441l-15.66-7.47l-6.622-3.159c2.892-1.822 5.241-4.634 6.778-8.021a21.743 21.743 0 0 0 1.945-8.99c0-1.827-.29-3.562-.694-5.236c-1.97-8.112-8.305-14.088-15.91-14.088c-7.461 0-13.7 5.763-15.792 13.644c-.483 1.808-.815 3.688-.815 5.68c0 3.459.808 6.684 2.181 9.489c1.587 3.254 3.94 5.937 6.804 7.662l-6.342 2.953l-16.168 7.53c-1.404.658-2.327 2.242-2.327 4.011v17.765c0 2.381 1.659 4.311 3.707 4.311h24.013V72.92a.78.78 0 0 1 .119-.396l-.01-.006l3.933-6.812l.01.006c.14-.24.389-.41.687-.41c.298 0 .547.169.687.41l.004-.003l.036.063c.005.01.012.018.016.028l3.881 6.721l-.005.003a.783.783 0 0 1 .119.397v13.602h24.013c2.048 0 3.708-1.93 3.708-4.311V64.446c.003-1.763-.905-3.332-2.296-4.005zM54.62 55.886l.01.006l-3.934 6.812l-.01-.006a.796.796 0 0 1-.687.409a.796.796 0 0 1-.687-.409l-.005.003l-.04-.069c-.003-.007-.009-.013-.012-.02l-3.881-6.723l.004-.003a.783.783 0 0 1-.119-.397c0-.445.361-.806.806-.806h7.866c.445 0 .806.361.806.806a.762.762 0 0 1-.117.397z"
-                />
-              </svg>
-              <p class="flex justify-center items-center">Candidate</p>
-            </span>
-            <a href="./Notification.html">
-              <span class="text-Grey-100 flex gap-4 cursor-pointer">
+            <a href="./SDashboard.html">
+              <span class="text-Popup1-200 w-full flex gap-4 cursor-pointer">
                 <svg
+                  class="w-10 h-10"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="30"
-                  viewBox="0 0 36 36"
+                  viewBox="0 0 24 24"
                 >
                   <path
                     fill="currentColor"
-                    d="m32.85 28.13l-.34-.3A14.37 14.37 0 0 1 30 24.9a12.63 12.63 0 0 1-1.35-4.81v-4.94A10.81 10.81 0 0 0 19.21 4.4V3.11a1.33 1.33 0 1 0-2.67 0v1.31a10.81 10.81 0 0 0-9.33 10.73v4.94a12.63 12.63 0 0 1-1.35 4.81a14.4 14.4 0 0 1-2.47 2.93l-.34.3v2.82h29.8Z"
-                    class="clr-i-solid clr-i-solid-path-1"
+                    d="M5.175 16h13.65l-1.95-2.2l1.425-1.425L21 15.45V22H3v-6.55l2.75-3.125l1.425 1.425l-2 2.25Zm6.85-.175L5.7 9.45l7.75-7.75l6.375 6.325l-7.8 7.8Zm.025-2.875L17 8l-3.55-3.5L8.5 9.45l3.55 3.5Z"
                   />
-                  <path
-                    fill="currentColor"
-                    d="M15.32 32a2.65 2.65 0 0 0 5.25 0Z"
-                    class="clr-i-solid clr-i-solid-path-2"
-                  />
-                  <path fill="none" d="M0 0h36v36H0z" />
                 </svg>
-                <p class="flex justify-center items-center">Notification</p>
+                <p class="flex justify-center items-center  text-lg">Elections</p>
               </span>
             </a>
-              <a href="Results.html">
-                <span class="text-Grey-100 flex gap-4 cursor-pointer">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="40"
-                    height="40"
-                    viewBox="0 0 48 48"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M32 9a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v30a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3V9ZM19 21a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v18a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3V21ZM9 30a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3h4a3 3 0 0 0 3-3v-6a3 3 0 0 0-3-3H9Z"
-                    />
-                  </svg>
-                  <p class="flex justify-center items-center">Results</p>
-                </span>
-              </a>
+             <a href="">
+              <span class="text-Grey-100 flex gap-4 cursor-pointer">
+                <svg
+                  class="w-10 h-10"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 100 100"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m80.161 60.441l-15.66-7.47l-6.622-3.159c2.892-1.822 5.241-4.634 6.778-8.021a21.743 21.743 0 0 0 1.945-8.99c0-1.827-.29-3.562-.694-5.236c-1.97-8.112-8.305-14.088-15.91-14.088c-7.461 0-13.7 5.763-15.792 13.644c-.483 1.808-.815 3.688-.815 5.68c0 3.459.808 6.684 2.181 9.489c1.587 3.254 3.94 5.937 6.804 7.662l-6.342 2.953l-16.168 7.53c-1.404.658-2.327 2.242-2.327 4.011v17.765c0 2.381 1.659 4.311 3.707 4.311h24.013V72.92a.78.78 0 0 1 .119-.396l-.01-.006l3.933-6.812l.01.006c.14-.24.389-.41.687-.41c.298 0 .547.169.687.41l.004-.003l.036.063c.005.01.012.018.016.028l3.881 6.721l-.005.003a.783.783 0 0 1 .119.397v13.602h24.013c2.048 0 3.708-1.93 3.708-4.311V64.446c.003-1.763-.905-3.332-2.296-4.005zM54.62 55.886l.01.006l-3.934 6.812l-.01-.006a.796.796 0 0 1-.687.409a.796.796 0 0 1-.687-.409l-.005.003l-.04-.069c-.003-.007-.009-.013-.012-.02l-3.881-6.723l.004-.003a.783.783 0 0 1-.119-.397c0-.445.361-.806.806-.806h7.866c.445 0 .806.361.806.806a.762.762 0 0 1-.117.397z"
+                  />
+                </svg>
+                <p class="flex justify-center items-center  text-lg">Candidate</p>
+              </span>
+             </a>
             
-            <span class="text-Grey-100 flex gap-4 cursor-pointer">
+            <a href="./Notification.html">
+              <span class="text-Grey-100 flex gap-6 cursor-pointer ">
+                <svg class="w-8 h-8  fill-Grey-100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
+                  />
+                </svg>
+
+                <p class="flex justify-center items-center  text-lg">Notification</p>
+              </span>
+            </a>
+
+            <a href="Results.html">
+              <span class="text-Grey-100 flex gap-6 cursor-pointer">
+                <svg
+                  class="w-8 h-8 "
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 48 48"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M32 9a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v30a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3V9ZM19 21a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v18a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3V21ZM9 30a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3h4a3 3 0 0 0 3-3v-6a3 3 0 0 0-3-3H9Z"
+                  />
+                </svg>
+                <p class="flex justify-center items-center  text-lg">Results</p>
+              </span>
+            </a>
+
+            <span class="text-Grey-100 flex gap-6 cursor-pointer">
               <svg
+                class="w-8 h-8"
                 xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="40"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -137,7 +142,7 @@
                   d="m19.44 12.99l-.01.02c.04-.33.08-.67.08-1.01c0-.34-.03-.66-.07-.99l.01.02l2.44-1.92l-2.43-4.22l-2.87 1.16l.01.01c-.52-.4-1.09-.74-1.71-1h.01L14.44 2H9.57l-.44 3.07h.01c-.62.26-1.19.6-1.71 1l.01-.01l-2.88-1.17l-2.44 4.22l2.44 1.92l.01-.02c-.04.33-.07.65-.07.99c0 .34.03.68.08 1.01l-.01-.02l-2.1 1.65l-.33.26l2.43 4.2l2.88-1.15l-.02-.04c.53.41 1.1.75 1.73 1.01h-.03L9.58 22h4.85s.03-.18.06-.42l.38-2.65h-.01c.62-.26 1.2-.6 1.73-1.01l-.02.04l2.88 1.15l2.43-4.2s-.14-.12-.33-.26l-2.11-1.66zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5s3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5z"
                 />
               </svg>
-              <p class="flex justify-center items-center">Setting</p>
+              <p class="flex justify-center items-center text-lg">Setting</p>
             </span>
           </div>
         </div>
@@ -149,15 +154,21 @@
       <section
         class="w-full h-full flex flex-col justify-evenly items-center gap-2 md:flex md:justify-center md:items-center"
       >
-        <h3 class="text-xl font-semibold md:text-3xl md:font-bold md:mt-3 lg:mt-10 ">UP COMING ELECTIONS.</h3>
-        <div class="w-full h-full flex flex-col gap-1 px-4 justify-evenly md:w-full md:h-full md:flex md:flex-col md:gap-2 md:items-center lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-8">
+        <h3
+          class="text-xl font-semibold md:text-3xl md:font-bold md:mt-3 lg:mt-10"
+        >
+          UP COMING ELECTIONS.
+        </h3>
+        <div
+          class="w-full h-full flex flex-col gap-1 px-4 justify-evenly md:w-full md:h-full md:flex md:flex-col md:gap-2 md:items-center lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-8"
+        >
           <div
-            class="bg-Grey-100 rounded-lg w-full h-72 shadow-lg flex flex-col justify-center items-center gap-4  md:h-1/2  md:w-[500px] md:flex lg:w-80 lg:h-96"
+            class="bg-Grey-100 rounded-lg w-full h-72 shadow-lg flex flex-col justify-center items-center gap-4 md:h-1/2 md:w-[500px] md:flex lg:w-80 lg:h-96"
           >
             <span class="text-Gray-500">
-              <svg class="w-24 h-24 md:w-36 md:h-36"
+              <svg
+                class="w-24 h-24 md:w-36 md:h-36"
                 xmlns="http://www.w3.org/2000/svg"
-                
                 viewBox="0 0 512 512"
               >
                 <path
@@ -173,15 +184,21 @@
                 />
               </svg>
             </span>
-            <p class="text-Gray-500 md:text-2xl md:font-bold lg:text-lg">GUILD REPRESENTATIVE COMMITTE</p>
-            <p class="text-Gray-500 md:text-2xl md:font-semibold lg:text-lg">Date:26/05/2024</p>
-            <p class="text-Gray-500 md:text-2xl md:font-semibold lg:text-lg">Time:8am-5pm</p>
+            <p class="text-Gray-500 md:text-2xl md:font-bold lg:text-lg">
+              GUILD REPRESENTATIVE COMMITTE
+            </p>
+            <p class="text-Gray-500 md:text-2xl md:font-semibold lg:text-lg">
+              Date:26/05/2024
+            </p>
+            <p class="text-Gray-500 md:text-2xl md:font-semibold lg:text-lg">
+              Time:8am-5pm
+            </p>
             <span class="text-Gray-500 flex">
               <svg
-              class="w-10 h-10"
+                class="w-10 h-10"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 36 36"
-               >
+              >
                 <path
                   fill="currentColor"
                   d="M18 2a16 16 0 1 0 16 16A16 16 0 0 0 18 2Zm6.2 21.18a1 1 0 0 1-1.39.28l-5.9-4v-8.71a1 1 0 0 1 2 0v7.65l5 3.39a1 1 0 0 1 .29 1.39Zm-.35-14.95a11.39 11.39 0 1 0-8.54 20.83L15 30.63a13 13 0 1 1 9.7-23.77Z"
@@ -189,21 +206,25 @@
                 />
                 <path fill="none" d="M0 0h36v36H0z" />
               </svg>
-              <p class="flex justify-center items-center md:text-2xl md:font-semibold lg:text-lg">5days to go!</p>
+              <p
+                class="flex justify-center items-center md:text-2xl md:font-semibold lg:text-lg"
+              >
+                5days to go!
+              </p>
             </span>
           </div>
           <div
-          class="bg-Grey-100 rounded-lg w-full h-72 shadow-lg  flex flex-col justify-center items-center gap-4  md:h-1/2  md:w-[500px] md:flex lg:w-80 lg:h-96"
-        >
-          <span class="text-Gray-500">
-            <svg class="w-24 h-24 md:w-36 md:h-36"
-              xmlns="http://www.w3.org/2000/svg"
-              
-              viewBox="0 0 512 512"
-            >
-              <path
-                fill="currentColor"
-                d="M494 21.621c-14.947 8.43-29.566 17.581-43.67 29.227l7.318 38.547C471.923
+            class="bg-Grey-100 rounded-lg w-full h-72 shadow-lg flex flex-col justify-center items-center gap-4 md:h-1/2 md:w-[500px] md:flex lg:w-80 lg:h-96"
+          >
+            <span class="text-Gray-500">
+              <svg
+                class="w-24 h-24 md:w-36 md:h-36"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M494 21.621c-14.947 8.43-29.566 17.581-43.67 29.227l7.318 38.547C471.923
                 93.66 483.583 95.26 494 95.36V21.62zm-98.982 24.512c-15.283-.085-32.48 2.596-53.832
                 6.834l-.22.043l-.22.033c-14.77 2.177-40.794 12.065-66.465 38.867l44.27 11.766c.972-1.493
                 5.936-9.004 6.88-10.555c5.124 3.123 10.248 6.244 15.372 9.365c-12.475 20.475-26.742 35.556-43.934
@@ -211,22 +232,28 @@
                 55.963-56.271l5.469.964c11.501 2.031 26.47 1.058 38.707-2.853c11.098-3.548 19.272-9.357 22.662-15.688L432.54
                 53.65c-12.044-5.214-24.039-7.442-37.523-7.517zM227.932 98.717l-29.436 115.986l9.643.297H311.27l.9-.209l6.804-27.092c-8.86 
                 1.9-18.296-.217-26.557-4.855c-5.188-2.913-10.024-7.24-12.621-13.434c-7.797-19.938 15.857-37.297 28.724-52.75l-80.59-17.943zM69.562 201l-23 46h418.875l-23-46H334.195l-3.517 14H352v18H160v-18h19.852l3.552-14H69.563zM41 265v222h430V265H41zm14 14h402v194H55V279zm18 18v118.238l34.502-74.994l73.36 31.762l66.652-45.84l37.513 57.273l50.11-4.595l31.3-39.332L439 394.627V297H73zm169.543 54.43l-90.63 62.33l27.01 41.24h95.606l19.666-24.71l-51.652-78.86zm-126.045 12.326L74.521 455h82.885l-30.193-46.098l36.144-24.857l-46.859-20.29zm253.065.732L297.533 455h140.54l.927-1.166v-36.602l-69.438-52.744zm-49.944 33.854l-23.426 2.148l9.805 14.969l13.621-17.117z"
-              />
-            </svg>
-          </span>
-          <p class="text-Gray-500  md:text-2xl  md:font-bold lg:text-lg">GUILD PRESIDENT</p>
-          <p class="text-Gray-500  md:text-2xl  md:font-semibold lg:text-lg">Date:26/05/2024</p>
-          <p class="text-Gray-500  md:text-2xl  md:font-semibold lg:text-lg">Time:8am-5pm</p>
-          <button
-           class="w-28 h-10 rounded-lg text-Gray-100 text-xl font-semibold bg-Success-500 cursor-pointer lg:w-32 lg:h-10 lg:text-sm md:w-3/4 md:h-16 md:text-2xl"
-           id="login-cta"
-           >
-           Let's vote
-         </button>
-        </div>
-      
+                />
+              </svg>
+            </span>
+            <p class="text-Gray-500 md:text-2xl md:font-bold lg:text-lg">
+              GUILD PRESIDENT
+            </p>
+            <p class="text-Gray-500 md:text-2xl md:font-semibold lg:text-lg">
+              Date:26/05/2024
+            </p>
+            <p class="text-Gray-500 md:text-2xl md:font-semibold lg:text-lg">
+              Time:8am-5pm
+            </p>
+            <button
+              class="w-28 h-10 rounded-lg text-Gray-100 text-xl font-semibold bg-Success-500 cursor-pointer lg:w-32 lg:h-10 lg:text-sm md:w-3/4 md:h-16 md:text-2xl"
+              id="login-cta"
+            >
+              Let's vote
+            </button>
+          </div>
         </div>
       </section>
     </main>
+    <script></script>
   </body>
 </html>
