@@ -732,6 +732,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -900,12 +904,20 @@ video {
   height: 100vh;
 }
 
-.w-1\/2 {
-  width: 50%;
+.h-\[\] {
+  height: ;
 }
 
-.w-10 {
-  width: 2.5rem;
+.h-\[400p\] {
+  height: 400p;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-12 {
@@ -1955,6 +1967,11 @@ video {
   border-color: rgb(201 30 30 / var(--tw-border-opacity));
 }
 
+.border-Popup1-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(81 203 80 / var(--tw-border-opacity));
+}
+
 .border-Popup1-500 {
   --tw-border-opacity: 1;
   border-color: rgb(37 190 36 / var(--tw-border-opacity));
@@ -1973,11 +1990,6 @@ video {
 .border-red-600 {
   --tw-border-opacity: 1;
   border-color: rgb(220 38 38 / var(--tw-border-opacity));
-}
-
-.border-Popup1-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(34 173 33 / var(--tw-border-opacity));
 }
 
 .bg-Danger-300 {
@@ -2833,16 +2845,6 @@ video {
   }
 }
 
-.hover\:bg-Popup1-200:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(155 225 154 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-Popup1-50:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(233 249 233 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-Popup1-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(187 235 187 / var(--tw-bg-opacity));
@@ -3119,10 +3121,6 @@ video {
     margin-top: 2.5rem;
   }
 
-  .lg\:block {
-    display: block;
-  }
-
   .lg\:flex {
     display: flex;
   }
@@ -3155,10 +3153,6 @@ video {
     height: 7rem;
   }
 
-  .lg\:h-72 {
-    height: 18rem;
-  }
-
   .lg\:h-96 {
     height: 24rem;
   }
@@ -3178,6 +3172,30 @@ video {
 
   .lg\:h-screen {
     height: 100vh;
+  }
+
+  .lg\:h-\[\] {
+    height: ;
+  }
+
+  .lg\:h-\[500px\] {
+    height: 500px;
+  }
+
+  .lg\:h-\[00px\] {
+    height: 00px;
+  }
+
+  .lg\:h-\[300px\] {
+    height: 300px;
+  }
+
+  .lg\:h-\[400px\] {
+    height: 400px;
+  }
+
+  .lg\:h-\[450px\] {
+    height: 450px;
   }
 
   .lg\:w-1\/2 {
@@ -3311,10 +3329,6 @@ video {
 
   .lg\:rounded-lg {
     border-radius: 0.5rem;
-  }
-
-  .lg\:p-6 {
-    padding: 1.5rem;
   }
 
   .lg\:py-4 {
