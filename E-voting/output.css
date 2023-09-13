@@ -1996,6 +1996,21 @@ video {
   border-color: rgb(220 38 38 / var(--tw-border-opacity));
 }
 
+.border-Information-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 39 102 / var(--tw-border-opacity));
+}
+
+.border-Information-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(51 85 141 / var(--tw-border-opacity));
+}
+
+.border-Information-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 43 112 / var(--tw-border-opacity));
+}
+
 .bg-Danger-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(232 106 106 / var(--tw-bg-opacity));
@@ -2855,6 +2870,10 @@ video {
       max-width: 1536px;
     }
   }
+}
+
+.hover\:border:hover {
+  border-width: 1px;
 }
 
 .hover\:bg-Information-400:hover {
