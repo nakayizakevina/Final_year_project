@@ -191,76 +191,124 @@
           </span>
         </div>
       </section>
-      <div class="flex flex-row justify-between w-full h-fit relative">
-        <div class="flex flex-col gap-3 pl-2">
-          <p
-            class="text-lg font-bold md:text-2xl cursor-pointer hover:text-Danger-500"
-          >
-            Notifications
-          </p>
-          <p
-            class="text-sm font-semibold md:text-xl cursor-pointer hover:text-Danger-500"
-          >
-            All
-          </p>
-        </div>
-        <div class="flex flex-col gap-3 pr-2">
-          <p
-            class="text-lg font-bold md:text-2xl cursor-pointer hover:text-Danger-500"
-          >
-            Mark all as read
-          </p>
-          <p
-            class="text-sm font-semibold md:text-xl cursor-pointer hover:text-Danger-500"
-          >
-            Achieved
-          </p>
-        </div>
-        <div
-          id="mobile-nav"
-          class="hidden bg-Success-500 w-1/2 absolute top-0 right-3 rounded-md gap-3 lg:hidden z-50"
-        >
-          <a href="./SDashboard.html">
-            <span
-              class="text-Popup1-200 w-full h-10 flex gap-4 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
-            >
-              <svg
-                class="w-8 h-10"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="currentColor"
-                  d="M5.175 16h13.65l-1.95-2.2l1.425-1.425L21 15.45V22H3v-6.55l2.75-3.125l1.425 1.425l-2 2.25Zm6.85-.175L5.7 9.45l7.75-7.75l6.375 6.325l-7.8 7.8Zm.025-2.875L17 8l-3.55-3.5L8.5 9.45l3.55 3.5Z"
-                />
-              </svg>
-              <p class="flex justify-center items-center text-lg">Elections</p>
-            </span>
-          </a>
-          <a href="./ACDashboard.html">
-            <span
-              class="text-Grey-100 flex gap-4 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
-            >
-              <svg
-                class="w-8 h-10"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 100 100"
-              >
-                <path
-                  fill="currentColor"
-                  d="m80.161 60.441l-15.66-7.47l-6.622-3.159c2.892-1.822 5.241-4.634 6.778-8.021a21.743 21.743 0 0 0 1.945-8.99c0-1.827-.29-3.562-.694-5.236c-1.97-8.112-8.305-14.088-15.91-14.088c-7.461 0-13.7 5.763-15.792 13.644c-.483 1.808-.815 3.688-.815 5.68c0 3.459.808 6.684 2.181 9.489c1.587 3.254 3.94 5.937 6.804 7.662l-6.342 2.953l-16.168 7.53c-1.404.658-2.327 2.242-2.327 4.011v17.765c0 2.381 1.659 4.311 3.707 4.311h24.013V72.92a.78.78 0 0 1 .119-.396l-.01-.006l3.933-6.812l.01.006c.14-.24.389-.41.687-.41c.298 0 .547.169.687.41l.004-.003l.036.063c.005.01.012.018.016.028l3.881 6.721l-.005.003a.783.783 0 0 1 .119.397v13.602h24.013c2.048 0 3.708-1.93 3.708-4.311V64.446c.003-1.763-.905-3.332-2.296-4.005zM54.62 55.886l.01.006l-3.934 6.812l-.01-.006a.796.796 0 0 1-.687.409a.796.796 0 0 1-.687-.409l-.005.003l-.04-.069c-.003-.007-.009-.013-.012-.02l-3.881-6.723l.004-.003a.783.783 0 0 1-.119-.397c0-.445.361-.806.806-.806h7.866c.445 0 .806.361.806.806a.762.762 0 0 1-.117.397z"
-                />
-              </svg>
-              <p class="flex justify-center items-center text-lg">Candidate</p>
-            </span>
-          </a>
 
-          <a href="./Notification.html">
+      <section class="flex flex-col h-full w-full overflow-hidden">
+        <div class="flex flex-row justify-between w-full h-fit relative">
+          <div class="flex flex-col gap-3 pl-2">
+            <p
+              class="text-lg font-bold md:text-2xl cursor-pointer hover:text-Danger-500"
+            >
+              Notifications
+            </p>
+            <p
+              class="text-sm font-semibold md:text-xl cursor-pointer hover:text-Danger-500"
+            >
+              All
+            </p>
+          </div>
+          <div class="flex flex-col gap-3 pr-2">
+            <p
+              class="text-lg font-bold md:text-2xl cursor-pointer hover:text-Danger-500"
+            >
+              Mark all as read
+            </p>
+            <p
+              class="text-sm font-semibold md:text-xl cursor-pointer hover:text-Danger-500"
+            >
+              Achieved
+            </p>
+          </div>
+          <div
+            id="mobile-nav"
+            class="hidden bg-Success-500 w-1/2 absolute top-0 right-3 rounded-md gap-3 lg:hidden z-50"
+          >
+            <a href="./SDashboard.html">
+              <span
+                class="text-Popup1-200 w-full h-10 flex gap-4 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
+              >
+                <svg
+                  class="w-8 h-10"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M5.175 16h13.65l-1.95-2.2l1.425-1.425L21 15.45V22H3v-6.55l2.75-3.125l1.425 1.425l-2 2.25Zm6.85-.175L5.7 9.45l7.75-7.75l6.375 6.325l-7.8 7.8Zm.025-2.875L17 8l-3.55-3.5L8.5 9.45l3.55 3.5Z"
+                  />
+                </svg>
+                <p class="flex justify-center items-center text-lg">
+                  Elections
+                </p>
+              </span>
+            </a>
+            <a href="./ACDashboard.html">
+              <span
+                class="text-Grey-100 flex gap-4 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
+              >
+                <svg
+                  class="w-8 h-10"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 100 100"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m80.161 60.441l-15.66-7.47l-6.622-3.159c2.892-1.822 5.241-4.634 6.778-8.021a21.743 21.743 0 0 0 1.945-8.99c0-1.827-.29-3.562-.694-5.236c-1.97-8.112-8.305-14.088-15.91-14.088c-7.461 0-13.7 5.763-15.792 13.644c-.483 1.808-.815 3.688-.815 5.68c0 3.459.808 6.684 2.181 9.489c1.587 3.254 3.94 5.937 6.804 7.662l-6.342 2.953l-16.168 7.53c-1.404.658-2.327 2.242-2.327 4.011v17.765c0 2.381 1.659 4.311 3.707 4.311h24.013V72.92a.78.78 0 0 1 .119-.396l-.01-.006l3.933-6.812l.01.006c.14-.24.389-.41.687-.41c.298 0 .547.169.687.41l.004-.003l.036.063c.005.01.012.018.016.028l3.881 6.721l-.005.003a.783.783 0 0 1 .119.397v13.602h24.013c2.048 0 3.708-1.93 3.708-4.311V64.446c.003-1.763-.905-3.332-2.296-4.005zM54.62 55.886l.01.006l-3.934 6.812l-.01-.006a.796.796 0 0 1-.687.409a.796.796 0 0 1-.687-.409l-.005.003l-.04-.069c-.003-.007-.009-.013-.012-.02l-3.881-6.723l.004-.003a.783.783 0 0 1-.119-.397c0-.445.361-.806.806-.806h7.866c.445 0 .806.361.806.806a.762.762 0 0 1-.117.397z"
+                  />
+                </svg>
+                <p class="flex justify-center items-center text-lg">
+                  Candidate
+                </p>
+              </span>
+            </a>
+
+            <a href="./Notification.html">
+              <span
+                class="text-Grey-100 flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
+              >
+                <svg
+                  class="w-7 h-10 fill-Grey-100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
+                  />
+                </svg>
+
+                <p class="flex justify-center items-center text-lg">
+                  Notification
+                </p>
+              </span>
+            </a>
+
+            <a href="Results.html">
+              <span
+                class="text-Grey-100 flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
+              >
+                <svg
+                  class="w-7 h-10"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 48 48"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M32 9a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v30a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3V9ZM19 21a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v18a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3V21ZM9 30a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3h4a3 3 0 0 0 3-3v-6a3 3 0 0 0-3-3H9Z"
+                  />
+                </svg>
+                <p class="flex justify-center items-center text-lg">Results</p>
+              </span>
+            </a>
             <span
-              class="text-Grey-100 flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
+              class="text-Grey-100 flex gap-6 w-full cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
             >
               <svg
-                class="w-7 h-10 fill-Grey-100"
+                class="w-7 h-10"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -271,105 +319,352 @@
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
+                  d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
                 />
               </svg>
 
-              <p class="flex justify-center items-center text-lg">
-                Notification
-              </p>
+              <p class="flex justify-center items-center text-lg">Profile</p>
             </span>
-          </a>
-
-          <a href="Results.html">
             <span
-              class="text-Grey-100 flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
+              class="text-Grey-100 w-full flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
             >
               <svg
                 class="w-7 h-10"
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 48 48"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2.5"
+                stroke="currentColor"
               >
                 <path
-                  fill="currentColor"
-                  d="M32 9a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v30a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3V9ZM19 21a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v18a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3V21ZM9 30a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3h4a3 3 0 0 0 3-3v-6a3 3 0 0 0-3-3H9Z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"
                 />
               </svg>
-              <p class="flex justify-center items-center text-lg">Results</p>
+              <p class="flex justify-center items-center text-lg">Logout</p>
             </span>
-          </a>
-          <span
-            class="text-Grey-100 flex gap-6 w-full cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
-          >
-            <svg
-              class="w-7 h-10"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="2.5"
-              stroke="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
-              />
-            </svg>
-
-            <p class="flex justify-center items-center text-lg">Profile</p>
-          </span>
-          <span
-            class="text-Grey-100 w-full flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
-          >
-            <svg
-              class="w-7 h-10"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="2.5"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"
-              />
-            </svg>
-            <p class="flex justify-center items-center text-lg">Logout</p>
-          </span>
+          </div>
         </div>
-      </div>
-      <section
-        class="w-full h-full flex flex-col items-center gap-2 relative md:flex md:justify-center md:items-center overflow-y-auto"
-      >
-        <div
-          class="w-full h-fit flex flex-col gap-2 px-4 justify-evenly md:gap-2 md:items-center lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-8"
+        <section
+          class="w-full h-full flex flex-col items-center gap-2 relative md:flex md:items-center overflow-y-auto border border-blue-500 mb-10"
         >
-          <div
-            class="bg-Grey-100 flex gap-2 items-center px-2 rounded-lg w-full h-fit md:h-fit md:flex md:flex-row md:justify-between lg:h-28 lg:justify-between"
-          >
-            <div class="flex gap-4">
-              <label
-                for="Photo"
-                class="border border-Danger-600 h-20 w-24 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 md:w-24 md:h-24 lg:h-20 lg:w-20"
+          <div class="w-full h-fit flex flex-col gap-2 px-4" id="notifications-list">
+            <div
+              class="bg-Popup1-50 flex gap-2 items-center px-2 rounded-lg w-full h-fit md:h-fit md:flex md:flex-row md:justify-between lg:h-28 lg:justify-between"
+            
               >
-                <input type="file" id="Photo" name="Photo" class="hidden" />
-                <span class="text-xs text-center md:text-lg lg:text-sm"
-                  >Upload <br />
-                  Photo</span
+              <div class="flex w-fit gap-4">
+                <div class="inline-flex">
+                  <label
+                    for="Photo"
+                    class="border border-Danger-600 h-20 w-20 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 md:w-24 md:h-24 lg:h-20 lg:w-20"
+                  >
+                    <input type="file" id="Photo" name="Photo" class="hidden" />
+                    <span class="text-xs text-center md:text-lg lg:text-sm"
+                      >Upload <br />
+                      Photo</span
+                    >
+                  </label>
+                </div>
+                <p class="text-sm lg:text-xl py-6 align-middle md:text-2xl">
+                  <span class="font-bold">Nakato Karen</span>
+                  was registered successfully
+                  <br />
+                  3days ago
+                </p>
+              </div>
+              <button id="elip">
+                <svg
+                  class="w-8 h-full flex items-center md:w-14 lg:w-12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
                 >
-              </label>
-              <p class="text-sm lg:text-xl py-6 align-middle md:text-2xl">
-                <span class="font-bold">Nakato Karen</span>
-                was registered successfully
-                <br />
-                3days ago
-              </p>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                  />
+                </svg>
+              </button>
             </div>
-
+            <div
+              class="bg-Popup1-50 flex gap-2 items-center px-2 rounded-lg w-full h-fit md:h-fit md:flex md:flex-row md:justify-between lg:h-28 lg:justify-between"
+            >
+              <div class="flex gap-4">
+                <label
+                  for="Photo"
+                  class="border border-Danger-600 h-20 w-24 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 md:w-24 md:h-24 lg:h-20 lg:w-20"
+                >
+                  <input type="file" id="Photo" name="Photo" class="hidden" />
+                  <span class="text-xs text-center md:text-lg lg:text-sm"
+                    >Upload <br />
+                    Photo</span
+                  >
+                </label>
+                <p class="text-sm lg:text-xl py-6 align-middle md:text-2xl">
+                  <span class="font-bold">Nakato Karen</span>
+                  was registered successfully
+                  <br />
+                  3days ago
+                </p>
+              </div>
+              <button>
+                <svg
+                  class="w-8 h-full flex items-center md:w-14 lg:w-12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="bg-Popup1-50 flex gap-2 items-center px-2 rounded-lg w-full h-fit md:h-fit md:flex md:flex-row md:justify-between lg:h-28 lg:justify-between"
+            >
+              <div class="flex gap-4">
+                <label
+                  for="Photo"
+                  class="border border-Danger-600 h-20 w-24 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 md:w-24 md:h-24 lg:h-20 lg:w-20"
+                >
+                  <input type="file" id="Photo" name="Photo" class="hidden" />
+                  <span class="text-xs text-center md:text-lg lg:text-sm"
+                    >Upload <br />
+                    Photo</span
+                  >
+                </label>
+                <p class="text-sm lg:text-xl py-6 align-middle md:text-2xl">
+                  <span class="font-bold">Nakato Karen</span>
+                  was registered successfully
+                  <br />
+                  3days ago
+                </p>
+              </div>
+              <button>
+                <svg
+                  class="w-8 h-full flex items-center md:w-14 lg:w-12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="bg-Grey-100 flex gap-2 items-center px-2 rounded-lg w-full h-fit md:h-fit md:flex md:flex-row md:justify-between lg:h-28 lg:justify-between"
+            >
+              <div class="flex gap-4">
+                <label
+                  for="Photo"
+                  class="border border-Danger-600 h-20 w-24 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 md:w-24 md:h-24 lg:h-20 lg:w-20"
+                >
+                  <input type="file" id="Photo" name="Photo" class="hidden" />
+                  <span class="text-xs text-center md:text-lg lg:text-sm"
+                    >Upload <br />
+                    Photo</span
+                  >
+                </label>
+                <p class="text-sm lg:text-xl py-6 align-middle md:text-2xl">
+                  <span class="font-bold">Nakato Karen</span>
+                  was registered successfully
+                  <br />
+                  3days ago
+                </p>
+              </div>
+              <button>
+                <svg
+                  class="w-8 h-full flex items-center md:w-14 lg:w-12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="bg-Grey-100 flex gap-2 items-center px-2 rounded-lg w-full h-fit md:h-fit md:flex md:flex-row md:justify-between lg:h-28 lg:justify-between"
+            >
+              <div class="flex gap-4">
+                <label
+                  for="Photo"
+                  class="border border-Danger-600 h-20 w-24 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 md:w-24 md:h-24 lg:h-20 lg:w-20"
+                >
+                  <input type="file" id="Photo" name="Photo" class="hidden" />
+                  <span class="text-xs text-center md:text-lg lg:text-sm"
+                    >Upload <br />
+                    Photo</span
+                  >
+                </label>
+                <p class="text-sm lg:text-xl py-6 align-middle md:text-2xl">
+                  <span class="font-bold">Nakato Karen</span>
+                  was registered successfully
+                  <br />
+                  3days ago
+                </p>
+              </div>
+              <button>
+                <svg
+                  class="w-8 h-full flex items-center md:w-14 lg:w-12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="bg-Grey-100 flex gap-2 items-center px-2 rounded-lg w-full h-fit md:h-fit md:flex md:flex-row md:justify-between lg:h-28 lg:justify-between"
+            >
+              <div class="flex gap-4">
+                <label
+                  for="Photo"
+                  class="border border-Danger-600 h-20 w-24 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 md:w-24 md:h-24 lg:h-20 lg:w-20"
+                >
+                  <input type="file" id="Photo" name="Photo" class="hidden" />
+                  <span class="text-xs text-center md:text-lg lg:text-sm"
+                    >Upload <br />
+                    Photo</span
+                  >
+                </label>
+                <p class="text-sm lg:text-xl py-6 align-middle md:text-2xl">
+                  <span class="font-bold">Nakato Karen</span>
+                  was registered successfully
+                  <br />
+                  3days ago
+                </p>
+              </div>
+              <button>
+                <svg
+                  class="w-8 h-full flex items-center md:w-14 lg:w-12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="bg-Grey-100 flex gap-2 items-center px-2 rounded-lg w-full h-fit md:h-fit md:flex md:flex-row md:justify-between lg:h-28 lg:justify-between"
+            >
+              <div class="flex gap-4">
+                <label
+                  for="Photo"
+                  class="border border-Danger-600 h-20 w-24 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 md:w-24 md:h-24 lg:h-20 lg:w-20"
+                >
+                  <input type="file" id="Photo" name="Photo" class="hidden" />
+                  <span class="text-xs text-center md:text-lg lg:text-sm"
+                    >Upload <br />
+                    Photo</span
+                  >
+                </label>
+                <p class="text-sm lg:text-xl py-6 align-middle md:text-2xl">
+                  <span class="font-bold">Nakato Karen</span>
+                  was registered successfully
+                  <br />
+                  3days ago
+                </p>
+              </div>
+              <button>
+                <svg
+                  class="w-8 h-full flex items-center md:w-14 lg:w-12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="bg-Grey-100 flex gap-2 items-center px-2 rounded-lg w-full h-fit md:h-fit md:flex md:flex-row md:justify-between lg:h-28 lg:justify-between"
+            >
+              <div class="flex gap-4">
+                <label
+                  for="Photo"
+                  class="border border-Danger-600 h-20 w-24 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 md:w-24 md:h-24 lg:h-20 lg:w-20"
+                >
+                  <input type="file" id="Photo" name="Photo" class="hidden" />
+                  <span class="text-xs text-center md:text-lg lg:text-sm"
+                    >Upload <br />
+                    Photo</span
+                  >
+                </label>
+                <p class="text-sm lg:text-xl py-6 align-middle md:text-2xl">
+                  <span class="font-bold">Nakato Karen</span>
+                  was registered successfully
+                  <br />
+                  3days ago
+                </p>
+              </div>
+              <button>
+                <svg
+                  class="w-8 h-full flex items-center md:w-14 lg:w-12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+        <!-- <div id="option" class="invisible w-1/2 h-fit flex flex-col gap-3">
+          <div
+            class="text-Success-400 w-full h-11 flex gap-3  items-center cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
+          >
             <svg
-              class="w-8 h-full flex items-center md:w-14 lg:w-12"
+              class="w-8 h-8"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -379,34 +674,16 @@
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
               />
             </svg>
+            <p class="text-lg font-semibold">Starred</p>
           </div>
           <div
-            class="bg-Grey-100 flex gap-2 items-center px-2 rounded-lg w-full h-fit md:h-fit md:flex md:flex-row md:justify-between lg:h-28 lg:justify-between"
+            class="text-Success-400 w-full h-11 flex gap-3 items-center cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
           >
-            <div class="flex gap-4">
-              <label
-                for="Photo"
-                class="border border-Danger-600 h-20 w-24 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 md:w-24 md:h-24 lg:h-20 lg:w-20"
-              >
-                <input type="file" id="Photo" name="Photo" class="hidden" />
-                <span class="text-xs text-center md:text-lg lg:text-sm"
-                  >Upload <br />
-                  Photo</span
-                >
-              </label>
-              <p class="text-sm lg:text-xl py-6 align-middle md:text-2xl">
-                <span class="font-bold">Nakato Karen</span>
-                was registered successfully
-                <br />
-                3days ago
-              </p>
-            </div>
-
             <svg
-              class="w-8 h-full flex items-center md:w-14 lg:w-12"
+              class="w-8 h-8"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -416,197 +693,33 @@
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
               />
             </svg>
+            <p class="text-lg font-semibold">Delete</p>
           </div>
           <div
-            class="bg-Grey-100 flex gap-2 items-center px-2 rounded-lg w-full h-fit md:h-fit md:flex md:flex-row md:justify-between lg:h-28 lg:justify-between"
+            class="text-Success-400 w-full h-11  flex items-center gap-3 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
           >
-            <div class="flex gap-4">
-              <label
-                for="Photo"
-                class="border border-Danger-600 h-20 w-24 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 md:w-24 md:h-24 lg:h-20 lg:w-20"
-              >
-                <input type="file" id="Photo" name="Photo" class="hidden" />
-                <span class="text-xs text-center md:text-lg lg:text-sm"
-                  >Upload <br />
-                  Photo</span
-                >
-              </label>
-              <p class="text-sm lg:text-xl py-6 align-middle md:text-2xl">
-                <span class="font-bold">Nakato Karen</span>
-                was registered successfully
-                <br />
-                3days ago
-              </p>
-            </div>
-
-            <svg
-              class="w-8 h-full flex items-center md:w-14 lg:w-12"
+            <svg class="w-8 h-8 "
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
+            
             >
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                d="M9 13.5l3 3m0 0l3-3m-3 3v-6m1.06-4.19l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"
               />
             </svg>
+            <p class="text-lg font-semibold">Acheive</p>
           </div>
-          <div
-            class="bg-Grey-100 flex gap-2 items-center px-2 rounded-lg w-full h-fit md:h-fit md:flex md:flex-row md:justify-between lg:h-28 lg:justify-between"
-          >
-            <div class="flex gap-4">
-              <label
-                for="Photo"
-                class="border border-Danger-600 h-20 w-24 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 md:w-24 md:h-24 lg:h-20 lg:w-20"
-              >
-                <input type="file" id="Photo" name="Photo" class="hidden" />
-                <span class="text-xs text-center md:text-lg lg:text-sm"
-                  >Upload <br />
-                  Photo</span
-                >
-              </label>
-              <p class="text-sm lg:text-xl py-6 align-middle md:text-2xl">
-                <span class="font-bold">Nakato Karen</span>
-                was registered successfully
-                <br />
-                3days ago
-              </p>
-            </div>
-
-            <svg
-              class="w-8 h-full flex items-center md:w-14 lg:w-12"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
-              />
-            </svg>
-          </div>
-          <div
-            class="bg-Grey-100 flex gap-2 items-center px-2 rounded-lg w-full h-fit md:h-fit md:flex md:flex-row md:justify-between lg:h-28 lg:justify-between"
-          >
-            <div class="flex gap-4">
-              <label
-                for="Photo"
-                class="border border-Danger-600 h-20 w-24 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 md:w-24 md:h-24 lg:h-20 lg:w-20"
-              >
-                <input type="file" id="Photo" name="Photo" class="hidden" />
-                <span class="text-xs text-center md:text-lg lg:text-sm"
-                  >Upload <br />
-                  Photo</span
-                >
-              </label>
-              <p class="text-sm lg:text-xl py-6 align-middle md:text-2xl">
-                <span class="font-bold">Nakato Karen</span>
-                was registered successfully
-                <br />
-                3days ago
-              </p>
-            </div>
-
-            <svg
-              class="w-8 h-full flex items-center md:w-14 lg:w-12"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
-              />
-            </svg>
-          </div>
-          <div
-            class="bg-Grey-100 flex gap-2 items-center px-2 rounded-lg w-full h-fit md:h-fit md:flex md:flex-row md:justify-between lg:h-28 lg:justify-between"
-          >
-            <div class="flex gap-4">
-              <label
-                for="Photo"
-                class="border border-Danger-600 h-20 w-24 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 md:w-24 md:h-24 lg:h-20 lg:w-20"
-              >
-                <input type="file" id="Photo" name="Photo" class="hidden" />
-                <span class="text-xs text-center md:text-lg lg:text-sm"
-                  >Upload <br />
-                  Photo</span
-                >
-              </label>
-              <p class="text-sm lg:text-xl py-6 align-middle md:text-2xl">
-                <span class="font-bold">Nakato Karen</span>
-                was registered successfully
-                <br />
-                3days ago
-              </p>
-            </div>
-
-            <svg
-              class="w-8 h-full flex items-center md:w-14 lg:w-12"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
-              />
-            </svg>
-          </div>
-          <div
-            class="bg-Grey-100 flex gap-2 items-center px-2 rounded-lg w-full h-fit md:h-fit md:flex md:flex-row md:justify-between lg:h-28 lg:justify-between"
-          >
-            <div class="flex gap-4">
-              <label
-                for="Photo"
-                class="border border-Danger-600 h-20 w-24 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 md:w-24 md:h-24 lg:h-20 lg:w-20"
-              >
-                <input type="file" id="Photo" name="Photo" class="hidden" />
-                <span class="text-xs text-center md:text-lg lg:text-sm"
-                  >Upload <br />
-                  Photo</span
-                >
-              </label>
-              <p class="text-sm lg:text-xl py-6 align-middle md:text-2xl">
-                <span class="font-bold">Nakato Karen</span>
-                was registered successfully
-                <br />
-                3days ago
-              </p>
-            </div>
-
-            <svg
-              class="w-8 h-full flex items-center md:w-14 lg:w-12"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
-              />
-            </svg>
-          </div>
-        </div>
+        </div> -->
       </section>
+      
     </main>
     <script>
       const Menu = document.getElementById("menu");
@@ -614,6 +727,16 @@
       Menu.addEventListener("click", function () {
         items.classList.toggle("hidden");
       });
+
+      const data = fetch('./data/notifications.json').then( ( response ) => {
+        return response.json()
+      }).then(( notifications ) => {
+        const notificationsList = document.getElementById("notifications-list")
+        notifications.forEach( (notification, index ) => {
+          list.insertAdjustmentHTML("beforeend",'<li>className="avatar"</li>'& '<li>className="kevina"       </li>')
+          return 
+        })
+      })
     </script>
   </body>
 </html>
