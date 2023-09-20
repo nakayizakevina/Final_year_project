@@ -303,7 +303,7 @@
           Let's see who the winner is!
         </p>
 
-        <div class="w-full md:mx-5 flex justify-center">
+        <div id="results"   class="w-full md:mx-5 flex justify-center"> 
           <div
             class="w-3/2 bg-Grey-100 rounded-lg flex flex-row gap-2 md:w-full md:mx-4 md:flex md:justify-center  md:items-center lg:w-11/12 lg:h-fit lg:py-4 lg:flex lg:flex-row"
           >
@@ -340,8 +340,8 @@
               <p class="font-bold text-Danger-500 md:text-2xl">Votes</p>
               <p class="font-bold text-Success-500 md:text-2xl">500</p>
             </div>
-          </div>
-        </div>
+          </div> 
+        </div> 
       </section>
       <footer
         class="text-Danger-500 w-full text-center absolute bottom-5 font-bold text-xs md:text-lg"
@@ -358,6 +358,21 @@
       }
       
       );
+      
+      const data = fetch('./data/results.json').then((response)=>{
+        return response.json()
+      }).then((results) =>{
+        const result = document.getElementById("results")
+        results.forEach((result,index) => {
+          const resultHtml = `
+          <div class="w-3/2 bg-Grey-100 rounded-lg flex flex-row gap-2 md:w-full md:mx-4 md:flex md:justify-center  md:items-center lg:w-11/12 lg:h-fit lg:py-4 lg:flex lg:flex-row">
+            
+            
+            </div> `
+        })
+      })
+
+
     </script>
   </body>
 </html>
