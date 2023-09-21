@@ -2079,6 +2079,11 @@ video {
   background-color: rgb(0 0 0 / 0.1);
 }
 
+.bg-Success-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 66 29 / var(--tw-bg-opacity));
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
