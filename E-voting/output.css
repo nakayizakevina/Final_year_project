@@ -2937,6 +2937,11 @@ video {
   background-color: rgb(85 132 106 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-Popup1-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 173 33 / var(--tw-bg-opacity));
+}
+
 .hover\:text-lg:hover {
   font-size: 1.125rem;
   line-height: 1.75rem;
