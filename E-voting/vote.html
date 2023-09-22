@@ -40,18 +40,58 @@
        </p>
        <div class="w-full flex justify-evenly mb-2">
          <button id="Cancel" class=" text-sm font-bold cursor-pointer text-Danger-500 md:text-2xl lg:text-xl">Cancel</button>
-         <button class="text-sm font-bold cursor-pointer text-Popup1-500 md:text-2xl lg:text-xl">Confirm</button>
+         <button id="Confirm" class="text-sm font-bold cursor-pointer text-Popup1-500 md:text-2xl lg:text-xl">Confirm</button>
        </div>
      </main> 
     </div>
+    <!--Success-->
+    <div id="success" class="w-full h-full align-middle  hidden absolute z-50 flex justify-center items-center">
+      <main class="w-64 h-96  flex flex-col justify-evenly bg-Popup1-300 shadow-lg ">
+          <div class="w-full flex justify-end pr-2 ">
+            <svg id="exit" class="fill-current text-Gray-50"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <path
+                
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243"
+              />
+            </svg>
+          </div>
+          <div class="w-full  flex flex-col  gap-5 justify-start items-center">
+              <div class="w-full flex flex-col items-center text-Gray-900 ">
+              <h1 class="font-bold text-2xl">Success!</h1>
+              <p class="text-center font-semibold text-lg">
+                Congraturations upon <br> voting.
+              </p>
+              </div>
+             <div>
+              <svg
+                class="w-28 h-28 stroke-cuurent stroke-Gray-50 fill-none"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+             </div>
+             
+          </div>
+        </main>
+      </div>
 
 
-
-
-
-
-
-        <section
+    <!--End-->
+  <section
     class="w-full h-fit flex overflow-hidden px-2 bg-Success-500 lg:w-64 items-center md:flex lg:h-full lg:flex lg:flex-col lg:gap-1 lg:justify-evenly"
     >
     <div class="flex w-full justify-between items-center py-1">
@@ -518,7 +558,7 @@
       const warning = document.getElementById("alert");
       button.addEventListener("click", function(){
         warning.classList.toggle("invisible");
-        console.log("am okay")
+      
       });
      
     
@@ -526,5 +566,21 @@
       var popup = document.getElementById("alert");
       popup.classList.toggle("invisible");
     });
+
+    const Confirm = document.getElementById("Confirm");
+    const success = document.getElementById("success");
+    Confirm.addEventListener("click",function(){
+      success.classList.toggle("hidden");
+      const Pop = document.getElementById("alert");
+      Pop.classList.toggle("invisible");
+    });
+    
+    document.getElementById("exit").addEventListener("click",function(){
+      const disappear =document.getElementById("success");
+      disappear.classList.toggle("hidden");
+      
+
+    });
+
 </script>
 </html>
