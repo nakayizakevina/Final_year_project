@@ -45,10 +45,10 @@
      </main> 
     </div>
     <!--Success-->
-    <div id="success" class="w-full h-full align-middle  hidden absolute z-50 flex justify-center items-center">
+    <div id="success" class="w-full h-full align-middle  hidden absolute z-50 justify-center items-center">
       <main class="w-64 h-96  flex flex-col justify-evenly rounded-lg bg-Popup1-100 shadow-lg ">
           <div class="w-full flex justify-end pr-2 ">
-            <svg id="exit" class="fill-current text-Popup1-500"
+            <svg id="exit" class="fill-current text-Popup1-500 cursor-pointer"
               xmlns="http://www.w3.org/2000/svg"
               width="32"
               height="32"
@@ -570,7 +570,8 @@
     const Confirm = document.getElementById("Confirm");
     const success = document.getElementById("success");
     Confirm.addEventListener("click",function(){
-      success.classList.toggle("hidden");
+      success.classList.remove("hidden")
+      success.classList.add("flex")
       const Pop = document.getElementById("alert");
       Pop.classList.toggle("invisible");
     });
@@ -581,6 +582,8 @@
       
 
     });
+
+
 
 </script>
 </html>

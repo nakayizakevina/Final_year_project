@@ -713,11 +713,6 @@ video {
   clear: none;
 }
 
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -2180,20 +2175,16 @@ video {
   fill: #FAFBFC;
 }
 
+.fill-Popup1-200 {
+  fill: #9BE19A;
+}
+
 .fill-current {
   fill: currentColor;
 }
 
 .fill-none {
   fill: none;
-}
-
-.fill-Popup1-100 {
-  fill: #BBEBBB;
-}
-
-.fill-Popup1-200 {
-  fill: #9BE19A;
 }
 
 .stroke-Gray-50 {
