@@ -673,6 +673,14 @@ video {
   top: 8rem;
 }
 
+.top-4 {
+  top: 1rem;
+}
+
+.top-28 {
+  top: 7rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -716,6 +724,11 @@ video {
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .my-10 {
@@ -2070,6 +2083,11 @@ video {
   background-color: rgb(250 251 252 / var(--tw-bg-opacity));
 }
 
+.bg-Grey-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 249 250 / var(--tw-bg-opacity));
+}
+
 .bg-Grey-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(242 245 246 / var(--tw-bg-opacity));
@@ -2246,11 +2264,6 @@ video {
   padding: 0.5rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -2259,6 +2272,11 @@ video {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .px-6 {
@@ -2291,13 +2309,12 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
 .pl-2 {
   padding-left: 0.5rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
 }
 
 .pr-2 {
@@ -2516,6 +2533,11 @@ video {
 .text-Popup1-500 {
   --tw-text-opacity: 1;
   color: rgb(37 190 36 / var(--tw-text-opacity));
+}
+
+.text-Popup1-700 {
+  --tw-text-opacity: 1;
+  color: rgb(26 135 26 / var(--tw-text-opacity));
 }
 
 .text-Success-400 {

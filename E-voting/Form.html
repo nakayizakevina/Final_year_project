@@ -364,8 +364,44 @@
             <p class="flex justify-center items-center text-lg">Logout</p>
           </span>
         </div>
+        <div id="confirm" class="  shadow-lg hidden absolute z-50 top-28 ">
+          <main
+          class="w-64 h-96 flex flex-col  bg-Grey-200 mx-auto container shadow-lg"
+        >
+          <div id="cancel" class="w-full flex justify-end pr-2 pt-2 cursor-pointer">
+            <svg
+              class="fill-current text-Black"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243"
+              />
+            </svg>
+          </div>
+          <h1 class="font-bold text-2xl text-Popup1-700 pl-4">Hi</h1>
+          <div class="w-full flex flex-col gap-5 px-2 ">
+            <div class="w-full h-80 flex flex-col gap-4 justify-center">
+             
+              <p class="text-center font-semibold text-lg text-Popup1-700">
+                Your application has been recevied with thanks.Wish your victory in the forth coming elections.
+              </p>
+            </div>
+            <div>
+              
+            
+          </div>
+        </main>
+      </div>
+
         <h3
-          class="text-xl font-semibold md:text-3xl md:font-bold md:mt-3 lg:mt-10"
+          class="text-xl font-semibold relative md:text-3xl md:font-bold md:mt-3 lg:mt-10"
         >
           CANDIDATE APPLICATION FORM
         </h3>
@@ -534,7 +570,7 @@
             </div>
           </div>
           <div class="w-full flex justify-center">
-            <button class="w-28 h-10 lg:w-44 lg:h-12 my-4  bg-Success-500 text-Grey-100 font-semibold rounded-md hover:bg-Popup1-100 hover:text-Popup1-600 ">
+            <button id="apply" class="w-28 h-10 lg:w-44 lg:h-12 my-4  bg-Success-500 text-Grey-100 font-semibold rounded-md hover:bg-Popup1-100 hover:text-Popup1-600 ">
               Apply
             </button>
           </div> 
@@ -548,6 +584,20 @@
       Menu.addEventListener("click", function () {
         list.classList.toggle("hidden");
       });
+
+      const btn = document.getElementById("apply");
+      const pop = document.getElementById("confirm");
+      btn.addEventListener("click",function(){
+        pop.classList.toggle("hidden");
+      });
+
+      document.getElementById("cancel").addEventListener("click",function(){
+      const disappear =document.getElementById("confirm");
+      disappear.classList.toggle("hidden");
+      
+
+    });
+
     </script>
   </body>
 </html>
