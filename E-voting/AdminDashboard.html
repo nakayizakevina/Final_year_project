@@ -372,39 +372,29 @@
             <div class="w-full flex flex-col gap-3 lg:flex-row lg:justify-evenly">
               <div class="w-48 flex">
                 <input
-                  class="w-full py-2 px-2 text-sm rounded-l-md  border border-Black-800"
+                  class="w-full py-2 px-2 text-sm rounded-md lg:px-3 lg:py-3 lg:text-lg border border-Black-800"
                   type="text"
                   placeholder="Search by name"
                 />
-                <svg class="w-6 rounded-r-md bg-Grey-900"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2.5"
-                  stroke="currentColor"
-                
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-                  />
-                </svg>
+               
               </div>
               <div class="w-48">
                 <input
-                  class="w-full py-2 px-2 text-sm rounded-md border border-Black-800"
+                  class="w-full py-2 px-2 text-sm rounded-md lg:px-3 lg:py-3 lg:text-lg  border border-Black-800"
                   type="text"
                   placeholder="Search by position"
                 />
               </div>
               <div class="w-48">
                 <input
-                  class="w-full py-2 px-2 text-sm rounded-md border border-Black-800"
+                  class="w-full py-2 px-2 text-sm rounded-md lg:px-3 lg:py-3 lg:text-lg  border border-Black-800"
                   type="text"
                   placeholder="Search by status"
                 />
               </div>
+              <button class="w-48 py-2 px-2 text-sm rounded-md lg:px-3 lg:py-3 lg:text-lg  bg-Success-500 text-Gray-50 font-semibold hover:bg-Popup1-100 hover:text-Popup1-600">
+                Search
+              </button>
             </div>
             <div class="w-full overflow-y-auto">
               <table class="w-full  table-auto">
@@ -414,8 +404,8 @@
                   <th class="py-4 text-left">Status</th>
                 </thead>
                 <tbody class="w-full">
-                  <tr class="bg-Grey-50 rounded-md shadow-md">
-                    <td class="flex gap-2 py-2 text-left">
+                  <tr class="bg-Grey-50 rounded-md shadow-md border border-orange-400">
+                    <td class="flex gap-2 py-2  text-left cursor-pointer">
                       <label
                       for="Photo"
                       class="border border-Danger-600 h-20 w-20 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 md:w-24 md:h-24 lg:h-20 lg:w-20"
@@ -434,8 +424,8 @@
                     <td class="font-bold text-sm lg:text-lg">06/04/2023</td>
                     <td class="font-bold text-Warning-700 text-sm lg:text-lg">Pending</td>
                   </tr>
-                  <tr class="bg-Grey-50  rounded-md shadow-md">
-                    <td class="flex gap-2 py-2 text-left">
+                  <tr class="bg-Grey-50 rounded-md shadow-md border border-orange-500">
+                    <td class="flex gap-2 py-2 text-left cursor-pointer">
                       <label
                       for="Photo"
                       class="border border-Danger-600 h-20 w-20 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 md:w-24 md:h-24 lg:h-20 lg:w-20"
