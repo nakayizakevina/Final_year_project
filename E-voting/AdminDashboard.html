@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admi Dashboard</title>
-    <link rel="stylesheet" href="./output.css"/>
-    
-</head>
-<body>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
     <main
       class="w-screen h-screen bg-Grey-400 flex flex-col gap-2 lg:flex lg:flex-row overflow-hidden"
     >
@@ -175,7 +174,7 @@
           </div>
         </div>
         <div
-          class="hidden lg:text-Grey-100 cursor-pointer  lg:w-full lg:flex lg:flex-col lg:justify-start lg:items-start lg:gap-3"
+          class="hidden lg:text-Grey-100 cursor-pointer lg:w-full lg:flex lg:flex-col lg:justify-start lg:items-start lg:gap-3"
         >
           <span
             class="text-Grey-100 flex gap-6 w-full cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
@@ -365,8 +364,105 @@
             <p class="flex justify-center items-center text-lg">Logout</p>
           </span>
         </div>
-    </div>
-    </section>
+        <div class="w-full h-full bg-Grey-100">
+          <h3 class="text-lg font-semibold text-center md:text-3xl md:font-bold md:mt-3">
+            CANDIDATE APPLICATION FORM
+          </h3>
+          <div class="w-full mt-6">
+            <div class="w-full flex flex-col gap-3 lg:flex-row lg:justify-evenly">
+              <div class="w-48 flex">
+                <input
+                  class="w-full py-2 px-2 text-sm rounded-l-md  border border-Black-800"
+                  type="text"
+                  placeholder="Search by name"
+                />
+                <svg class="w-6 rounded-r-md bg-Grey-900"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2.5"
+                  stroke="currentColor"
+                
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                  />
+                </svg>
+              </div>
+              <div class="w-48">
+                <input
+                  class="w-full py-2 px-2 text-sm rounded-md border border-Black-800"
+                  type="text"
+                  placeholder="Search by position"
+                />
+              </div>
+              <div class="w-48">
+                <input
+                  class="w-full py-2 px-2 text-sm rounded-md border border-Black-800"
+                  type="text"
+                  placeholder="Search by status"
+                />
+              </div>
+            </div>
+            <div class="w-full overflow-y-auto">
+              <table class="w-full  table-auto">
+                <thead class="lg:text-xl">
+                  <th class="py-4 text-left">Candidate</th>
+                  <th class="py-4 text-left">Date</th>
+                  <th class="py-4 text-left">Status</th>
+                </thead>
+                <tbody class="w-full">
+                  <tr class="bg-Grey-50 rounded-md shadow-md">
+                    <td class="flex gap-2 py-2 text-left">
+                      <label
+                      for="Photo"
+                      class="border border-Danger-600 h-20 w-20 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 md:w-24 md:h-24 lg:h-20 lg:w-20"
+                    >
+                      <input type="file" id="Photo" name="Photo" class="hidden" />
+                      <span class="text-xs text-center md:text-lg lg:text-sm"
+                        >Upload <br />
+                        Photo</span
+                      >
+                     </label>
+                     <div class="font-bold text-Black-900 text-sm  lg:text-lg flex flex-col gap-1 py-6">
+                      <h3>Nakato Karen</h3>
+                      <div>Guild President </div>
+                     </div>
+                    </td>
+                    <td class="font-bold text-sm lg:text-lg">06/04/2023</td>
+                    <td class="font-bold text-Warning-700 text-sm lg:text-lg">Pending</td>
+                  </tr>
+                  <tr class="bg-Grey-50  rounded-md shadow-md">
+                    <td class="flex gap-2 py-2 text-left">
+                      <label
+                      for="Photo"
+                      class="border border-Danger-600 h-20 w-20 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 md:w-24 md:h-24 lg:h-20 lg:w-20"
+                    >
+                      <input type="file" id="Photo" name="Photo" class="hidden" />
+                      <span class="text-xs text-center md:text-lg lg:text-sm"
+                        >Upload <br />
+                        Photo</span
+                      >
+                     </label>
+                     <div class="font-bold text-Black-900 text-sm  lg:text-lg flex flex-col gap-1 py-6">
+                      <h3>Nakato Karen</h3>
+                      <div>Guild President </div>
+                     </div>
+                    </td>
+                    <td class="font-bold text-sm lg:text-lg">06/04/2023</td>
+                    <td class="font-bold text-Popup1-700 text-sm lg:text-lg">Approved</td>
+                  </tr>
+                </tbody>
+               
+              </table>
+            </div>
+           
+          </div>
+
+        </div>
+      </section>
     </main>
     <script>
       const Menu = document.getElementById("menu");
@@ -374,13 +470,6 @@
       Menu.addEventListener("click", function () {
         list.classList.toggle("hidden");
       });
-
-     
-
-      
-
     </script>
   </body>
-    
-
 </html>
