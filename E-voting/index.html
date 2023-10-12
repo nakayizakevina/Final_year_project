@@ -19,12 +19,13 @@
           alt=""
         />
         <input
-          class="w-full h-12 pl-2 outline-Success-500 lg:w-full lg:h-12 lg:text-lg md:w-3/4 md:h-16 md:text-2xl  border border-Success-500 bg-Grey-100 rounded-lg "
+          class="w-full h-12 pl-2 outline-Success-500 lg:w-full lg:h-12 lg:text-lg md:w-3/4 md:h-16 md:text-2xl  border border-Success-500 bg-Grey-100 rounded-lg  required"
           type="text"
           placeholder="Enter University Email"
+          
         />
-        <div class="w-full h-12 flex outline-Success-500 justify-between  lg:w-full lg:h-12 lg:text-lg md:w-3/4  md:h-16 md:text-2xl border border-Success-500 bg-Grey-100  rounded-lg ">
-          <input class="w-full pl-2  rounded-md "
+        <div class="w-full h-12 flex outline-Success-500 justify-between  lg:w-full lg:h-12 lg:text-lg md:w-3/4  md:h-16 md:text-2xl border border-Success-500 bg-Grey-100  rounded-lg">
+          <input class="w-full pl-2  rounded-md required "
           type="password"
           placeholder="Enter Password"
          />
@@ -61,15 +62,31 @@
     </footer>
   </body>
   <script>
-    document.getElementById("login-cta").addEventListener("click", () => {
-      // Check if the credentials are valid
-      // Define the logic to check the database and return the appropriate information
-      const login = true;
+    bubmitButton = document.getElementById("login-cta").addEventListener("click", () => {
+      
+    const requiredFields = document.querySelectorAll('.required');
+
+    for (const field of requiredFields) {
+    if (field.value.trim() === '') {
+      alert('Please fill out all required fields.');
+      event.preventDefault(); 
+      break; 
+     }
+   }
+   const login = true;
       if (login) {
         console.log("Voila! logging In User ...");
         // Navigate the user to the login page
         window.location.href = "SDashboard.html";
       }
-    });
+  });
+      // Check if the credentials are valid
+      // Define the logic to check the database and return the appropriate information
+      
+  
+
+    
+
+  
   </script>
 </html>
