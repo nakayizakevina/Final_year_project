@@ -8,8 +8,20 @@
   </head>
   <body>
     <main
-      class="w-screen h-screen bg-Grey-400 flex flex-col gap-2 lg:flex lg:flex-row overflow-hidden"
+      class="w-screen h-screen bg-Grey-400 flex flex-col gap-2 lg:flex lg:flex-row overflow-hidden relative"
     >
+      <div
+        class="w-screen h-screen absolute bg-black/10 hidden justify-center items-center z-50 overflow-y-hidden"
+        id="candidate-modal"
+      >
+        <div class="w-3/4 h-[300px] bg-white rounded-md  border border-red-500">
+          <div class=" flex justify-end">
+
+            <button id="close-candidate-modal">X</button>
+          </div>
+          <p>I love basketball</p>
+        </div>
+      </div>
       <section
         class="w-full h-fit flex overflow-hidden px-2 bg-Success-500 lg:w-64 items-center md:flex lg:h-full lg:flex lg:flex-col lg:gap-1 lg:justify-evenly"
       >
@@ -364,93 +376,249 @@
             <p class="flex justify-center items-center text-lg">Logout</p>
           </span>
         </div>
-        <div class="w-full h-full bg-Grey-100">
-          <h3 class="text-lg font-semibold text-center md:text-3xl md:font-bold md:mt-3">
+        <div
+          class="w-full h-4/5 px-2 bg-Grey-100 border border-red-500 flex flex-col overflow-y-hidden"
+        >
+          <h3
+            class="text-lg font-semibold text-center md:text-3xl md:font-bold md:mt-3"
+          >
             CANDIDATE APPLICATION FORM
           </h3>
-          <div class="w-full mt-6">
-            <div class="w-full flex flex-col gap-3 lg:flex-row lg:justify-evenly">
+          <div
+            class="w-full mt-6 h-full flex flex-col border px-2 overflow-hidden pb-5"
+          >
+            <div
+              class="w-full flex flex-col gap-3 lg:flex-row lg:justify-evenly"
+            >
               <div class="w-48 flex">
                 <input
                   class="w-full py-2 px-2 text-sm rounded-md lg:px-3 lg:py-3 lg:text-lg border border-Black-800"
                   type="text"
                   placeholder="Search by name"
                 />
-               
               </div>
               <div class="w-48">
                 <input
-                  class="w-full py-2 px-2 text-sm rounded-md lg:px-3 lg:py-3 lg:text-lg  border border-Black-800"
+                  class="w-full py-2 px-2 text-sm rounded-md lg:px-3 lg:py-3 lg:text-lg border border-Black-800"
                   type="text"
                   placeholder="Search by position"
                 />
               </div>
               <div class="w-48">
                 <input
-                  class="w-full py-2 px-2 text-sm rounded-md lg:px-3 lg:py-3 lg:text-lg  border border-Black-800"
+                  class="w-full py-2 px-2 text-sm rounded-md lg:px-3 lg:py-3 lg:text-lg border border-Black-800"
                   type="text"
                   placeholder="Search by status"
                 />
               </div>
-              <button class="w-48 py-2 px-2 text-sm rounded-md lg:px-3 lg:py-3 lg:text-lg  bg-Success-500 text-Gray-50 font-semibold hover:bg-Popup1-100 hover:text-Popup1-600">
+              <button
+                class="w-48 py-2 px-2 text-sm rounded-md lg:px-3 lg:py-3 lg:text-lg bg-Success-500 text-Gray-50 font-semibold hover:bg-Popup1-100 hover:text-Popup1-600"
+              >
                 Search
               </button>
             </div>
-            <div class="w-full overflow-y-auto">
-              <table class="w-full  table-auto">
+            <div
+              class="w-full overflow-y-auto border border-Popup1-700 relative h-3/5 px-1 py-4"
+            >
+              <table class="w-full table-auto">
                 <thead class="lg:text-xl">
                   <th class="py-4 text-left">Candidate</th>
                   <th class="py-4 text-left">Date</th>
                   <th class="py-4 text-left">Status</th>
                 </thead>
                 <tbody class="w-full">
-                  <tr class="bg-Grey-50 rounded-md shadow-md border border-orange-400">
-                    <td class="flex gap-2 py-2  text-left cursor-pointer">
-                      <label
-                      for="Photo"
-                      class="border border-Danger-600 h-20 w-20 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 md:w-24 md:h-24 lg:h-20 lg:w-20"
-                    >
-                      <input type="file" id="Photo" name="Photo" class="hidden" />
-                      <span class="text-xs text-center md:text-lg lg:text-sm"
-                        >Upload <br />
-                        Photo</span
-                      >
-                     </label>
-                     <div class="font-bold text-Black-900 text-sm  lg:text-lg flex flex-col gap-1 py-6">
-                      <h3>Nakato Karen</h3>
-                      <div>Guild President </div>
-                     </div>
-                    </td>
-                    <td class="font-bold text-sm lg:text-lg">06/04/2023</td>
-                    <td class="font-bold text-Warning-700 text-sm lg:text-lg">Pending</td>
-                  </tr>
-                  <tr class="bg-Grey-50 rounded-md shadow-md border border-orange-500">
+                  <tr
+                    class="bg-Grey-50 rounded-md shadow-md border border-orange-400"
+                    id="candidate"
+                  >
                     <td class="flex gap-2 py-2 text-left cursor-pointer">
                       <label
-                      for="Photo"
-                      class="border border-Danger-600 h-20 w-20 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 md:w-24 md:h-24 lg:h-20 lg:w-20"
-                    >
-                      <input type="file" id="Photo" name="Photo" class="hidden" />
-                      <span class="text-xs text-center md:text-lg lg:text-sm"
-                        >Upload <br />
-                        Photo</span
+                        for="Photo"
+                        class="border border-Danger-600 h-20 w-20 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 md:w-24 md:h-24 lg:h-20 lg:w-20"
                       >
-                     </label>
-                     <div class="font-bold text-Black-900 text-sm  lg:text-lg flex flex-col gap-1 py-6">
-                      <h3>Nakato Karen</h3>
-                      <div>Guild President </div>
-                     </div>
+                        <input
+                          type="file"
+                          id="Photo"
+                          name="Photo"
+                          class="hidden"
+                        />
+                        <span class="text-xs text-center md:text-lg lg:text-sm"
+                          >Upload <br />
+                          Photo</span
+                        >
+                      </label>
+                      <div
+                        id="person"
+                        class="font-bold text-Black-900 text-sm lg:text-lg flex flex-col gap-1 py-6 cursor-pointer"
+                      >
+                        <h3>Nakato Karen</h3>
+                        <div>Guild President</div>
+                      </div>
                     </td>
                     <td class="font-bold text-sm lg:text-lg">06/04/2023</td>
-                    <td class="font-bold text-Popup1-700 text-sm lg:text-lg">Approved</td>
+                    <td class="font-bold text-Warning-700 text-sm lg:text-lg">
+                      Pending
+                    </td>
+                  </tr>
+                  <tr
+                    class="bg-Grey-50 rounded-md shadow-md border border-orange-500"
+                  >
+                    <td class="flex gap-2 py-2 text-left cursor-pointer">
+                      <label
+                        for="Photo"
+                        class="border border-Danger-600 h-20 w-20 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 md:w-24 md:h-24 lg:h-20 lg:w-20"
+                      >
+                        <input
+                          type="file"
+                          id="Photo"
+                          name="Photo"
+                          class="hidden"
+                        />
+                        <span class="text-xs text-center md:text-lg lg:text-sm"
+                          >Upload <br />
+                          Photo</span
+                        >
+                      </label>
+                      <div
+                        class="font-bold text-Black-900 text-sm lg:text-lg flex flex-col gap-1 py-6"
+                      >
+                        <h3>Nakato Karen</h3>
+                        <div>Guild President</div>
+                      </div>
+                    </td>
+                    <td class="font-bold text-sm lg:text-lg">06/04/2023</td>
+                    <td class="font-bold text-Popup1-700 text-sm lg:text-lg">
+                      Approved
+                    </td>
+                  </tr>
+                  <tr
+                    class="bg-Grey-50 rounded-md shadow-md border border-orange-500"
+                  >
+                    <td class="flex gap-2 py-2 text-left cursor-pointer">
+                      <label
+                        for="Photo"
+                        class="border border-Danger-600 h-20 w-20 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 md:w-24 md:h-24 lg:h-20 lg:w-20"
+                      >
+                        <input
+                          type="file"
+                          id="Photo"
+                          name="Photo"
+                          class="hidden"
+                        />
+                        <span class="text-xs text-center md:text-lg lg:text-sm"
+                          >Upload <br />
+                          Photo</span
+                        >
+                      </label>
+                      <div
+                        class="font-bold text-Black-900 text-sm lg:text-lg flex flex-col gap-1 py-6"
+                      >
+                        <h3>Nakato Karen</h3>
+                        <div>Guild President</div>
+                      </div>
+                    </td>
+                    <td class="font-bold text-sm lg:text-lg">06/04/2023</td>
+                    <td class="font-bold text-Popup1-700 text-sm lg:text-lg">
+                      Approved
+                    </td>
+                  </tr>
+                  <tr
+                    class="bg-Grey-50 rounded-md shadow-md border border-orange-500"
+                  >
+                    <td class="flex gap-2 py-2 text-left cursor-pointer">
+                      <label
+                        for="Photo"
+                        class="border border-Danger-600 h-20 w-20 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 md:w-24 md:h-24 lg:h-20 lg:w-20"
+                      >
+                        <input
+                          type="file"
+                          id="Photo"
+                          name="Photo"
+                          class="hidden"
+                        />
+                        <span class="text-xs text-center md:text-lg lg:text-sm"
+                          >Upload <br />
+                          Photo</span
+                        >
+                      </label>
+                      <div
+                        class="font-bold text-Black-900 text-sm lg:text-lg flex flex-col gap-1 py-6"
+                      >
+                        <h3>Nakato Karen</h3>
+                        <div>Guild President</div>
+                      </div>
+                    </td>
+                    <td class="font-bold text-sm lg:text-lg">06/04/2023</td>
+                    <td class="font-bold text-Popup1-700 text-sm lg:text-lg">
+                      Approved
+                    </td>
+                  </tr>
+                  <tr
+                    class="bg-Grey-50 rounded-md shadow-md border border-orange-500"
+                  >
+                    <td class="flex gap-2 py-2 text-left cursor-pointer">
+                      <label
+                        for="Photo"
+                        class="border border-Danger-600 h-20 w-20 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 md:w-24 md:h-24 lg:h-20 lg:w-20"
+                      >
+                        <input
+                          type="file"
+                          id="Photo"
+                          name="Photo"
+                          class="hidden"
+                        />
+                        <span class="text-xs text-center md:text-lg lg:text-sm"
+                          >Upload <br />
+                          Photo</span
+                        >
+                      </label>
+                      <div
+                        class="font-bold text-Black-900 text-sm lg:text-lg flex flex-col gap-1 py-6"
+                      >
+                        <h3>Nakato Karen</h3>
+                        <div>Guild President</div>
+                      </div>
+                    </td>
+                    <td class="font-bold text-sm lg:text-lg">06/04/2023</td>
+                    <td class="font-bold text-Popup1-700 text-sm lg:text-lg">
+                      Approved
+                    </td>
+                  </tr>
+                  <tr
+                    class="bg-Grey-50 rounded-md shadow-md border border-orange-500"
+                  >
+                    <td class="flex gap-2 py-2 text-left cursor-pointer">
+                      <label
+                        for="Photo"
+                        class="border border-Danger-600 h-20 w-20 my-3 align-middle rounded-full flex justify-center items-center cursor-pointer bg-Grey-100 md:w-24 md:h-24 lg:h-20 lg:w-20"
+                      >
+                        <input
+                          type="file"
+                          id="Photo"
+                          name="Photo"
+                          class="hidden"
+                        />
+                        <span class="text-xs text-center md:text-lg lg:text-sm"
+                          >Upload <br />
+                          Photo</span
+                        >
+                      </label>
+                      <div
+                        class="font-bold text-Black-900 text-sm lg:text-lg flex flex-col gap-1 py-6"
+                      >
+                        <h3>Nakato Karen</h3>
+                        <div>Guild President</div>
+                      </div>
+                    </td>
+                    <td class="font-bold text-sm lg:text-lg">06/04/2023</td>
+                    <td class="font-bold text-Popup1-700 text-sm lg:text-lg">
+                      Approved
+                    </td>
                   </tr>
                 </tbody>
-               
               </table>
             </div>
-           
           </div>
-
         </div>
       </section>
     </main>
@@ -459,6 +627,13 @@
       const list = document.getElementById("mobile-nav");
       Menu.addEventListener("click", function () {
         list.classList.toggle("hidden");
+      });
+
+      const candidateModal = document.getElementById("candidate-modal");
+      const candidate = document.getElementById("candidate");
+      candidate.addEventListener("click", function () {
+        candidateModal.classList.remove("hidden");
+        candidateModal.classList.add("flex");
       });
     </script>
   </body>
