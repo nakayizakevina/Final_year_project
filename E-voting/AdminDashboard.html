@@ -365,7 +365,7 @@
             <p class="flex justify-center items-center text-lg">Profile</p>
           </span>
           <span
-            class="text-Grey-100 w-full flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
+            id="logout"  class="text-Grey-100 w-full flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
           >
             <svg
               class="w-7 h-10"
@@ -513,7 +513,7 @@
             <p class="flex justify-center items-center text-lg">Profile</p>
           </span>
           <span
-            class="text-Grey-100 w-full flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
+           id="mobile-logout"  class="text-Grey-100 w-full flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
           >
             <svg
               class="w-7 h-10"
@@ -797,7 +797,16 @@
       const disappear = document.getElementById("candidate-modal");
       disappear.classList.toggle("hidden");
       });
-    
+       
+     const Logout = document.getElementById("logout")
+     Logout.addEventListener("click", function(){
+       window.location.href ='index.html';
+     });
+     const mobileLogout = document.getElementById("mobile-logout")
+     mobileLogout.addEventListener("click",function(){
+     window.location.href = 'index.html';
+     });
+     
     </script>
   </body>
 </html>

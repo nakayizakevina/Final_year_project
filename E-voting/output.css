@@ -909,6 +909,18 @@ video {
   height: 7rem;
 }
 
+.h-3\/5 {
+  height: 60%;
+}
+
+.h-4\/5 {
+  height: 80%;
+}
+
+.h-4\/6 {
+  height: 66.666667%;
+}
+
 .h-56 {
   height: 14rem;
 }
@@ -939,6 +951,10 @@ video {
 
 .h-\[400px\] {
   height: 400px;
+}
+
+.h-\[500px\] {
+  height: 500px;
 }
 
 .h-\[590px\] {
@@ -980,6 +996,10 @@ video {
 
 .w-28 {
   width: 7rem;
+}
+
+.w-3\/4 {
+  width: 75%;
 }
 
 .w-32 {
@@ -2073,19 +2093,14 @@ video {
   border-color: rgb(1 72 32 / var(--tw-border-opacity));
 }
 
-.border-orange-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(251 146 60 / var(--tw-border-opacity));
-}
-
-.border-orange-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(249 115 22 / var(--tw-border-opacity));
-}
-
 .border-red-600 {
   --tw-border-opacity: 1;
   border-color: rgb(220 38 38 / var(--tw-border-opacity));
+}
+
+.border-b-Gray-500 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(122 122 122 / var(--tw-border-opacity));
 }
 
 .bg-Danger-300 {
@@ -2096,6 +2111,11 @@ video {
 .bg-Danger-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(228 77 77 / var(--tw-bg-opacity));
+}
+
+.bg-Danger-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(201 30 30 / var(--tw-bg-opacity));
 }
 
 .bg-Grey-100 {
@@ -2126,6 +2146,11 @@ video {
 .bg-Popup1-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(233 249 233 / var(--tw-bg-opacity));
+}
+
+.bg-Popup1-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 173 33 / var(--tw-bg-opacity));
 }
 
 .bg-Success-500 {
@@ -2289,6 +2314,11 @@ video {
   padding: 0.5rem;
 }
 
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -2334,6 +2364,10 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
 .pl-2 {
   padding-left: 0.5rem;
 }
@@ -2344,6 +2378,10 @@ video {
 
 .pr-2 {
   padding-right: 0.5rem;
+}
+
+.pr-6 {
+  padding-right: 1.5rem;
 }
 
 .pt-2 {
@@ -3014,9 +3052,19 @@ video {
   }
 }
 
+.hover\:bg-Danger-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 77 77 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-Popup1-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(187 235 187 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-Popup1-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(81 203 80 / var(--tw-bg-opacity));
 }
 
 .hover\:fill-Popup1-600:hover {
@@ -3290,6 +3338,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:left-40 {
+    left: 10rem;
+  }
+
   .lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;

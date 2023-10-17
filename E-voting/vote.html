@@ -11,7 +11,7 @@
         class="w-screen h-screen overflow-x-hidden overflow-y-hidden bg-Grey-400 flex flex-col gap-2 lg:flex lg:flex-row"
     >  
 
-    <!-- hhhhhhhhh -->
+    
     <div id="alert" class="bg-black/10 w-full h-screen invisible absolute z-50   flex flex-col items-center justify-center  md:flex md:items-center">
       <main 
        class="w-[350px] h-fit rounded-lg px-4 shadow-lg flex flex-col gap-6 items-center  overflow-hidden bg-Grey-100  md:w-[600px] lg:w-[500px]"
@@ -242,7 +242,7 @@
         
         <p class="flex justify-center items-center text-lg">Profile</p>
     </span>
-    <span class="text-Grey-100 w-full flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600">
+    <span id="logout" class="text-Grey-100 w-full flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600">
         <svg
         class="w-7 h-10"
         xmlns="http://www.w3.org/2000/svg"
@@ -361,7 +361,7 @@
      
       <p class="flex justify-center items-center text-lg">Profile</p>
     </span>
-    <span class="text-Grey-100 w-full flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600">
+    <span id="mobile-logout" class="text-Grey-100 w-full flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600">
       <svg
         class="w-7 h-10"
         xmlns="http://www.w3.org/2000/svg"
@@ -583,7 +583,15 @@
 
     });
 
+    const Logout = document.getElementById("logout")
+     Logout.addEventListener("click", function(){
+       window.location.href ='index.html';
+     });
 
+     const mobileLogout = document.getElementById("mobile-logout")
+     mobileLogout.addEventListener("click",function(){
+     window.location.href = 'index.html';
+     });
 
 </script>
 </html>
