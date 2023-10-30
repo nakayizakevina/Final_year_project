@@ -462,14 +462,14 @@
             <p class="text-Gray-500 md:text-2xl md:font-semibold lg:text-lg">
               Time: <span class="font-bold">8am-5pm</span>
             </p>
-            <a href="vote.html">
+            
               <button
                 class="w-28 h-10 text-lg font-bold rounded-lg text-Gray-100 bg-Success-500 hover:bg-Popup1-100 hover:text-Popup1-600 cursor-pointer lg:w-32 lg:h-10 md:w-3/4 md:h-16"
                 id="login-cta"
               >
-                Let's vote
+                LET'S VOTE
               </button>
-            </a>
+          
           </div>
         </div>
       </section>
@@ -479,6 +479,11 @@
       const items = document.getElementById("mobile-nav");
       Menu.addEventListener("click", function () {
         items.classList.toggle("hidden");
+      });
+
+      const vote = document.getElementById("login-cta")
+      vote.addEventListener("click", function(){
+        window.location.href = 'vote.html'
       });
 
       const Logout = document.getElementById("logout")
