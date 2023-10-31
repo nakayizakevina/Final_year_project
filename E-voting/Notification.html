@@ -398,7 +398,7 @@
             </span>
           </div>
         </div>
-        <div class="w-full h-full overflow-x-hidden overflow-y-hidden">
+        <div class="w-full h-full flex flex-col overflow-x-hidden overflow-y-hidden border borderDanger-500">
           <section
           class="w-full h-full flex flex-col items-center gap-2 relative md:flex md:items-center overflow-y-auto overflow-x-hidden mb-10"
         >
@@ -711,11 +711,9 @@
               </button>
             </div> -->
           </div>
-          <footer class="w-full text-Danger-500  text-center absolute bottom-5 font-semibold text-sm md:text-2xl lg:text-lg">
-          MIU ELECTIONS <span>&copy;2023</span>
-        </footer> 
+          
         </section>
-        
+         
         </div>
         
          <div id="option" class="bg-Grey-100 rounded-lg shadow-lg absolute z-50 top-32 right-20 w-44 hidden h-fit flex flex-col gap-3">
@@ -779,9 +777,12 @@
         </div> 
         
       </section>
-      
+      <footer class="w-full text-Danger-500  text-center absolute bottom-5 font-semibold text-sm md:text-2xl lg:text-lg">
+        MIU ELECTIONS <span>&copy;2023</span>
+      </footer>
       
     </main>
+
     <script>
       const Menu = document.getElementById("menu");
       const items = document.getElementById("mobile-nav");
