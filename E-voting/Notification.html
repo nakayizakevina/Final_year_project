@@ -8,7 +8,7 @@
   </head>
   <body>
     <main
-      class="w-screen h-screen bg-Grey-400 flex flex-col gap-2 lg:flex lg:flex-row overflow-hidden"
+      class="w-screen h-screen bg-Grey-400 flex flex-col gap-2 lg:flex lg:flex-row overflow-hidden overflow-y-hidden"
     >
       <section
         class="w-full h-fit flex overflow-hidden px-2 bg-Success-500 lg:w-64 items-center md:flex lg:h-full lg:flex lg:flex-col lg:gap-1 lg:justify-evenly"
@@ -218,7 +218,7 @@
         </div>
       </section>
 
-      <section class="flex flex-col h-full w-full overflow-hidden">
+      <section class="flex flex-col h-full w-full overflow-hidden overflow-x-hidden">
         <div class="flex flex-row justify-between w-full h-fit relative">
           <div class="flex flex-col gap-3 pl-2">
             <p
@@ -398,8 +398,9 @@
             </span>
           </div>
         </div>
-        <section
-          class="w-full h-full flex flex-col items-center gap-2 relative md:flex md:items-center overflow-y-auto mb-10"
+        <div class="w-full h-full overflow-x-hidden overflow-y-hidden">
+          <section
+          class="w-full h-full flex flex-col items-center gap-2 relative md:flex md:items-center overflow-y-auto overflow-x-hidden mb-10"
         >
           <div class="w-full h-fit flex flex-col gap-2 px-4" id="notifications-list">
             <!-- <div
@@ -710,7 +711,13 @@
               </button>
             </div> -->
           </div>
+          <footer class="w-full text-Danger-500  text-center absolute bottom-5 font-semibold text-sm md:text-2xl lg:text-lg">
+          MIU ELECTIONS <span>&copy;2023</span>
+        </footer> 
         </section>
+        
+        </div>
+        
          <div id="option" class="bg-Grey-100 rounded-lg shadow-lg absolute z-50 top-32 right-20 w-44 hidden h-fit flex flex-col gap-3">
           <div
             class="text-Success-400 w-full h-11 flex gap-3  items-center cursor-pointer rounded-lg pl-2  hover:bg-Popup1-100 hover:text-Popup1-600"
@@ -772,6 +779,7 @@
         </div> 
         
       </section>
+      
       
     </main>
     <script>
