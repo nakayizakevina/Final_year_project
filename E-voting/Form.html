@@ -197,12 +197,7 @@
             <p class="flex justify-center items-center text-lg">Profile</p>
           </span>
           <span
-<<<<<<< HEAD
-            id="logout" class="text-Grey-100 flex gap-6 w-full cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
-            
-=======
-            class="text-Grey-100 w-full flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
->>>>>>> parent of b580ff4... have added a window location to the logout to the entire pages
+            id="logout1" class="text-Grey-100 w-full flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
           >
             <svg
               class="w-7 h-10"
@@ -350,7 +345,7 @@
             <p class="flex justify-center items-center text-lg">Profile</p>
           </span>
           <span
-            class="text-Grey-100 w-full flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
+            id="logout2" class="text-Grey-100 w-full flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
           >
             <svg
               class="w-7 h-10"
@@ -608,8 +603,16 @@
       document.getElementById("cancel").addEventListener("click",function(){
       const disappear =document.getElementById("confirm");
       disappear.classList.toggle("hidden");
-      
+      });
+ 
+    const logOut1 = document.getElementById("logout1");
+    logOut1.addEventListener("click",function(){
+     window.location.href = 'index.html'
+    });
 
+    const logOut2 = document.getElementById("logout2");
+    logOut2.addEventListener("click",function(){
+     window.location.href = 'index.html'
     });
 
     </script>
