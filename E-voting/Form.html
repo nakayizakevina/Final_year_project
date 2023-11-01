@@ -31,17 +31,20 @@
               >
             </p>
           </div>
-          <span
-            id="menu"
-            class="text-Grey-100 flex justify-center items-center cursor-pointer w-8 h-full md:w-16 md:h-full md:flex md:items-center lg:hidden"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-              <path
-                fill="currentColor"
-                d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm448 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32z"
-              />
-            </svg>
-          </span>
+          <button type="button" id="menu" class=w-fit h-fit">
+
+            <span
+              
+              class="text-Grey-100 flex justify-center items-center cursor-pointer w-8 h-full md:w-16 md:h-full md:flex md:items-center lg:hidden"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                  fill="currentColor"
+                  d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm448 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32z"
+                />
+              </svg>
+            </span>
+          </button>
         </div>
         <div
           class="hidden lg:flex lg:flex-col lg:gap-3 lg:justify-center lg:items-center lg:py-4"
@@ -575,7 +578,7 @@
           </div>
           
           <div class="w-full flex justify-center">
-            <button id="apply" class="w-full h-10 lg:w-44 lg:h-12 my-4  bg-Success-500 text-Grey-100 font-semibold rounded-md hover:bg-Popup1-100 hover:text-Popup1-600 ">
+            <button id="apply" class="w-full h-10 lg:w-44 lg:h-12 my-4 relative z-50 bg-Success-500 text-Grey-100 font-semibold rounded-md hover:bg-Popup1-100 hover:text-Popup1-600 ">
               Apply
             </button>
           </div> 
@@ -588,6 +591,7 @@
       
     </main>
     <script>
+      console.log(window)
       const Menu = document.getElementById("menu");
       const list = document.getElementById("mobile-nav");
       Menu.addEventListener("click", function () {
@@ -614,6 +618,19 @@
     logOut2.addEventListener("click",function(){
      window.location.href = 'index.html'
     });
+
+  /*  window.addEventListener('click', (event) =>  {
+      console.log(event.target)
+      mobileNav = document.getElementById("mobile-nav")
+      console.log()
+
+      
+    })*/
+
+    
+    
+
+
 
     </script>
   </body>
