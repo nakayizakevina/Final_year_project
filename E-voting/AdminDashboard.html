@@ -151,26 +151,12 @@
               </div>
   
             </div>
-            <div class="w-full flex flex-col gap-3 px-2">
-              <h5 class="text-lg font-bold md:text-xl">Submission</h5>
-              <div class="lg:flex lg:flex-col flex flex-col  gap-6">
-                <div class="lg:flex lg:flex-col lg:gap-4">
-                  <div class=" w-full flex flex-col gap-2 lg:flex lg:flex-row  lg:w-[430px] lg:items-center ">
-                    <label class="font-semibold text-lg">Date</label>
-                    <p>02/25/2023</p>
-                  </div>
-                  <div class=" w-full flex flex-col gap-2 lg:flex lg:flex-row  lg:w-[430px] lg:items-center ">
-                    <label class="font-semibold text-lg">Time</label>
-                    <p>12:45PM</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+         
             <div class="w-full  flex justify-evenly gap-2">
-              <button id="approve" class="w-1/2 h-10 lg:w-44 lg:h-12 my-4  bg-Popup1-600 text-Grey-100 font-semibold rounded-md hover:bg-Popup1-400 hover:text-lg ">
+              <button id="btnapprove" class="w-1/2 h-10 lg:w-44 lg:h-12 my-4  bg-Popup1-600 text-Grey-100 font-semibold rounded-md hover:bg-Popup1-400 hover:text-lg ">
                 Approve
               </button>
-              <button id="reject" class="w-1/2 h-10 lg:w-44 lg:h-12 my-4  bg-Danger-600 text-Grey-100 font-semibold rounded-md hover:bg-Danger-400 hover:text-lg ">
+              <button id="btnreject" class="w-1/2 h-10 lg:w-44 lg:h-12 my-4  bg-Danger-600 text-Grey-100 font-semibold rounded-md hover:bg-Danger-400 hover:text-lg ">
                 Reject
               </button>
             </div> 
@@ -178,6 +164,67 @@
           </div>
         </div>
       </div>
+      <div id="success" class="w-full h-full align-middle hidden  absolute z-50 justify-center items-center">
+        <main class="w-64 h-44 flex flex-col justify-evenly rounded-lg bg-Popup1-100 shadow-lg">
+            <div class="w-full flex justify-end pr-2 ">
+              <svg id="exit" class="fill-current text-Popup1-500 cursor-pointer w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                
+                viewBox="0 0 24 24"
+              >
+                <path
+                  
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243"
+                />
+              </svg>
+            </div>
+            <div class="w-full  flex flex-col  gap-5 justify-start items-center">
+                <div class="w-full flex flex-col items-center text-Popup1-500 ">
+                <h1 class="font-bold text-xl">Candidate</h1>
+                <p class="text-center font-semibold text-sm">
+                has been approved successfully.
+                </p>
+                </div>
+               
+               
+            </div>
+          </main>
+        </div>
+        <div id="reject" class="w-full h-full align-middle  hidden absolute z-50 justify-center items-center">
+          <main class="w-64 h-44 flex flex-col justify-evenly rounded-lg bg-Danger-500 shadow-lg">
+              <div class="w-full flex justify-end pr-2 ">
+                <svg id="Exit" class="fill-current text-Grey-100 cursor-pointer w-6 h-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243"
+                  />
+                </svg>
+              </div>
+              <div class="w-full  flex flex-col  gap-5 justify-start items-center">
+                  <div class="w-full flex flex-col items-center text-Grey-100 ">
+                  <h1 class="font-bold text-xl">Candidate</h1>
+                  <p class="text-center font-semibold text-sm">
+                  has been rejected successfully.
+                  </p>
+                  </div>
+                 
+                 
+              </div>
+            </main>
+        </div>
+      
       <section
         class="w-full h-fit flex overflow-hidden px-2 bg-Success-500 lg:w-64 items-center md:flex lg:h-full lg:flex lg:flex-col lg:gap-1 lg:justify-evenly"
       >
@@ -194,7 +241,7 @@
                 >METROPOLITAN</span
               >
               <span
-                class="text-xs font-medium text-center md:text-[17px] lg:text-[10px]"
+                class="text-xs font-medium text-center md:text-[17px] lg:text-[8px]"
                 >INTERNATIONAL UNIVERSITY</span
               >
             </p>
@@ -810,6 +857,37 @@
     const logOut2 = document.getElementById("logout2");
     logOut2.addEventListener("click",function(){
      window.location.href = 'index.html'
+    });
+
+    const approve = document.getElementById("btnapprove")
+    const success = document.getElementById("success")
+    approve.addEventListener("click",function(){
+    success.classList.toggle("hidden");
+    const Pop = document.getElementById("candidate-modal");
+      Pop.classList.toggle("invisible");
+    });
+
+    const exit = document.getElementById("exit")
+    const Success = document.getElementById("success")
+    exit.addEventListener("click",function(){
+    Success.classList.toggle("hidden");
+   
+    });
+
+
+    const Reject = document.getElementById("btnreject")
+    const Rejectionapproved = document.getElementById("reject")
+    Reject.addEventListener("click",function(){
+    Rejectionapproved.classList.toggle("hidden");
+    const Pop = document.getElementById("candidate-modal");
+      Pop.classList.toggle("invisible");
+    });
+
+    const Exit = document.getElementById("Exit")
+    const reJectionApproved = document.getElementById("reject")
+    Exit.addEventListener("click",function(){
+    reJectionApproved.classList.toggle("invisible");
+   
     });
 
     </script>
