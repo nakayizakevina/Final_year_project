@@ -40,7 +40,7 @@
        </p>
        <div class="w-full flex justify-evenly mb-2">
          <button id="Cancel" class=" text-sm font-bold cursor-pointer text-Danger-500 md:text-2xl lg:text-xl">Cancel</button>
-         <button id="Confirm" class="text-sm font-bold cursor-pointer text-Popup1-500 md:text-2xl lg:text-xl">Confirm</button>
+         <button id="Confirm" class="text-sm font-bold cursor-pointer text-Popup1-500 md:text-2xl lg:text-xl">Next</button>
        </div>
      </main> 
     </div>
@@ -395,10 +395,21 @@
  
   
   
-  <div class="w-4/5 h-fit bg-Grey-100 rounded-lg shadow-lg  flex flex-col gap-4 py-4 items-center lg:w-full">
+  <div id="vote-card" class="w-4/5 h-fit bg-Grey-100 rounded-lg shadow-lg  flex flex-col gap-4 py-4 items-center lg:w-full">
+       <div class="w-full flex justify-end ">
+      <svg id="tick" class=" h-10 mr-6 text-Popup1-500 hidden "
+        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" 
+        stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round"
+        d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+       </div>
+    
+    
+    
             <label
                 for="Photo"
-                class="border border-Danger-500 h-24 w-24 rounded-full flex justify-center items-center cursor-pointer bg-Grey-100"
+                class="border border-Danger-500 h-24 w-24 rounded-md flex justify-center items-center cursor-pointer bg-Grey-100"
                 >
                 <input type="file" id="Photo" name="Photo" class="hidden" />
                 <span class="text-xs text-center"
@@ -406,7 +417,7 @@
                 Photo</span
                 >
             </label>
-            <div class="w-full flex flex-col items-center gap-1  md:w-full md:flex md:flex-col md:gap-3 lg:gap-2 border-b-4 border-Danger-500 py-4 ">
+            <div class="w-full flex flex-col items-center gap-1  md:w-full md:flex md:flex-col md:gap-3 lg:gap-2 border-b-2 border-Danger-200 py-4 ">
                 <div class="flex flex-col gap-1 md:gap-3 lg:gap-2">
                     <p class="font-bold text-lg text-Gray-400 md:text-xl lg:text-xl">
                       Nakato Karen
@@ -536,7 +547,7 @@
 
    
     <footer
-      class="text-Danger-500 w-full text-center absolute bottom-5 font-bold text-xs md:text-lg"
+      class="text-Gray-500 w-full flex justify-end mr-6 absolute bottom-5 font-semiboldtext-xs md:text-lg border border-Success-500"
     >
       MIU ELECTIONS <span>&copy;2023</span>
     </footer>
@@ -576,6 +587,30 @@
       Pop.classList.toggle("invisible");
     });
     
+    const Tick = document.getElementById("tick");
+    const confirm  = document.getElementById("Confirm");
+    confirm.addEventListener("click",function(){
+      Tick.classList.toggle("hidden");
+     
+    });
+
+   /** const confirm2 = document.getElementById("Confirm");
+    comfirm2.addEventListener("click",function(){
+    const card = document.getElementById("vote-card");
+    card.style.backgroundColor = 'bg-Danger-500';  
+    });
+     **/
+   
+
+
+    document.getElementById("Cancel").addEventListener("click", function() {
+      var Tick = document.getElementById("tick");
+      Tick.classList.toggle("invisible");
+
+      
+    });
+
+
     document.getElementById("exit").addEventListener("click",function(){
       const disappear =document.getElementById("success");
       disappear.classList.toggle("hidden");
@@ -592,6 +627,8 @@
     logOut2.addEventListener("click",function(){
      window.location.href = 'index.html'
     });
+
+
 
 </script>
 </html>
