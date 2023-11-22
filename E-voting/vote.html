@@ -47,23 +47,7 @@
     <!--Success-->
     <div id="success" class="w-full h-full align-middle  hidden absolute z-50 justify-center items-center">
       <main class="w-64 h-96  flex flex-col justify-evenly rounded-lg bg-Popup1-100 shadow-lg ">
-          <div class="w-full flex justify-end pr-2 ">
-            <svg id="exit" class="fill-current text-Popup1-500 cursor-pointer"
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
-            >
-              <path
-                
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
-                d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243"
-              />
-            </svg>
-          </div>
+          
           <div class="w-full  flex flex-col  gap-5 justify-start items-center">
               <div class="w-full flex flex-col items-center text-Popup1-500 ">
               <h1 class="font-bold text-2xl">Success!</h1>
@@ -572,7 +556,7 @@
       
       });
      
-    
+    //the altert with cancel and next disappers
     document.getElementById("Cancel").addEventListener("click", function() {
       var popup = document.getElementById("alert");
       popup.classList.toggle("invisible");
@@ -585,6 +569,13 @@
       success.classList.add("flex")
       const Pop = document.getElementById("alert");
       Pop.classList.toggle("invisible");
+
+      const timeout = document.getElementById ("success");
+       setTimeout(()=>{
+      //timeout.style.display = "none";
+      timeout.classList.toggle("hidden");
+      console.log("Delayed for 2 seconds.");
+    },2000);
     });
     
     const Tick = document.getElementById("tick");
@@ -608,15 +599,10 @@
       Tick.classList.toggle("invisible");
 
       
-    });
+    }); 
 
 
-    document.getElementById("exit").addEventListener("click",function(){
-      const disappear =document.getElementById("success");
-      disappear.classList.toggle("hidden");
-      
-
-    });
+   
 
     const logOut1 = document.getElementById("logout1");
     logOut1.addEventListener("click",function(){
@@ -627,8 +613,8 @@
     logOut2.addEventListener("click",function(){
      window.location.href = 'index.html'
     });
-
-
+    
+   
 
 </script>
 </html>
