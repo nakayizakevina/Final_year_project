@@ -990,6 +990,14 @@ video {
   height: 100vh;
 }
 
+.h-1\/2 {
+  height: 50%;
+}
+
+.h-\[\] {
+  height: ;
+}
+
 .w-1\/2 {
   width: 50%;
 }
