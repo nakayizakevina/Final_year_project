@@ -8,8 +8,67 @@
 </head>
 <body>
     <main
-    class="w-screen h-screen overflow-hidden bg-Grey-400 flex flex-col gap-2 lg:flex lg:flex-row"
+    class="w-screen h-screen overflow-hidden relative bg-Grey-400 flex flex-col gap-2 lg:flex lg:flex-row"
   >
+  <div
+  class="w-screen h-screen absolute bg-black/10  justify-center items-center z-50 lg:left-10 overflow-y-hidden "
+  id="details"
+>
+  <div class="w-3/4 h-[500px] bg-white rounded-lg shadow-lg ">
+    
+    <div id="cancel" class="w-full flex justify-end pr-6 pt-2 cursor-pointer">
+      <svg
+        class="fill-current text-Black w-6 h-6"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243"
+        />
+      </svg>
+    </div>
+    <h4 class="font-semibold text-lg">MIU Elections</h4>
+    <div class="w-full h-1/2 flex flex-col  items-center gap-4  bg-Grey-100 text-Black-500">
+      
+   
+     <div>
+       <h5 class="font-semibold text-lg">VOTE NAKATO KAREN <br>
+         <span class="text-lg ">for</span>
+         <br>
+         GUILD PRESIDENT
+       </h5>
+     </div>
+     <div class="flex gap-2">
+        <label
+          for="Photo"
+          class="border border-Danger-500 w-20  flex justify-center items-center cursor-pointer bg-Grey-50">
+          <input type="file" id="Photo" name="Photo" class="hidden" />
+          <span class="text-xs text-center text-Black-500"
+          >Upload <br />
+          Photo</span
+          >
+        </label>
+        <div class="flex flex-col gap-2 text-sm">
+          <p class="font-semibold text-lg">Nakato Karen</p>
+          <p class="text-sm">Faculty of Science & Technology</p>
+          <p class="text-sm">Department of Computing</p>
+        </div>
+     </div>
+     <p>"Vote for me and i will be your voice"</p>
+    </div>
+    <div class="w-full h-64 bg-Grey-100 overflow-y-auto overflow-x-hidden">
+    <h4 class="font-semibold text-lg text-Black-400">Manifesto</h4>
+    <p class="text-lg">I extend my gratitude to my friends and classmates for their encouragement and for being a constant
+      source of motivation throughout this journey. Their discussions and brainstorming sessions were instrumental 
+      in refining the ideas presented in this project.</p>
+
+    </div>
+  </div>
+</div>
   <section
   class="w-full flex h-16 overflow-hidden px-2 bg-Success-500 lg:w-64 md:h-24 md:flex lg:h-full lg:flex lg:flex-col lg:gap-1 lg:justify-evenly"
 >
@@ -349,17 +408,18 @@
       </span>
        
     </div>
+   
     
 
      
-      <div class="w-full h-full   border border-Danger-500">
+      <div class="w-full h-full">
         <div class="w-full flex flex-col justify-center items-center">
           <h5 class="font-semibold text-xl">Electoral Candidates</h5>
           <p class="text-lg">This candidates have been verified by the MIU electoral board</p>
         </div>
-      <div class="w-full h-96  flex flex-col gap-4 overflow-y-auto border border-Danger-500">
-        <div class="w-full flex gap-3 flex-wrap border border-Warning-500">
-          <div class="w-32 h-fit flex flex-col gap-4 items-center  py-2 bg-Grey-100 shadow-lg rounded-md lg:w-44">
+      <div class="w-full h-96  flex flex-col gap-4 overflow-y-auto lg:overflow-hidden lg:h-full">
+        <div class="w-full flex gap-3 flex-wrap lg:gap-4 lg:justify-evenly">
+          <div class="w-32 h-fit flex flex-col gap-4 items-center  py-2 bg-Grey-100 shadow-lg rounded-md lg:w-48 lg:gap-6">
               <label
               for="Photo"
               class="border border-gray h-20 w-20  flex justify-center items-center cursor-pointer bg-Grey-100"
@@ -372,9 +432,9 @@
               <p>
                 Nakato Karen
               </p>
-              <button id="details" class="w-28 font-bold rounded-lg text-Gray-100 py-2 px-2 bg-Success-500 hover:bg-Popup1-100 hover:text-Popup1-600 cursor-pointer lg:w-24 lg:text-sm md:text-2xl">View details</button>
+              <button id="details_btn" class="w-28 font-bold rounded-lg text-Gray-100 py-2 px-2 bg-Success-500 hover:bg-Popup1-100 hover:text-Popup1-600 cursor-pointer lg:w-24 lg:text-sm md:text-2xl">View details</button>
           </div>
-          <div class="w-32 h-fit flex flex-col gap-4 items-center  py-2 bg-Grey-100 shadow-lg rounded-md  lg:w-44">
+          <div class="w-32 h-fit flex flex-col gap-4 items-center  py-2 bg-Grey-100 shadow-lg rounded-md  lg:w-48 lg:gap-6">
             <label
             for="Photo"
             class="border border-gray h-20 w-20  flex justify-center items-center cursor-pointer bg-Grey-100"
@@ -389,7 +449,7 @@
             </p>
             <button class="w-28 font-bold rounded-lg text-Gray-100 py-2 px-2 bg-Success-500 hover:bg-Popup1-100 hover:text-Popup1-600 cursor-pointer lg:w-24 lg:text-sm md:text-2xl">View details</button>
           </div>
-          <div class="w-32 h-fit flex flex-col gap-4 items-center  py-2 bg-Grey-100 shadow-lg rounded-md  lg:w-44">
+          <div class="w-32 h-fit flex flex-col gap-4 items-center  py-2 bg-Grey-100 shadow-lg rounded-md  lg:w-48 lg:gap-6">
           <label
           for="Photo"
           class="border border-gray h-20 w-20  flex justify-center items-center cursor-pointer bg-Grey-100"
@@ -404,7 +464,7 @@
           </p>
           <button class="w-28 font-bold rounded-lg text-Gray-100 py-2 px-2 bg-Success-500 hover:bg-Popup1-100 hover:text-Popup1-600 cursor-pointer lg:w-24 lg:text-sm md:text-2xl">View details</button>
           </div>
-          <div class="w-32 h-fit flex flex-col gap-4 items-center  py-2 bg-Grey-100 shadow-lg rounded-md  lg:w-44">
+          <div class="w-32 h-fit flex flex-col gap-4 items-center  py-2 bg-Grey-100 shadow-lg rounded-md  lg:w-48 lg:gap-6">
         <label
         for="Photo"
         class="border border-gray h-20 w-20  flex justify-center items-center cursor-pointer bg-Grey-100"
@@ -419,7 +479,7 @@
         </p>
         <button class="w-28 font-bold rounded-lg text-Gray-100 py-2 px-2 bg-Success-500 hover:bg-Popup1-100 hover:text-Popup1-600 cursor-pointer lg:w-24 lg:text-sm md:text-2xl">View details</button>
           </div>
-          <div class="w-32 h-fit flex flex-col gap-4 items-center  py-2 bg-Grey-100 shadow-lg rounded-md  lg:w-44">
+          <div class="w-32 h-fit flex flex-col gap-4 items-center  py-2 bg-Grey-100 shadow-lg rounded-md  lg:w-48 lg:gap-6">
       <label
       for="Photo"
       class="border border-gray h-20 w-20  flex justify-center items-center cursor-pointer bg-Grey-100"
@@ -434,7 +494,7 @@
       </p>
       <button class="w-28 font-bold rounded-lg text-Gray-100 py-2 px-2 bg-Success-500 hover:bg-Popup1-100 hover:text-Popup1-600 cursor-pointer lg:w-24 lg:text-sm md:text-2xl">View details</button>
          </div>
-         <div class="w-32 h-fit flex flex-col gap-4 items-center  py-2 bg-Grey-100 shadow-lg rounded-md  lg:w-44">
+         <div class="w-32 h-fit flex flex-col gap-4 items-center  py-2 bg-Grey-100 shadow-lg rounded-md  lg:w-48 lg:gap-6">
     <label
     for="Photo"
     class="border border-gray h-20 w-20  flex justify-center items-center cursor-pointer bg-Grey-100"
@@ -450,8 +510,8 @@
     <button class="w-28 font-bold rounded-lg text-Gray-100 py-2 px-2 bg-Success-500 hover:bg-Popup1-100 hover:text-Popup1-600 cursor-pointer lg:w-24 lg:text-sm md:text-2xl">View details</button>
          </div>
         </div>
-        <div class="w-full flex gap-3 flex-wrap border border-Warning-500">
-          <div class="w-32 h-fit flex flex-col gap-4 items-center  py-2 bg-Grey-100 shadow-lg rounded-md lg:w-44">
+        <div class="w-full flex gap-3 flex-wrap lg:gap-4 lg:justify-evenly">
+          <div class="w-32 h-fit flex flex-col gap-4 items-center  py-2 bg-Grey-100 shadow-lg rounded-md lg:w-48 lg:gap-6">
               <label
               for="Photo"
               class="border border-gray h-20 w-20  flex justify-center items-center cursor-pointer bg-Grey-100"
@@ -466,7 +526,7 @@
               </p>
               <button id="details" class="w-28 font-bold rounded-lg text-Gray-100 py-2 px-2 bg-Success-500 hover:bg-Popup1-100 hover:text-Popup1-600 cursor-pointer lg:w-24 lg:text-sm md:text-2xl">View details</button>
           </div>
-          <div class="w-32 h-fit flex flex-col gap-4 items-center  py-2 bg-Grey-100 shadow-lg rounded-md  lg:w-44">
+          <div class="w-32 h-fit flex flex-col gap-4 items-center  py-2 bg-Grey-100 shadow-lg rounded-md  lg:w-48 lg:gap-6">
             <label
             for="Photo"
             class="border border-gray h-20 w-20  flex justify-center items-center cursor-pointer bg-Grey-100"
@@ -481,7 +541,7 @@
             </p>
             <button class="w-28 font-bold rounded-lg text-Gray-100 py-2 px-2 bg-Success-500 hover:bg-Popup1-100 hover:text-Popup1-600 cursor-pointer lg:w-24 lg:text-sm md:text-2xl">View details</button>
           </div>
-          <div class="w-32 h-fit flex flex-col gap-4 items-center  py-2 bg-Grey-100 shadow-lg rounded-md  lg:w-44">
+          <div class="w-32 h-fit flex flex-col gap-4 items-center  py-2 bg-Grey-100 shadow-lg rounded-md  lg:w-48 lg:gap-6">
           <label
           for="Photo"
           class="border border-gray h-20 w-20  flex justify-center items-center cursor-pointer bg-Grey-100"
@@ -496,7 +556,7 @@
           </p>
           <button class="w-28 font-bold rounded-lg text-Gray-100 py-2 px-2 bg-Success-500 hover:bg-Popup1-100 hover:text-Popup1-600 cursor-pointer lg:w-24 lg:text-sm md:text-2xl">View details</button>
           </div>
-          <div class="w-32 h-fit flex flex-col gap-4 items-center  py-2 bg-Grey-100 shadow-lg rounded-md  lg:w-44">
+          <div class="w-32 h-fit flex flex-col gap-4 items-center  py-2 bg-Grey-100 shadow-lg rounded-md  lg:w-48 lg:gap-6">
         <label
         for="Photo"
         class="border border-gray h-20 w-20  flex justify-center items-center cursor-pointer bg-Grey-100"
@@ -511,7 +571,7 @@
         </p>
         <button class="w-28 font-bold rounded-lg text-Gray-100 py-2 px-2 bg-Success-500 hover:bg-Popup1-100 hover:text-Popup1-600 cursor-pointer lg:w-24 lg:text-sm md:text-2xl">View details</button>
           </div>
-          <div class="w-32 h-fit flex flex-col gap-4 items-center  py-2 bg-Grey-100 shadow-lg rounded-md  lg:w-44">
+          <div class="w-32 h-fit flex flex-col gap-4 items-center  py-2 bg-Grey-100 shadow-lg rounded-md  lg:w-48 lg:gap-6">
       <label
       for="Photo"
       class="border border-gray h-20 w-20  flex justify-center items-center cursor-pointer bg-Grey-100"
@@ -526,7 +586,7 @@
       </p>
       <button class="w-28 font-bold rounded-lg text-Gray-100 py-2 px-2 bg-Success-500 hover:bg-Popup1-100 hover:text-Popup1-600 cursor-pointer lg:w-24 lg:text-sm md:text-2xl">View details</button>
          </div>
-         <div class="w-32 h-fit flex flex-col gap-4 items-center  py-2 bg-Grey-100 shadow-lg rounded-md  lg:w-44">
+         <div class="w-32 h-fit flex flex-col gap-4 items-center  py-2 bg-Grey-100 shadow-lg rounded-md  lg:w-48 lg:gap-6">
     <label
     for="Photo"
     class="border border-gray h-20 w-20  flex justify-center items-center cursor-pointer bg-Grey-100"
@@ -566,6 +626,20 @@
     logOut2.addEventListener("click",function(){
      window.location.href = 'index.html'
     });
+
+    const Details = document.getElementById("details");
+      const details_btn = document.getElementById("details_btn");
+      details_btn.addEventListener("click", function () {
+        Details.classList.remove("hidden");
+        Details.classList.add("flex");
+      });
+      
+
+      document.getElementById("cancel").addEventListener("click",function(){
+      const disappear = document.getElementById("details");
+      disappear.classList.toggle("hidden");
+      });
+       
 
 
   </script>
