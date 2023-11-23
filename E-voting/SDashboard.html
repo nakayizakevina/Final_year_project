@@ -26,7 +26,7 @@
                 >METROPOLITAN</span
               >
               <span
-                class="text-xs font-medium text-center md:text-[17px] lg:text-[8px]"
+                class="text-xs font-medium text-center md:text-[17px] lg:text-[10px]"
                 >INTERNATIONAL UNIVERSITY</span
               >
             </p>
@@ -108,7 +108,7 @@
                 </p>
               </span>
             </a>
-            <a href="./ACDashboard.html">
+            <a href="./Candidates.html">
               <span
                 class="text-Grey-100 flex gap-4 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
               >
@@ -197,8 +197,7 @@
             <p class="flex justify-center items-center text-lg">Profile</p>
           </span>
           <span
-            id="logout1"
-              class="text-Grey-100 w-full flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
+           id="logout" class="text-Grey-100 w-full flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
           >
             <svg
               class="w-7 h-10"
@@ -268,7 +267,7 @@
               </p>
             </span>
           </a>
-         <a href="./ACDashboard.html">
+         <a href="./Candidates.html">
             <span
               class="text-Grey-100 flex gap-4 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
             >
@@ -349,7 +348,7 @@
             <p class="flex justify-center items-center text-lg">Profile</p>
           </span>
           <span
-           id="logout2" class="text-Grey-100 w-full flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
+           id="mobile-logout" class="text-Grey-100 w-full flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
           >
             <svg
               class="w-7 h-10"
@@ -463,21 +462,17 @@
             <p class="text-Gray-500 md:text-2xl md:font-semibold lg:text-lg">
               Time: <span class="font-bold">8am-5pm</span>
             </p>
-            
+            <a href="vote.html">
               <button
                 class="w-28 h-10 text-lg font-bold rounded-lg text-Gray-100 bg-Success-500 hover:bg-Popup1-100 hover:text-Popup1-600 cursor-pointer lg:w-32 lg:h-10 md:w-3/4 md:h-16"
                 id="login-cta"
               >
-                Let's Vote
+                Let's vote
               </button>
-          
+            </a>
           </div>
         </div>
-        <footer class="text-Gray-500 w-full flex justify-end mr-6 absolute bottom-5 font-semibold text-sm md:text-2xl lg:text-lg">
-          MIU ELECTIONS <span>&copy;2023</span>
-        </footer>
       </section>
-      
     </main>
     <script>
       const Menu = document.getElementById("menu");
@@ -486,17 +481,12 @@
         items.classList.toggle("hidden");
       });
 
-      const vote = document.getElementById("login-cta")
-      vote.addEventListener("click", function(){
-        window.location.href = 'vote.html'
-      });
-
-      const Logout = document.getElementById("logout1")
+      const Logout = document.getElementById("logout")
      Logout.addEventListener("click", function(){
        window.location.href ='index.html';
      });
 
-     const mobileLogout = document.getElementById("logout2")
+     const mobileLogout = document.getElementById("mobile-logout")
      mobileLogout.addEventListener("click",function(){
      window.location.href = 'index.html';
      });

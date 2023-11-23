@@ -8,7 +8,7 @@
   </head>
   <body>
     <main
-      class="w-screen h-screen bg-Grey-400 flex flex-col gap-2 lg:flex lg:flex-row overflow-hidden overflow-y-hidden"
+      class="w-screen h-screen bg-Grey-400 flex flex-col gap-2 lg:flex lg:flex-row overflow-hidden"
     >
       <section
         class="w-full h-fit flex overflow-hidden px-2 bg-Success-500 lg:w-64 items-center md:flex lg:h-full lg:flex lg:flex-col lg:gap-1 lg:justify-evenly"
@@ -20,13 +20,13 @@
               src="./image/Log3.png"
               alt=""
             />
-            <p class="flex flex-col text-Grey-100 w-fit md:my-2 lg:my-1 ">
+            <p class="flex flex-col text-Grey-100 w-fit md:my-2 lg:my-1">
               <span
                 class="text-[1.4rem] font-semibold w-full text-center md:text-3xl lg:text-lg"
                 >METROPOLITAN</span
               >
               <span
-                class="text-xs font-medium text-center md:text-[17px] lg:text-[8px] "
+                class="text-xs font-medium text-center md:text-[17px] lg:text-[10px]"
                 >INTERNATIONAL UNIVERSITY</span
               >
             </p>
@@ -108,7 +108,7 @@
                 </p>
               </span>
             </a>
-            <a href="./ACDashboard.html">
+            <a href="./Candidates.html">
               <span
                 class="text-Grey-100 flex gap-4 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
               >
@@ -197,8 +197,7 @@
             <p class="flex justify-center items-center text-lg">Profile</p>
           </span>
           <span
-            id="logout1"
-              class="text-Grey-100 w-full flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
+           id="logout" class="text-Grey-100 w-full flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
           >
             <svg
               class="w-7 h-10"
@@ -219,7 +218,7 @@
         </div>
       </section>
 
-      <section class="flex flex-col h-full w-full overflow-hidden overflow-x-hidden">
+      <section class="flex flex-col h-full w-full overflow-hidden">
         <div class="flex flex-row justify-between w-full h-fit relative">
           <div class="flex flex-col gap-3 pl-2">
             <p
@@ -294,7 +293,7 @@
                 </p>
               </span>
             </a>
-            <a href="./ACDashboard.html">
+            <a href="./Candidates.html">
               <span
                 class="text-Grey-100 flex gap-4 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
               >
@@ -379,7 +378,7 @@
               <p class="flex justify-center items-center text-lg">Profile</p>
             </span>
             <span
-              id="logout2" class="text-Grey-100 w-full flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
+              id="mobile-logout" class="text-Grey-100 w-full flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
             >
               <svg
                 class="w-7 h-10"
@@ -399,9 +398,8 @@
             </span>
           </div>
         </div>
-        <div class="w-full h-full flex flex-col overflow-x-hidden overflow-y-hidden border borderDanger-500">
-          <section
-          class="w-full h-full flex flex-col items-center gap-2 relative md:flex md:items-center overflow-y-auto overflow-x-hidden mb-10"
+        <section
+          class="w-full h-full flex flex-col items-center gap-2 relative md:flex md:items-center overflow-y-auto mb-10"
         >
           <div class="w-full h-fit flex flex-col gap-2 px-4" id="notifications-list">
             <!-- <div
@@ -712,11 +710,7 @@
               </button>
             </div> -->
           </div>
-          
         </section>
-         
-        </div>
-        
          <div id="option" class="bg-Grey-100 rounded-lg shadow-lg absolute z-50 top-32 right-20 w-44 hidden h-fit flex flex-col gap-3">
           <div
             class="text-Success-400 w-full h-11 flex gap-3  items-center cursor-pointer rounded-lg pl-2  hover:bg-Popup1-100 hover:text-Popup1-600"
@@ -778,12 +772,8 @@
         </div> 
         
       </section>
-      <footer class="w-full text-Gray-500 w-full flex justify-end mr-6  absolute bottom-5 font-semibold text-sm md:text-2xl lg:text-lg">
-        MIU ELECTIONS <span>&copy;2023</span>
-      </footer>
       
     </main>
-
     <script>
       const Menu = document.getElementById("menu");
       const items = document.getElementById("mobile-nav");
@@ -846,17 +836,17 @@
         icon.classList.toggle("hidden");
       });
       })
-
-    const logOut1 = document.getElementById("logout1");
-    logOut1.addEventListener("click",function(){
-     window.location.href = 'index.html'
-    });
-
-    const logOut2 = document.getElementById("logout2");
-    logOut2.addEventListener("click",function(){
-     window.location.href = 'index.html'
-    });
-
+      
+      const Logout = document.getElementById("logout")
+     Logout.addEventListener("click", function(){
+       window.location.href ='index.html';
+     });
+     
+     const mobileLogout = document.getElementById("mobile-logout")
+     mobileLogout.addEventListener("click",function(){
+     window.location.href = 'index.html';
+     });
+     
     </script>
   </body>
 </html>
