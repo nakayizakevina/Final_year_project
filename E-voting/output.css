@@ -2088,6 +2088,11 @@ video {
   border-color: rgb(1 72 32 / var(--tw-border-opacity));
 }
 
+.border-Popup1-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(81 203 80 / var(--tw-border-opacity));
+}
+
 .border-b-Gray-500 {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(122 122 122 / var(--tw-border-opacity));
@@ -3483,6 +3488,14 @@ video {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
+  .lg\:w-48 {
+    width: 12rem;
   }
 
   .lg\:grid-cols-3 {
