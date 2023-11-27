@@ -1022,6 +1022,10 @@ video {
   height: 530px;
 }
 
+.h-\[590px\] {
+  height: 590px;
+}
+
 .w-1\/2 {
   width: 50%;
 }
