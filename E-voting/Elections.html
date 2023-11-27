@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elections Page</title>
+    <link rel="stylesheet" href="./output.css" />
+</head>
+<body>
+    <main
+      class="w-screen h-screen bg-Grey-400 flex flex-col gap-2 lg:flex lg:flex-row overflow-hidden"
+    >
+      <section
+        class="w-full h-fit flex overflow-hidden px-2 bg-Success-500 lg:w-64 items-center md:flex lg:h-full lg:flex lg:flex-col lg:gap-1 lg:justify-evenly"
+      >
+        <div class="flex w-full justify-between items-center py-1">
+          <div class="w-full flex gap-x-2 items-center">
+            <img
+              class="w-10 h-10 md:w-20 md:h-20 lg:w-14 lg:h-14"
+              src="./image/Log3.png"
+              alt=""
+            />
+            <p class="flex flex-col text-Grey-100 w-fit md:my-2 lg:my-1">
+              <span
+                class="text-[1.4rem] font-semibold w-full text-center md:text-3xl lg:text-lg"
+                >METROPOLITAN</span
+              >
+              <span
+                class="text-xs font-medium text-center md:text-[17px] lg:text-[10px]"
+                >INTERNATIONAL UNIVERSITY</span
+              >
+            </p>
+          </div>
+          <span
+            id="menu"
+            class="text-Grey-100 flex justify-center items-center cursor-pointer w-8 h-full md:w-16 md:h-full md:flex md:items-center lg:hidden"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                fill="currentColor"
+                d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm448 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </span>
+        </div>
+        <div
+          class="hidden lg:flex lg:flex-col lg:gap-3 lg:justify-center lg:items-center lg:py-4"
+        >
+          <label
+            for="Photo"
+            class="border border-gray h-24 w-24 rounded-full flex justify-center items-center cursor-pointer bg-Grey-100"
+          >
+            <input type="file" id="Photo" name="Photo" class="hidden" />
+            <span class="text-xs text-center"
+              >Upload <br />
+              Photo</span
+            >
+          </label>
+          <p class="text-Grey-100">Nakayiza Kevina</p>
+        </div>
+        <div class="lg:w-full lg:h-96 md:block">
+          <div
+            id="items"
+            class="hidden lg:w-full lg:h-fit lg:flex lg:flex-col lg:gap-6"
+          >
+            <a href="./SDashboard.html">
+              <span
+                class="text-Grey-100 w-full h-10 flex gap-4 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
+              >
+                <svg
+                  class="w-8 h-10"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M5.175 16h13.65l-1.95-2.2l1.425-1.425L21 15.45V22H3v-6.55l2.75-3.125l1.425 1.425l-2 2.25Zm6.85-.175L5.7 9.45l7.75-7.75l6.375 6.325l-7.8 7.8Zm.025-2.875L17 8l-3.55-3.5L8.5 9.45l3.55 3.5Z"
+                  />
+                </svg>
+                <p class="flex justify-center items-center text-lg">
+                  Elections
+                </p>
+              </span>
+            </a>
+            
+            <a href="candidates.html">
+              <span
+                class="text-Grey-100 flex gap-4 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
+              >
+                <svg
+                  class="w-8 h-10"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 100 100"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m80.161 60.441l-15.66-7.47l-6.622-3.159c2.892-1.822 5.241-4.634 6.778-8.021a21.743 21.743 0 0 0 1.945-8.99c0-1.827-.29-3.562-.694-5.236c-1.97-8.112-8.305-14.088-15.91-14.088c-7.461 0-13.7 5.763-15.792 13.644c-.483 1.808-.815 3.688-.815 5.68c0 3.459.808 6.684 2.181 9.489c1.587 3.254 3.94 5.937 6.804 7.662l-6.342 2.953l-16.168 7.53c-1.404.658-2.327 2.242-2.327 4.011v17.765c0 2.381 1.659 4.311 3.707 4.311h24.013V72.92a.78.78 0 0 1 .119-.396l-.01-.006l3.933-6.812l.01.006c.14-.24.389-.41.687-.41c.298 0 .547.169.687.41l.004-.003l.036.063c.005.01.012.018.016.028l3.881 6.721l-.005.003a.783.783 0 0 1 .119.397v13.602h24.013c2.048 0 3.708-1.93 3.708-4.311V64.446c.003-1.763-.905-3.332-2.296-4.005zM54.62 55.886l.01.006l-3.934 6.812l-.01-.006a.796.796 0 0 1-.687.409a.796.796 0 0 1-.687-.409l-.005.003l-.04-.069c-.003-.007-.009-.013-.012-.02l-3.881-6.723l.004-.003a.783.783 0 0 1-.119-.397c0-.445.361-.806.806-.806h7.866c.445 0 .806.361.806.806a.762.762 0 0 1-.117.397z"
+                  />
+                </svg>
+                <p class="flex justify-center items-center text-lg">
+                  Candidate
+                </p>
+              </span>
+            </a>
+
+            <a href="./Notification.html">
+              <span
+                class="text-Grey-100 flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
+              >
+                <svg
+                  class="w-7 h-10 fill-Grey-100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
+                  />
+                </svg>
+
+                <p class="flex justify-center items-center text-lg">
+                  Notification
+                </p>
+              </span>
+            </a>
+
+            <a href="Results.html">
+              <span
+                class="text-Grey-100 flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
+              >
+                <svg
+                  class="w-7 h-10"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 48 48"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M32 9a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v30a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3V9ZM19 21a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v18a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3V21ZM9 30a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3h4a3 3 0 0 0 3-3v-6a3 3 0 0 0-3-3H9Z"
+                  />
+                </svg>
+                <p class="flex justify-center items-center text-lg">Results</p>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div
+          class="hidden lg:text-Grey-100 cursor-pointer  lg:w-full lg:flex lg:flex-col lg:justify-start lg:items-start lg:gap-3"
+        >
+          <span
+            class="text-Grey-100 flex gap-6 w-full cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
+          >
+            <svg
+              class="w-7 h-10"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+            </svg>
+
+            <p class="flex justify-center items-center text-lg">Profile</p>
+          </span>
+          <span
+            id="logout" class="text-Grey-100 w-full flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
+          >
+            <svg
+              class="w-7 h-10"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"
+              />
+            </svg>
+            <p class="flex justify-center items-center text-lg">Logout</p>
+          </span>
+        </div>
+      </section>
+      <section
+        class="w-full h-full bg-Grey-100 flex flex-col items-center gap-2 px-4 relative md:flex md:justify-center md:items-center overflow-y-auto"
+      >
+        <div
+          id="mobile-nav"
+          class="hidden bg-Success-500 w-1/2 absolute top-0 right-3 z-50 rounded-md gap-3 lg:hidden"
+        >
+          <a href="./SDashboard.html">
+            <span
+              class="text-Grey-100 w-full h-10 flex gap-4 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
+            >
+              <svg
+                class="w-8 h-10"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M5.175 16h13.65l-1.95-2.2l1.425-1.425L21 15.45V22H3v-6.55l2.75-3.125l1.425 1.425l-2 2.25Zm6.85-.175L5.7 9.45l7.75-7.75l6.375 6.325l-7.8 7.8Zm.025-2.875L17 8l-3.55-3.5L8.5 9.45l3.55 3.5Z"
+                />
+              </svg>
+              <p class="flex justify-center items-center text-lg">Elections</p>
+            </span>
+          </a>
+        <a href="candidates.html">
+            <span
+              class="text-Grey-100 flex gap-4 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
+            >
+              <svg
+                class="w-8 h-10"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 100 100"
+              >
+                <path
+                  fill="currentColor"
+                  d="m80.161 60.441l-15.66-7.47l-6.622-3.159c2.892-1.822 5.241-4.634 6.778-8.021a21.743 21.743 0 0 0 1.945-8.99c0-1.827-.29-3.562-.694-5.236c-1.97-8.112-8.305-14.088-15.91-14.088c-7.461 0-13.7 5.763-15.792 13.644c-.483 1.808-.815 3.688-.815 5.68c0 3.459.808 6.684 2.181 9.489c1.587 3.254 3.94 5.937 6.804 7.662l-6.342 2.953l-16.168 7.53c-1.404.658-2.327 2.242-2.327 4.011v17.765c0 2.381 1.659 4.311 3.707 4.311h24.013V72.92a.78.78 0 0 1 .119-.396l-.01-.006l3.933-6.812l.01.006c.14-.24.389-.41.687-.41c.298 0 .547.169.687.41l.004-.003l.036.063c.005.01.012.018.016.028l3.881 6.721l-.005.003a.783.783 0 0 1 .119.397v13.602h24.013c2.048 0 3.708-1.93 3.708-4.311V64.446c.003-1.763-.905-3.332-2.296-4.005zM54.62 55.886l.01.006l-3.934 6.812l-.01-.006a.796.796 0 0 1-.687.409a.796.796 0 0 1-.687-.409l-.005.003l-.04-.069c-.003-.007-.009-.013-.012-.02l-3.881-6.723l.004-.003a.783.783 0 0 1-.119-.397c0-.445.361-.806.806-.806h7.866c.445 0 .806.361.806.806a.762.762 0 0 1-.117.397z"
+                />
+              </svg>
+              <p class="flex justify-center items-center text-lg">Candidate</p>
+            </span>
+          </a>
+
+          <a href="./Notification.html">
+            <span
+              class="text-Grey-100 flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
+            >
+              <svg
+                class="w-7 h-10 fill-Grey-100 hover:fill-Popup1-600"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                stroke-width="2.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
+                />
+              </svg>
+
+              <p class="flex justify-center items-center text-lg">
+                Notification
+              </p>
+            </span>
+          </a>
+
+          <a href="Results.html">
+            <span
+              class="text-Grey-100 flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
+            >
+              <svg
+                class="w-7 h-10"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  fill="currentColor"
+                  d="M32 9a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v30a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3V9ZM19 21a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v18a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3V21ZM9 30a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3h4a3 3 0 0 0 3-3v-6a3 3 0 0 0-3-3H9Z"
+                />
+              </svg>
+              <p class="flex justify-center items-center text-lg">Results</p>
+            </span>
+          </a>
+          <span
+            class="text-Grey-100 flex gap-6 w-full cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
+          >
+            <svg
+              class="w-7 h-10"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+            </svg>
+
+            <p class="flex justify-center items-center text-lg">Profile</p>
+          </span>
+          <span
+            id="mobile-logout" class="text-Grey-100 w-full flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600"
+            >
+            <svg
+              class="w-7 h-10"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"
+              />
+            </svg>
+            <p class="flex justify-center items-center text-lg">Logout</p>
+          </span>
+        </div>
+        <div id="confirm" class="  shadow-lg hidden absolute z-50 top-28 ">
+          <main
+          class="w-64 h-96 flex flex-col  bg-Grey-200 mx-auto container shadow-lg"
+        >
+          <div id="cancel" class="w-full flex justify-end pr-2 pt-2 cursor-pointer">
+            <svg
+              class="fill-current text-Black"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243"
+              />
+            </svg>
+          </div>
+          <h1 class="font-bold text-2xl text-Popup1-700 pl-4">Hi</h1>
+          <div class="w-full flex flex-col gap-5 px-2 ">
+            <div class="w-full h-80 flex flex-col gap-4 justify-center">
+             
+              <p class="text-center font-semibold text-lg text-Popup1-700">
+                Your application has been recevied with thanks.Wish your victory in the forth coming elections.
+              </p>
+            </div>
+            <div>
+              
+            
+          </div>
+        </main>
+      </div>
+      
+          <h3
+          class="text-lg font-semibold relative md:text-3xl md:font-bold md:mt-3 "
+        >
+          CANDIDATE APPLICATION FORM
+        </h3>
+        
+        
+      
+        <div class="w-full h-full overflow-y-auto overflow-x-hidden lg:w-3/5 ">
+            <div class=" w-full flex flex-col gap-2 lg:flex lg:flex-row  lg:w-[430px] lg:items-center ">
+                <label class="font-semibold text-lg">Tittle</label>
+                <input  class="w-full rounded-md px-2 py-2 cursor-pointer border border-Black-500 outline-Success-500 md:text-lg" type="text" placeholder="Enter the tittle here">
+              </div>
+          
+            
+              <div class="w-full flex flex-col  text-lg ">
+                <label  class="font-semibold lg:text-lg">Faculty</label>
+                    <select  class="w-full  rounded-md px-2 py-2 cursor-pointer border border-Black-500 outline-Success-500 md:text-lg "
+                      name="orientation"
+                      id="orientation"
+                      class="p-2 w-48 text-sm border border-gray bg-white"
+                     
+                    >
+                      <option value="">Science and Technology</option>
+                       <option value="">Education and Humanities</option>
+                        <option value="">Business Adminstration</option>
+                         <option value="">Engering</option>
+                         <option value="">All</option>
+                    </select>
+            </div>
+              
+              <div class="w-full flex flex-col  text-lg  ">
+                <label   class="font-semibold text-lg">Department</label>
+                <select  class="w-full rounded-md px-2 py-2 cursor-pointer border border-Black-500 outline-Success-500   md:text-lg"
+                  name="orientation"
+                  id="orientation"
+                  class="p-2 w-48 text-sm border border-gray bg-white"
+                >
+                  <option value="">Computing</option>
+                  <option value="">Computing</option>
+                  <option value="">Computing</option>
+                  <option value="">Computing</option>
+                  <option value="">Computing</option>
+                  <option value="">All</option>
+                </select>
+              </div>
+              <div class="w-full flex flex-col  text-lg">
+                <label  class="font-semibold text-lg">Year of study</label>
+                    <select  class="w-full  rounded-md px-2 py-2 cursor-pointer border border-Black-500 outline-Success-500 md:text-lg"
+                      name="orientation"
+                      id="orientation"
+                      class="p-2 w-48 text-sm border border-gray bg-white"
+                      multiple
+                    >
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                      <option value="">4</option>
+                      <option value="">All</option>
+                    </select>
+              </div>
+              <div class="w-full flex flex-col  text-lg">
+                <label  class="font-semibold text-lg">Semester</label>
+                <select  class="w-full rounded-md px-2 py-2 cursor-pointer  border border-Black-500 outline-Success-500 md:text-lg"
+                  name=""
+                  id=""
+                  class="p-2 w-48 text-sm border border-gray bg-white"
+                >
+                  <option value="">1</option>
+                  <option value="">2</option>
+                </select>
+
+              </div>
+              
+              
+       </div>
+          
+      
+
+         
+        
+         
+
+         
+           
+          
+                <div class=" w-full flex flex-col gap-2 lg:flex lg:flex-row  lg:w-[430px] lg:items-center ">
+                  <label class="font-semibold text-lg">Date</label>
+                  <input  class="w-full rounded-md px-2 py-2 cursor-pointer border border-Black-500 outline-Success-500 md:text-lg" type="date" placeholder="Date">
+                </div>
+                <div class=" w-full flex flex-col gap-2 lg:flex lg:flex-row  lg:w-[430px] lg:items-center ">
+                  <label class="font-semibold text-lg">Time</label>
+                  <input  class="w-full rounded-md px-2 py-2 cursor-pointer border border-Black-500 outline-Success-500 md:text-lg" type="time" placeholder="Time">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full flex justify-center">
+            <button id="apply" class="w-full h-10 lg:w-44 lg:h-12 my-4  relative z-50 bg-Success-500 text-Grey-100 font-semibold rounded-md hover:bg-Popup1-100 hover:text-Popup1-600 ">
+              Apply
+            </button>
+          </div> 
+          
+       
+        
+      </section>
+  
+    </main>
+    <script>
+      const Menu = document.getElementById("menu");
+      const list = document.getElementById("mobile-nav");
+      Menu.addEventListener("click", function () {
+        list.classList.toggle("hidden");
+      });
+
+      const btn = document.getElementById("apply");
+      const pop = document.getElementById("confirm");
+      btn.addEventListener("click",function(){
+        pop.classList.toggle("hidden");
+      });
+
+      document.getElementById("cancel").addEventListener("click",function(){
+      const disappear =document.getElementById("confirm");
+      disappear.classList.toggle("hidden");
+      
+
+    });
+
+    const Logout = document.getElementById("logout")
+     Logout.addEventListener("click", function(){
+       window.location.href ='index.html';
+     });
+
+
+     const mobileLogout = document.getElementById("mobile-logout")
+     mobileLogout.addEventListener("click",function(){
+     window.location.href = 'index.html';
+     });
+
+    </script>
+  </body>
+</html>
+
+</body>
+</html>
