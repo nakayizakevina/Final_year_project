@@ -11,173 +11,84 @@
     class="w-screen h-screen bg-Grey-400 flex flex-col gap-2 lg:flex lg:flex-row overflow-hidden relative"
   >
     <div
-      class="w-screen h-screen absolute bg-black/10 hidden justify-center items-center z-50 lg:left-40 overflow-y-hidden"
+      class="w-screen h-screen absolute bg-black/10  justify-center items-center z-50 lg:left-40 overflow-y-hidden"
       id="candidate-modal"
     >
-      <div class="w-3/4 h-[500px] bg-white rounded-lg shadow-lg ">
-        <!-- <div class=" flex justify-end">
-
-          <button id="close-candidate-modal">X</button>
-        </div> -->
-        <div id="cancel" class="w-full flex justify-end pr-6 pt-2 cursor-pointer">
-          <svg
-            class="fill-current text-Black w-6 h-6"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
+      <div class="w-3/4 h-[500px] bg-white rounded-lg shadow-lg flex flex-col gap-2 ">
+        <div class="w-full flex justify-between">
+         <h5 class="pl-6 pt-2 font-semibold text-lg text-Success-500 ">MIU University</h5>
+         <div id="cancel" class="pr-6 pt-2 cursor-pointer">
+            <svg
+              class="fill-current text-Black w-6 h-6"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="w-full flex flex-col justify-center items-center gap-4 border border-Danger-500">
+          <h4 class="tex-2xl font-bold text-Balck-500">VOTE NAKATO KAREN</h4>
+          <p class="text-Balck-500 text-sm font-semibold">FOR</p>
+          <p class="text-lg font-semibold text-Balck-500">GUILD PRESIDENT</p>
+        </div>
+        <di class="flex flex-col lg:flex lg:flex-row lg:gap-4 lg:align-middle  border border-Warning-500">
+         <div class="flex gap-1 w-full lg:w-1/2 border border-Success-500">
+          <label
+          for="Photo"
+          class="border border-Danger-500 h-28 w-28 rounded-full flex justify-center items-center cursor-pointer bg-Grey-100"
+        >
+          <input type="file" id="Photo" name="Photo" class="hidden" />
+          <span class="text-xs text-center"
+            >Upload <br />
+            Photo</span
           >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="1.5"
-              d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243"
-            />
-          </svg>
+         </label>
+          <div class="flex flex-col gap-2">
+            <p class="font-semibold text-lg text-Balck-500">Nakato Karen</p>
+            <p class="text-sm text-Balck-500">Bacholor of Information Technology</p>
+            <p class="text-sm text-Balck-500">Faculty of Science & Technology</p>
+            <p class="text-sm text-Balck-500">Department of computing</p>
+            <p class="text-sm text-Balck-500"> Year:2 Sem:2</p>
+           
+          </div>
         </div>
-        <div class="w-full h-4/6 overflow-y-auto overflow-x-hidden ">
-          <!--Personal information-->
-          <div class="w-full flex flex-col ">
-            <div class="w-full flex justify-between px-2">
-              <h5 class="text-sm font-bold md:text-xl">Personal Information</h5>
-              <div
-             class="lg:flex lg:flex-col lg:gap-3 lg:justify-center lg:items-center lg:mr-3">
-              <label
-                for="Photo"
-                class="border border-Danger-500 h-20 w-20 rounded-full flex justify-center items-center cursor-pointer bg-Grey-50">
-                <input type="file" id="Photo" name="Photo" class="hidden" />
-                <span class="text-xs text-center"
-                >Upload <br />
-                Photo</span
-                >
-              </label>
-            </div>
-         </div>
-            
-            <div class=" flex flex-col md:grid md:grid-cols-2 lg:grid lg:grid-cols-4 gap-y-2 gap-x-10 w-full px-2">
-              <div class=" w-full flex flex-col text-lg ">
-                <label class="font-semibold text-lg">Name</label>
-                <p>Nakato Karen</p>
-              </div>
-              <div class=" w-full flex flex-col  text-lg  ">
-                <label class="font-semibold text-lg" >Reg-No.</label>
-                <p>20/BIT/513/UMC</p>
-              </div>
-              <div class="w-full flex flex-col  text-lg ">
-                <label  class="font-semibold lg:text-lg">Faculty</label>
-                   <p>Sceince and Technology</p>
-              </div>
-              <div class="w-full flex flex-col  text-lg ">
-                <label   class="font-semibold text-lg">Department</label>
-              <p>Computing</p>
-              </div>
-              <div class="w-full flex flex-col  text-lg">
-                <label  class="font-semibold text-lg">Year of study</label>
-                <p>3</p>
-              </div>
-              <div class="w-full flex flex-col  text-lg">
-                <label  class="font-semibold text-lg">Semester</label>
-                <p>2</p>
-
-              </div>
-              <div class=" w-full flex flex-col  text-lg ">
-                <label  class="font-semibold text-lg">University Email</label>
-                <p>nakatokaren.miu@gmail.com</p>
-
-              </div>
-              <div class="flex flex-col  text-lg ">
-                <label  class="font-semibold text-lg">Personal Email</label>
-                <p>nakatokaren@gmail.come</p>
-
-              </div>
-            </div>
-          </div>
-          <!--End-->
-          <div class="w-full flex flex-col gap-3 px-2">
-            <h5 class="text-lg font-bold md:text-xl">Elections Details</h5>
-             <div class="flex flex-col  text-lg lg:w-[430px] gap-2">
-                <label  class="font-semibold text-lg">Position Appling for</label>
-                <p>Guild President</p>
-              </div>
-              <div class=" w-full flex flex-col gap-2">
-                <h5 class="text-lg font-bold md:text-xl">Election Statement</h5>
-                <p>I am also indebted to the faculty members and staff of  for providing a conducive academic environment and the necessary resources to carry out this project. Your dedication to fostering a culture of learning and research is commendable.</p>
-              </div>
-
-          </div>
-          <div class="w-full flex flex-col gap-3 px-2">
-            <h5 class="text-lg font-bold md:text-xl">Manifesto</h5>
-             <p>I extend my gratitude to my friends and classmates for their encouragement and for being a constant source of motivation throughout this journey. Their discussions and brainstorming sessions were instrumental in refining the ideas presented in this project.</p>
+        <div>
+          <p class="font-semibold text-Balck-500">"Vote for me and i will be your voice"</p>
+          <div class="text-lg ">
+            <h4 class="font-semibold text-lg text-Balck-500">Manifesto</h4>
+            <div class="w-full h-1/2 px-3 lg:w-1/2 lg:h-64 border border-Danger-500 overflow-y-auto">
+              I believe that creating a cohesive, vibrant community that unites both the young and the old 
+              is important to nurturing the growth of individuals. I believe that community artworks are the
+              anchors of this community, creating and maintaining this sense of community. Therefore, I believe 
+              that works of art, visual and otherwise, should be created and supported by members of a community
+              as important reminders and symbols of cohesive community.
+  
               
-
-          </div>
-          <div class="w-full flex flex-col gap-3 px-2">
-            <h5 class="text-lg font-bold md:text-xl">References</h5>
-            
-            <div class="lg:flex lg:flex-col gap-6">
-              <div class="lg:flex lg:flex-col lg:gap-4">
-                <div class=" w-full flex flex-col gap-2 lg:flex lg:flex-row  lg:w-[430px] lg:items-center ">
-                  <label class="font-semibold text-lg">1.Name</label>
-                  <p>Nakayiza Kevina</p>
-                </div>
-                <div class=" w-full flex flex-col gap-2 lg:flex lg:flex-row  lg:w-[430px] lg:items-center ">
-                  <label class="font-semibold text-lg">Title</label>
-                  <p>Current Guild President</p>
-                </div>
-                    <div class=" w-full flex flex-col gap-2 lg:flex lg:flex-row  lg:w-[430px] lg:items-center ">
-                  <label class="font-semibold text-lg">Email</label>
-                  <p>kevinanakayiza@gmail.com</p>
-                </div>  
-              </div>
-              <div class="lg:flex lg:flex-col lg:gap-4">
-                <div class=" w-full flex flex-col gap-2 lg:flex lg:flex-row  lg:w-[430px] lg:items-center ">
-                  <label class="font-semibold text-lg">2.Name</label>
-                  <p>Kalinaki Hussein</p>
-                </div>
-                  <div class=" w-full flex flex-col gap-2 lg:flex lg:flex-row  lg:w-[430px] lg:items-center ">
-                  <label class="font-semibold text-lg">Title</label>
-                   <p>Faculty Dean Sceince and Technology</p>
-                </div>
-                    <div class=" w-full flex flex-col gap-2 lg:flex lg:flex-row  lg:w-[430px] lg:items-center ">
-                  <label class="font-semibold text-lg">Email</label>
-                  <p>hkanalinaki@gmail.com</p>
-                </div>  
-              </div>
             </div>
-          </div>
-          <div class="w-full flex flex-col gap-3 px-2">
-            <h5 class="text-lg font-bold md:text-xl">Declaration</h5>
-            <div class=" w-full flex flex-col gap-2">
-            <p>I Nakato Karen declare that the above information is true of me</p>
-            </div>
-
-          </div>
-          <div class="w-full flex flex-col gap-3 px-2">
-            <h5 class="text-lg font-bold md:text-xl">Submission</h5>
-            <div class="lg:flex lg:flex-col flex flex-col  gap-6">
-              <div class="lg:flex lg:flex-col lg:gap-4">
-                <div class=" w-full flex flex-col gap-2 lg:flex lg:flex-row  lg:w-[430px] lg:items-center ">
-                  <label class="font-semibold text-lg">Date</label>
-                  <p>02/25/2023</p>
-                </div>
-                <div class=" w-full flex flex-col gap-2 lg:flex lg:flex-row  lg:w-[430px] lg:items-center ">
-                  <label class="font-semibold text-lg">Time</label>
-                  <p>12:45PM</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="w-full  flex justify-evenly gap-2">
-            <button id="approve" class="w-1/2 h-10 lg:w-44 lg:h-12 my-4  bg-Popup1-600 text-Grey-100 font-semibold rounded-md hover:bg-Popup1-400 hover:text-lg ">
-              Approve
-            </button>
-            <button id="reject" class="w-1/2 h-10 lg:w-44 lg:h-12 my-4  bg-Danger-600 text-Grey-100 font-semibold rounded-md hover:bg-Danger-400 hover:text-lg ">
-              Reject
-            </button>
-          </div> 
           
+          </div>
         </div>
+       
+        </div>
+       
+       
+         
+         
+             
+           
+               
+          
+          
       </div>
     </div>
+    
     <section
       class="w-full h-fit flex overflow-hidden px-2 bg-Success-500 lg:w-64 items-center md:flex lg:h-full lg:flex lg:flex-col lg:gap-1 lg:justify-evenly"
     >
