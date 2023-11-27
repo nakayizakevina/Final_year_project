@@ -1006,6 +1006,14 @@ video {
   height: 800px;
 }
 
+.h-\[00px\] {
+  height: 00px;
+}
+
+.h-\[600px\] {
+  height: 600px;
+}
+
 .w-1\/2 {
   width: 50%;
 }
