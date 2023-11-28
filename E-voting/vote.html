@@ -10,7 +10,6 @@
     <main
         class="w-screen h-screen overflow-x-hidden overflow-y-hidden bg-Grey-400 flex flex-col gap-2 lg:flex lg:flex-row"
     >  
-
     
     <div id="alert" class="bg-black/10 w-full h-screen invisible absolute z-50   flex flex-col items-center justify-center  md:flex md:items-center">
       <main 
@@ -33,7 +32,7 @@
            />
          </svg>
        </div>
-       
+      
        <p class="text-sm md:text-2xl lg:text-xl text-Gray-600">
          Are you sure you want to vote this candidate? <br />
          this action can't be <span class="font-bold">undone.</span> 
@@ -44,6 +43,8 @@
        </div>
      </main> 
     </div>
+   
+       
     <!--Success-->
     <div id="success" class="w-full h-full align-middle  hidden absolute z-50 justify-center items-center">
       <main class="w-64 h-96  flex flex-col justify-evenly rounded-lg bg-Popup1-100 shadow-lg ">
@@ -89,7 +90,7 @@
         </main>
       </div>
 
-
+    
     <!--End-->
   <section
     class="w-full h-fit flex overflow-hidden px-2 bg-Success-500 lg:w-64 items-center md:flex lg:h-full lg:flex lg:flex-col lg:gap-1 lg:justify-evenly"
@@ -390,6 +391,14 @@
  <div class="w-full h-[490px] overflow-y-auto overflow-x-hidden px-4  relative  flex flex-col gap-3 items-center  lg:h-[700px] lg:grid lg:grid-cols-3 lg:items-start lg:gap-2">
 
 <div class="w-4/5 h-fit bg-Grey-100 rounded-lg shadow-lg  flex flex-col gap-4 py-4 items-center lg:w-full">
+  <div class="w-full flex justify-end pr-6 ">
+    <svg id="tick" class="w-[20px] h-[20px] hidden"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-width="2" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10ZM7 12l4 3l5-7"/>
+   </svg>
+  </div>
+ 
+     
             <label
                 for="Photo"
                 class="border border-Danger-500 h-24 w-24 rounded-full flex justify-center items-center cursor-pointer bg-Grey-100"
@@ -400,7 +409,7 @@
                 Photo</span
                 >
             </label>
-            <div class="w-full flex flex-col items-center gap-1  md:w-full md:flex md:flex-col md:gap-3 lg:gap-2 border-b-4 border-Danger-500 py-4 ">
+            <div class="w-full flex flex-col items-center gap-1  md:w-full md:flex md:flex-col md:gap-3 lg:gap-2 border-b-2 border-Danger-300 py-4 ">
                 <div class="flex flex-col gap-1 md:gap-3 lg:gap-2">
                     <p class="font-bold text-lg text-Gray-400 md:text-xl lg:text-xl">
                       Nakato Karen
@@ -418,6 +427,13 @@
 
         </div>
        <div class="w-4/5 h-fit bg-Grey-100 rounded-lg shadow-lg  flex flex-col gap-4 py-4 items-center lg:w-full">
+        <div class="w-full flex justify-end pr-6 ">
+          <svg id="tick" class="w-[20px] h-[20px] hidden"
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path fill="none" stroke="currentColor" stroke-width="2" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10ZM7 12l4 3l5-7"/>
+         </svg>
+        </div>
+       
             <label
                 for="Photo"
                 class="border border-Danger-500 h-24 w-24 rounded-full flex justify-center items-center cursor-pointer bg-Grey-100"
@@ -428,7 +444,7 @@
                 Photo</span
                 >
             </label>
-            <div class="w-full flex flex-col items-center gap-1  md:w-full md:flex md:flex-col md:gap-3 lg:gap-2 border-b-4 border-Danger-500 py-4 ">
+            <div class="w-full flex flex-col items-center gap-1  md:w-full md:flex md:flex-col md:gap-3 lg:gap-2 border-b-2 border-Danger-300 py-4 ">
                 <div class="flex flex-col gap-1 md:gap-3 lg:gap-2">
                     <p class="font-bold text-lg text-Gray-400 md:text-xl lg:text-xl">
                       Nakato Karen
@@ -445,6 +461,13 @@
             </button>
         </div> 
         <div class="w-4/5 h-fit bg-Grey-100 rounded-lg shadow-lg  flex flex-col gap-4 py-4 items-center lg:w-full">
+          <div class="w-full flex justify-end pr-6 ">
+            <svg id="tick" class="w-[20px] h-[20px] hidden"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-width="2" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10ZM7 12l4 3l5-7"/>
+           </svg>
+          </div>
+         
             <label
                 for="Photo"
                 class="border border-Danger-500 h-24 w-24 rounded-full flex justify-center items-center cursor-pointer bg-Grey-100"
@@ -455,7 +478,7 @@
                 Photo</span
                 >
             </label>
-            <div class="w-full flex flex-col items-center gap-1  md:w-full md:flex md:flex-col md:gap-3 lg:gap-2 border-b-4 border-Danger-500 py-4 ">
+            <div class="w-full flex flex-col items-center gap-1  md:w-full md:flex md:flex-col md:gap-3 lg:gap-2 border-b-2 border-Danger-300 py-4 ">
                 <div class="flex flex-col gap-1 md:gap-3 lg:gap-2">
                     <p class="font-bold text-lg text-Gray-400 md:text-xl lg:text-xl">
                       Nakato Karen
@@ -472,6 +495,13 @@
             </button>
         </div>
         <div class="w-4/5 h-fit bg-Grey-100 rounded-lg shadow-lg  flex flex-col gap-4 py-4 items-center lg:w-full">
+          <div class="w-full flex justify-end pr-6 ">
+            <svg id="tick" class="w-[20px] h-[20px] hidden"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-width="2" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10ZM7 12l4 3l5-7"/>
+           </svg>
+          </div>
+         
           <label
               for="Photo"
               class="border border-Danger-500 h-24 w-24 rounded-full flex justify-center items-center cursor-pointer bg-Grey-100"
@@ -482,7 +512,7 @@
               Photo</span
               >
           </label>
-          <div class="w-full flex flex-col items-center gap-1  md:w-full md:flex md:flex-col md:gap-3 lg:gap-2 border-b-4 border-Danger-500 py-4 ">
+          <div class="w-full flex flex-col items-center gap-1  md:w-full md:flex md:flex-col md:gap-3 lg:gap-2 border-b-2 border-Danger-300 py-4 ">
               <div class="flex flex-col gap-1 md:gap-3 lg:gap-2">
                   <p class="font-bold text-lg text-Gray-400 md:text-xl lg:text-xl">
                     Nakato Karen
@@ -499,6 +529,13 @@
           </button>
       </div>
       <div class="w-4/5 h-fit bg-Grey-100 rounded-lg shadow-lg  flex flex-col gap-4 py-4 items-center lg:w-full">
+        <div class="w-full flex justify-end pr-6 ">
+          <svg id="tick" class="w-[20px] h-[20px] hidden"
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path fill="none" stroke="currentColor" stroke-width="2" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10ZM7 12l4 3l5-7"/>
+         </svg>
+        </div>
+       
         <label
             for="Photo"
             class="border border-Danger-500 h-24 w-24 rounded-full flex justify-center items-center cursor-pointer bg-Grey-100"
@@ -509,7 +546,7 @@
             Photo</span
             >
         </label>
-        <div class="w-full flex flex-col items-center gap-1  md:w-full md:flex md:flex-col md:gap-3 lg:gap-2 border-b-4 border-Danger-500 py-4 ">
+        <div class="w-full flex flex-col items-center gap-1  md:w-full md:flex md:flex-col md:gap-3 lg:gap-2 border-b-2 border-Danger-300 py-4 ">
             <div class="flex flex-col gap-1 md:gap-3 lg:gap-2">
                 <p class="font-bold text-lg text-Gray-400 md:text-xl lg:text-xl">
                   Nakato Karen
@@ -564,8 +601,19 @@
       success.classList.add("flex")
       const Pop = document.getElementById("alert");
       Pop.classList.toggle("invisible");
+       
+     });
+
+   
+    const Tick = document.getElementById("tick");
+    const confirm = document.getElementById("Confirm");
+    confirm.addEventListener("click",function(){
+      Tick.classList.toggle("hidden")
+
     });
-    
+
+   
+
     document.getElementById("exit").addEventListener("click",function(){
       const disappear =document.getElementById("success");
       disappear.classList.toggle("hidden");
