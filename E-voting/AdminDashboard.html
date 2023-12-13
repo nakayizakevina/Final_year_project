@@ -517,14 +517,15 @@
           <h3
             class="text-lg font-semibold text-center md:text-3xl md:font-bold md:mt-3"
           >
-            CANDIDATE APPLICATION FORM
+            CANDIDATE'S APPLICATIONS 
           </h3>
           <div
             class="w-full mt-6 h-full flex flex-col px-2 overflow-hidden pb-5"
           >
             <div
-              class="w-full flex flex-col gap-3 lg:flex-row lg:justify-evenly"
+              class="w-full flex flex-col gap-3 lg:flex-row lg:justify-evenly "
             >
+            <div class="w-full flex justify-evenly ">
               <div class="w-48 flex">
                 <input
                   class="w-full py-2 px-2 text-sm rounded-md lg:px-3 lg:py-3 lg:text-lg border border-Black-800"
@@ -532,35 +533,31 @@
                   placeholder="Search by name"
                 />
               </div>
-              <div class="w-48">
-                <input
-                  class="w-full py-2 px-2 text-sm rounded-md lg:px-3 lg:py-3 lg:text-lg border border-Black-800"
-                  type="text"
-                  placeholder="Search by position"
-                />
-              </div>
-              <div class="w-48">
-                <input
-                  class="w-full py-2 px-2 text-sm rounded-md lg:px-3 lg:py-3 lg:text-lg border border-Black-800"
-                  type="text"
-                  placeholder="Search by status"
-                />
-              </div>
-              <button
-                class="w-48 py-2 px-2 text-sm rounded-md lg:px-3 lg:py-3 lg:text-lg bg-Success-500 text-Gray-50 font-semibold hover:bg-Popup1-100 hover:text-Popup1-600"
-              >
-                Search
-              </button>
-              <a href="./Elections.html">
-                <button
-                class="w-48 py-2 px-2 text-sm rounded-md lg:px-3 lg:py-3 lg:text-lg bg-Success-500 text-Gray-50 font-semibold hover:bg-Popup1-100 hover:text-Popup1-600"
-              >
-                Set Election
-              </button>
-              </a>
+              <select  class="w-48 rounded-md px-2 py-2 cursor-pointer border border-Black-500 outline-Success-500 md:text-lg"
+                  name=""
+                  id=""
+                  class="p-2 w-48 text-sm border border-gray bg-white"
+                >
+                <option value="Search by position">Search by position</option>
+                  <option value="Guild President">Guild President</option>
+                  <option value="GRC">GRC</option>
+                  <option value="Hall Representative">Hall Representative</option>
+                </select>
+            </div>
+              
+            <select  class="w-full rounded-md px-2 py-2 cursor-pointer border border-Black-500 outline-Success-500 md:text-lg lg:w-48"
+             name=""
+             id=""
+             class="p-2 w-48 text-sm border border-gray bg-white"
+             >
+             <option value="Search by status">Search by status</option>
+             <option value="Pending">Pending</option>
+             <option value="Approved">Approved</option>
+            </select>
+             
             </div>
             <div
-              class="w-full overflow-y-auto relative h-3/5 px-1 py-4"
+              class="w-full overflow-y-auto relative h-[750px] px-1 py-4 lg:h-[850px] "
             >
               <table class="w-full table-auto">
                 <thead class="lg:text-xl">

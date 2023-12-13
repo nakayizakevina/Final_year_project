@@ -994,6 +994,18 @@ video {
   height: 100vh;
 }
 
+.h-\[600px\] {
+  height: 600px;
+}
+
+.h-\[650px\] {
+  height: 650px;
+}
+
+.h-\[750px\] {
+  height: 750px;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -3459,6 +3471,18 @@ video {
     height: 100%;
   }
 
+  .lg\:h-5\/6 {
+    height: 83.333333%;
+  }
+
+  .lg\:h-\[650px\] {
+    height: 650px;
+  }
+
+  .lg\:h-\[850px\] {
+    height: 850px;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -3538,6 +3562,10 @@ video {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-48 {
+    width: 12rem;
   }
 
   .lg\:grid-cols-3 {
