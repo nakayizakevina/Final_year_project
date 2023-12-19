@@ -6,7 +6,7 @@ module.exports = {
 		extend: {
 			colors: {
 				
-       Success:
+       success:
           {
             50:  "#E6EDE9",
             100: "#B0C6BA",
@@ -20,7 +20,7 @@ module.exports = {
             900: "#001E0D",
           },
          
-          Danger: 
+          danger: 
          {
            50: "#FCE9E9",
            100: "#F4BABA",
@@ -34,7 +34,7 @@ module.exports = {
            900: "#5D0E0E",
           },
           
-         Information:
+         blue:
           {
            50: "#E6EAF1",
            100: "#B0BDD3",
@@ -48,7 +48,7 @@ module.exports = {
            900: "#00122F",
           },
 
-         Warning:
+         warning:
           {
             50:  "#FEFEE6",
             100: "#FDFDB3",
@@ -62,7 +62,7 @@ module.exports = {
             900: "#686804",
          },
 
-         Gray:
+         gray:
          {
             50: "#F2F2F2",
            100: "#D6D6D6",
@@ -76,7 +76,7 @@ module.exports = {
            900: "#333333",   
          },
 
-          Grey:
+          grey:
           {
            50: "#FDFEFE",
            100: "#FAFBFC",
@@ -90,7 +90,7 @@ module.exports = {
            900: "#646666", 
           }, 
          
-          Black:
+          black:
           {
            50: "#E6E6E6",
            100: "#B0B0B0",
@@ -104,7 +104,7 @@ module.exports = {
            900: "#000000",
          },
          
-         Popup1:
+         popup1:
           {
              50: "#E9F9E9",
             100: "#BBEBBB",
