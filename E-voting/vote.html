@@ -8,16 +8,16 @@
 </head>
 <body>
     <main
-        class="w-screen h-screen overflow-x-hidden overflow-y-hidden bg-Grey-400 flex flex-col gap-2 lg:flex lg:flex-row"
+        class="w-screen h-screen overflow-x-hidden overflow-y-hidden bg-grey-400 flex flex-col gap-2 lg:flex lg:flex-row"
     >  
     
     <div id="alert" class="bg-black/10 w-full h-screen invisible absolute z-50   flex flex-col items-center justify-center  md:flex md:items-center">
       <main 
-       class="w-[350px] h-fit rounded-lg px-4 shadow-lg flex flex-col gap-6 items-center  overflow-hidden bg-Grey-100  md:w-[600px] lg:w-[500px]"
+       class="w-[350px] h-fit rounded-lg px-4 shadow-lg flex flex-col gap-6 items-center  overflow-hidden bg-grey-100  md:w-[600px] lg:w-[500px]"
      >
        <div class="flex gap-2 mt-2">
-         <h2 class="text-xl font-bold md:text-3xl lg:text-2xl text-Warning-600">warning!</h2>
-         <svg  class="w-8 h-8   stroke-Warning-600"
+         <h2 class="text-xl font-bold md:text-3xl lg:text-2xl text-warning-600">warning!</h2>
+         <svg  class="w-8 h-8   stroke-warning-600"
            xmlns="http://www.w3.org/2000/svg"
            fill="none"
            viewBox="0 0 24 24"
@@ -33,32 +33,32 @@
          </svg>
        </div>
       
-       <p class="text-sm md:text-2xl lg:text-xl text-Gray-600">
+       <p class="text-sm md:text-2xl lg:text-xl text-gray-600">
          Are you sure you want to vote this candidate? <br />
          this action can't be <span class="font-bold">undone.</span> 
        </p>
        <div class="w-full flex justify-evenly mb-2">
-         <button id="Cancel" class=" text-sm font-bold cursor-pointer text-Danger-500 md:text-2xl lg:text-xl">Cancel</button>
-         <button id="Confirm" class="text-sm font-bold cursor-pointer text-Popup1-500 md:text-2xl lg:text-xl">Confirm</button>
+         <button id="Cancel" class=" text-sm font-bold cursor-pointer text-danger-500 md:text-2xl lg:text-xl">Cancel</button>
+         <button id="Confirm" class="text-sm font-bold cursor-pointer text-popup1-500 md:text-2xl lg:text-xl">Confirm</button>
        </div>
      </main> 
     </div>
    
        
-    <!--Success-->
+    <!--success-->
     <div id="success" class="w-full h-full align-middle hidden absolute z-50 justify-center items-center">
-      <main class="w-64 h-96  flex flex-col justify-evenly rounded-lg bg-Popup1-100 shadow-lg ">
+      <main class="w-64 h-96  flex flex-col justify-evenly rounded-lg bg-popup1-100 shadow-lg ">
           
           <div class="w-full  flex flex-col  gap-5 justify-start items-center">
-              <div class="w-full flex flex-col items-center text-Popup1-500 ">
-              <h1 class="font-bold text-2xl">Success!</h1>
+              <div class="w-full flex flex-col items-center text-popup1-500 ">
+              <h1 class="font-bold text-2xl">success!</h1>
               <p class="text-center font-semibold text-lg">
                 Congraturations upon <br> voting.
               </p>
               </div>
              <div>
               <svg
-                class="w-28 h-28 stroke-cuurent stroke-Popup1-500 fill-none"
+                class="w-28 h-28 stroke-cuurent stroke-popup1-500 fill-none"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
               >
@@ -77,7 +77,7 @@
     
     <!--End-->
   <section
-    class="w-full h-fit flex overflow-hidden px-2 bg-Success-500 lg:w-64 items-center md:flex lg:h-full lg:flex lg:flex-col lg:gap-1 lg:justify-evenly"
+    class="w-full h-fit flex overflow-hidden px-2 bg-success-500 lg:w-64 items-center md:flex lg:h-full lg:flex lg:flex-col lg:gap-1 lg:justify-evenly"
     >
     <div class="flex w-full justify-between items-center py-1">
     <div class="w-full flex gap-x-2 items-center">
@@ -86,7 +86,7 @@
         src="./image/Log3.png"
         alt=""
         />
-        <p class="flex flex-col text-Grey-100 w-fit md:my-2 lg:my-1">
+        <p class="flex flex-col text-grey-100 w-fit md:my-2 lg:my-1">
         <span
             class="text-[1.4rem] font-semibold w-full text-center md:text-3xl lg:text-lg"
             >METROPOLITAN</span
@@ -99,7 +99,7 @@
     </div>
     <span
         id="menu1"
-        class="text-Grey-100 flex justify-center items-center cursor-pointer w-8 h-full md:w-16 md:h-full md:flex md:items-center lg:hidden"
+        class="text-grey-100 flex justify-center items-center cursor-pointer w-8 h-full md:w-16 md:h-full md:flex md:items-center lg:hidden"
     >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
         <path
@@ -114,7 +114,7 @@
     >
     <label
         for="Photo"
-        class="border border-gray h-24 w-24 rounded-full flex justify-center items-center cursor-pointer bg-Grey-100"
+        class="border border-gray h-24 w-24 rounded-full flex justify-center items-center cursor-pointer bg-grey-100"
     >
         <input type="file" id="Photo" name="Photo" class="hidden" />
         <span class="text-xs text-center"
@@ -122,7 +122,7 @@
         Photo</span
         >
     </label>
-    <p class="text-Grey-100">Nakayiza Kevina</p>
+    <p class="text-grey-100">Nakayiza Kevina</p>
     </div>
     <div class=" lg:w-full lg:h-96 md:block">
     <div
@@ -130,7 +130,7 @@
         class="hidden lg:w-full lg:h-fit lg:flex lg:flex-col lg:gap-6"
     >
         <a href="./SDashboard.html">
-        <span class="text-Grey-100 w-full h-10 flex gap-4 cursor-pointer rounded-lg pl-2  hover:bg-Popup1-100 hover:text-Popup1-600">
+        <span class="text-grey-100 w-full h-10 flex gap-4 cursor-pointer rounded-lg pl-2  hover:bg-popup1-100 hover:text-popup1-600">
             <svg
             class="w-8 h-10 "
             xmlns="http://www.w3.org/2000/svg"
@@ -147,7 +147,7 @@
         </span>
         </a>
         <a href="candidates.html">
-        <span class="text-Grey-100 flex gap-4 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600">
+        <span class="text-grey-100 flex gap-4 cursor-pointer rounded-lg pl-2 hover:bg-popup1-100 hover:text-popup1-600">
             <svg
             class="w-8 h-10"
             xmlns="http://www.w3.org/2000/svg"
@@ -165,9 +165,9 @@
         </a>
 
         <a href="./Notification.html">
-        <span class="text-Grey-100 flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600">
+        <span class="text-grey-100 flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-popup1-100 hover:text-popup1-600">
             <svg
-            class="w-7 h-10 fill-Grey-100"
+            class="w-7 h-10 fill-grey-100"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -189,7 +189,7 @@
         </a>
 
         <a href="Results.html">
-        <span class="text-Grey-100 flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600">
+        <span class="text-grey-100 flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-popup1-100 hover:text-popup1-600">
             <svg
             class="w-7 h-10"
             xmlns="http://www.w3.org/2000/svg"
@@ -206,9 +206,9 @@
     </div>
     </div>
     <div
-    class="hidden lg:text-Grey-100 cursor-pointer lg:w-full lg:flex lg:flex-col lg:justify-start lg:items-start lg:gap-3"
+    class="hidden lg:text-grey-100 cursor-pointer lg:w-full lg:flex lg:flex-col lg:justify-start lg:items-start lg:gap-3"
     >
-    <span class="text-Grey-100 flex gap-6 w-full cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600">
+    <span class="text-grey-100 flex gap-6 w-full cursor-pointer rounded-lg pl-2 hover:bg-popup1-100 hover:text-popup1-600">
         <svg class="w-7 h-10"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -227,7 +227,7 @@
         
         <p class="flex justify-center items-center text-lg">Profile</p>
     </span>
-    <span id="logout" class="text-Grey-100 w-full flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600">
+    <span id="logout" class="text-grey-100 w-full flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-popup1-100 hover:text-popup1-600">
         <svg
         class="w-7 h-10"
         xmlns="http://www.w3.org/2000/svg"
@@ -251,10 +251,10 @@
         >
     <div
     id="mobile1"
-    class="hidden bg-Success-500 w-1/2 absolute z-50 top-0 right-3  rounded-md border gap-3  lg:hidden"
+    class="hidden bg-success-500 w-1/2 absolute z-50 top-0 right-3  rounded-md border gap-3  lg:hidden"
   >
      <a href="./SDashboard.html">
-      <span class="text-Grey-100 w-full h-10 flex gap-4 cursor-pointer rounded-lg pl-2  hover:bg-Popup1-100 hover:text-Popup1-600">
+      <span class="text-grey-100 w-full h-10 flex gap-4 cursor-pointer rounded-lg pl-2  hover:bg-popup1-100 hover:text-popup1-600">
         <svg
           class="w-8 h-10 "
           xmlns="http://www.w3.org/2000/svg"
@@ -271,7 +271,7 @@
       </span>
     </a> 
     <a href="candidates.html">
-      <span class="text-Grey-100 flex gap-4 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600">
+      <span class="text-grey-100 flex gap-4 cursor-pointer rounded-lg pl-2 hover:bg-popup1-100 hover:text-popup1-600">
         <svg
           class="w-8 h-10"
           xmlns="http://www.w3.org/2000/svg"
@@ -289,9 +289,9 @@
     </a>
 
     <a href="./Notification.html">
-      <span class="text-Grey-100 flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600">
+      <span class="text-grey-100 flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-popup1-100 hover:text-popup1-600">
         <svg
-          class="w-7 h-10 fill-Grey-100"
+          class="w-7 h-10 fill-grey-100"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -313,7 +313,7 @@
     </a>
 
     <a href="Results.html">
-      <span class="text-Grey-100 flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600">
+      <span class="text-grey-100 flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-popup1-100 hover:text-popup1-600">
         <svg
           class="w-7 h-10"
           xmlns="http://www.w3.org/2000/svg"
@@ -327,7 +327,7 @@
         <p class="flex justify-center items-center text-lg">Results</p>
       </span>
     </a>
-    <span class="text-Grey-100 flex gap-6 w-full cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600">
+    <span class="text-grey-100 flex gap-6 w-full cursor-pointer rounded-lg pl-2 hover:bg-popup1-100 hover:text-popup1-600">
       <svg class="w-7 h-10"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -346,7 +346,7 @@
      
       <p class="flex justify-center items-center text-lg">Profile</p>
     </span>
-    <span id="mobile-logout" class="text-Grey-100 w-full flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-Popup1-100 hover:text-Popup1-600">
+    <span id="mobile-logout" class="text-grey-100 w-full flex gap-6 cursor-pointer rounded-lg pl-2 hover:bg-popup1-100 hover:text-popup1-600">
       <svg
         class="w-7 h-10"
         xmlns="http://www.w3.org/2000/svg"
@@ -368,13 +368,13 @@
 
 
     <div class="w-full h-fit lg:w-[1000px] flex gap-2 px-4">
-      <input class="w-1/2 h-8 rounded-lg outline-Success-500 text-start pl-2 text-sm lg:h-12 border border-Success-500 bg-Grey-100" type="text" placeholder="Candidate's Name">
-      <button class="w-1/2 h-8 rounded-lg outline-none font-bold hover:bg-Popup1-100 hover:text-Popup1-600 bg-Success-500 lg:h-12 text-Grey-100">Search</button>
+      <input class="w-1/2 h-8 rounded-lg outline-success-500 text-start pl-2 text-sm lg:h-12 border border-success-500 bg-grey-100" type="text" placeholder="Candidate's Name">
+      <button class="w-1/2 h-8 rounded-lg outline-none font-bold hover:bg-popup1-100 hover:text-popup1-600 bg-success-500 lg:h-12 text-grey-100">Search</button>
     </div>
 
  <div class="w-full h-[490px] overflow-y-auto overflow-x-hidden px-4  relative  flex flex-col gap-3 items-center  lg:h-[700px] lg:grid lg:grid-cols-3 lg:items-start lg:gap-2">
 
-<div class="w-4/5 h-fit bg-Grey-100 rounded-lg shadow-lg  flex flex-col gap-4 py-4 items-center lg:w-full">
+<div class="w-4/5 h-fit bg-grey-100 rounded-lg shadow-lg  flex flex-col gap-4 py-4 items-center lg:w-full">
   <div class="w-full flex justify-end pr-6 ">
     <svg id="tick" class="w-[20px] h-[20px] hidden"
     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -385,7 +385,7 @@
      
             <label
                 for="Photo"
-                class="border border-Danger-500 h-24 w-24 rounded-full flex justify-center items-center cursor-pointer bg-Grey-100"
+                class="border border-danger-500 h-24 w-24 rounded-full flex justify-center items-center cursor-pointer bg-grey-100"
                 >
                 <input type="file" id="Photo" name="Photo" class="hidden" />
                 <span class="text-xs text-center"
@@ -393,24 +393,24 @@
                 Photo</span
                 >
             </label>
-            <div class="w-full flex flex-col items-center gap-1  md:w-full md:flex md:flex-col md:gap-3 lg:gap-2 border-b-2 border-Danger-300 py-4 ">
+            <div class="w-full flex flex-col items-center gap-1  md:w-full md:flex md:flex-col md:gap-3 lg:gap-2 border-b-2 border-danger-300 py-4 ">
                 <div class="flex flex-col gap-1 md:gap-3 lg:gap-2">
-                    <p class="font-bold text-lg text-Gray-400 md:text-xl lg:text-xl">
+                    <p class="font-bold text-lg text-gray-400 md:text-xl lg:text-xl">
                       Nakato Karen
                     </p>
-                    <p class="text-Gray-400 text-sm md:text-2xl lg:text-xl">
+                    <p class="text-gray-400 text-sm md:text-2xl lg:text-xl">
                       Faculty of Sceince and Technology
                     </p>
-                    <p class="text-Gray-400 text-sm md:text-2xl lg:text-xl">Year:2 Sem:2</p>
+                    <p class="text-gray-400 text-sm md:text-2xl lg:text-xl">Year:2 Sem:2</p>
                 </div>
           </div>
           
-            <button id="vote" class="w-24 h-12 bg-Success-500 hover:bg-Popup1-100 hover:text-Popup1-600 cursor-pointer text-lg font-bold rounded-lg text-Grey-300">
+            <button id="vote" class="w-24 h-12 bg-success-500 hover:bg-popup1-100 hover:text-popup1-600 cursor-pointer text-lg font-bold rounded-lg text-grey-300">
                 vote
             </button>
 
         </div>
-       <div class="w-4/5 h-fit bg-Grey-100 rounded-lg shadow-lg  flex flex-col gap-4 py-4 items-center lg:w-full">
+       <div class="w-4/5 h-fit bg-grey-100 rounded-lg shadow-lg  flex flex-col gap-4 py-4 items-center lg:w-full">
         <div class="w-full flex justify-end pr-6 ">
           <svg id="tick" class="w-[20px] h-[20px] hidden"
           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -420,7 +420,7 @@
        
             <label
                 for="Photo"
-                class="border border-Danger-500 h-24 w-24 rounded-full flex justify-center items-center cursor-pointer bg-Grey-100"
+                class="border border-danger-500 h-24 w-24 rounded-full flex justify-center items-center cursor-pointer bg-grey-100"
                 >
                 <input type="file" id="Photo" name="Photo" class="hidden" />
                 <span class="text-xs text-center"
@@ -428,23 +428,23 @@
                 Photo</span
                 >
             </label>
-            <div class="w-full flex flex-col items-center gap-1  md:w-full md:flex md:flex-col md:gap-3 lg:gap-2 border-b-2 border-Danger-300 py-4 ">
+            <div class="w-full flex flex-col items-center gap-1  md:w-full md:flex md:flex-col md:gap-3 lg:gap-2 border-b-2 border-danger-300 py-4 ">
                 <div class="flex flex-col gap-1 md:gap-3 lg:gap-2">
-                    <p class="font-bold text-lg text-Gray-400 md:text-xl lg:text-xl">
+                    <p class="font-bold text-lg text-gray-400 md:text-xl lg:text-xl">
                       Nakato Karen
                     </p>
-                    <p class="text-Gray-400 text-sm md:text-2xl lg:text-xl">
+                    <p class="text-gray-400 text-sm md:text-2xl lg:text-xl">
                       Faculty of Sceince and Technology
                     </p>
-                    <p class="text-Gray-400 text-sm md:text-2xl lg:text-xl">Year:2 Sem:2</p>
+                    <p class="text-gray-400 text-sm md:text-2xl lg:text-xl">Year:2 Sem:2</p>
                 </div>
           </div>
           
-            <button class="w-24 h-12 bg-Success-500 hover:bg-Popup1-100 hover:text-Popup1-600 text-lg font-bold rounded-lg text-Grey-300">
+            <button class="w-24 h-12 bg-success-500 hover:bg-popup1-100 hover:text-popup1-600 text-lg font-bold rounded-lg text-grey-300">
                 vote
             </button>
         </div> 
-        <div class="w-4/5 h-fit bg-Grey-100 rounded-lg shadow-lg  flex flex-col gap-4 py-4 items-center lg:w-full">
+        <div class="w-4/5 h-fit bg-grey-100 rounded-lg shadow-lg  flex flex-col gap-4 py-4 items-center lg:w-full">
           <div class="w-full flex justify-end pr-6 ">
             <svg id="tick" class="w-[20px] h-[20px] hidden"
             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -454,7 +454,7 @@
          
             <label
                 for="Photo"
-                class="border border-Danger-500 h-24 w-24 rounded-full flex justify-center items-center cursor-pointer bg-Grey-100"
+                class="border border-danger-500 h-24 w-24 rounded-full flex justify-center items-center cursor-pointer bg-grey-100"
                 >
                 <input type="file" id="Photo" name="Photo" class="hidden" />
                 <span class="text-xs text-center"
@@ -462,23 +462,23 @@
                 Photo</span
                 >
             </label>
-            <div class="w-full flex flex-col items-center gap-1  md:w-full md:flex md:flex-col md:gap-3 lg:gap-2 border-b-2 border-Danger-300 py-4 ">
+            <div class="w-full flex flex-col items-center gap-1  md:w-full md:flex md:flex-col md:gap-3 lg:gap-2 border-b-2 border-danger-300 py-4 ">
                 <div class="flex flex-col gap-1 md:gap-3 lg:gap-2">
-                    <p class="font-bold text-lg text-Gray-400 md:text-xl lg:text-xl">
+                    <p class="font-bold text-lg text-gray-400 md:text-xl lg:text-xl">
                       Nakato Karen
                     </p>
-                    <p class="text-Gray-400 text-sm md:text-2xl lg:text-xl">
+                    <p class="text-gray-400 text-sm md:text-2xl lg:text-xl">
                       Faculty of Sceince and Technology
                     </p>
-                    <p class="text-Gray-400 text-sm md:text-2xl lg:text-xl">Year:2 Sem:2</p>
+                    <p class="text-gray-400 text-sm md:text-2xl lg:text-xl">Year:2 Sem:2</p>
                 </div>
           </div>
           
-            <button class="w-24 h-12 bg-Success-500 hover:bg-Popup1-100 hover:text-Popup1-600 text-lg font-bold rounded-lg text-Grey-300">
+            <button class="w-24 h-12 bg-success-500 hover:bg-popup1-100 hover:text-popup1-600 text-lg font-bold rounded-lg text-grey-300">
                 vote
             </button>
         </div>
-        <div class="w-4/5 h-fit bg-Grey-100 rounded-lg shadow-lg  flex flex-col gap-4 py-4 items-center lg:w-full">
+        <div class="w-4/5 h-fit bg-grey-100 rounded-lg shadow-lg  flex flex-col gap-4 py-4 items-center lg:w-full">
           <div class="w-full flex justify-end pr-6 ">
             <svg id="tick" class="w-[20px] h-[20px] hidden"
             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -488,7 +488,7 @@
          
           <label
               for="Photo"
-              class="border border-Danger-500 h-24 w-24 rounded-full flex justify-center items-center cursor-pointer bg-Grey-100"
+              class="border border-danger-500 h-24 w-24 rounded-full flex justify-center items-center cursor-pointer bg-grey-100"
               >
               <input type="file" id="Photo" name="Photo" class="hidden" />
               <span class="text-xs text-center"
@@ -496,23 +496,23 @@
               Photo</span
               >
           </label>
-          <div class="w-full flex flex-col items-center gap-1  md:w-full md:flex md:flex-col md:gap-3 lg:gap-2 border-b-2 border-Danger-300 py-4 ">
+          <div class="w-full flex flex-col items-center gap-1  md:w-full md:flex md:flex-col md:gap-3 lg:gap-2 border-b-2 border-danger-300 py-4 ">
               <div class="flex flex-col gap-1 md:gap-3 lg:gap-2">
-                  <p class="font-bold text-lg text-Gray-400 md:text-xl lg:text-xl">
+                  <p class="font-bold text-lg text-gray-400 md:text-xl lg:text-xl">
                     Nakato Karen
                   </p>
-                  <p class="text-Gray-400 text-sm md:text-2xl lg:text-xl">
+                  <p class="text-gray-400 text-sm md:text-2xl lg:text-xl">
                     Faculty of Sceince and Technology
                   </p>
-                  <p class="text-Gray-400 text-sm md:text-2xl lg:text-xl">Year:2 Sem:2</p>
+                  <p class="text-gray-400 text-sm md:text-2xl lg:text-xl">Year:2 Sem:2</p>
               </div>
         </div>
         
-          <button class="w-24 h-12 bg-Success-500 hover:bg-Popup1-100 hover:text-Popup1-600 text-lg font-bold rounded-lg text-Grey-300">
+          <button class="w-24 h-12 bg-success-500 hover:bg-popup1-100 hover:text-popup1-600 text-lg font-bold rounded-lg text-grey-300">
               vote
           </button>
       </div>
-      <div class="w-4/5 h-fit bg-Grey-100 rounded-lg shadow-lg  flex flex-col gap-4 py-4 items-center lg:w-full">
+      <div class="w-4/5 h-fit bg-grey-100 rounded-lg shadow-lg  flex flex-col gap-4 py-4 items-center lg:w-full">
         <div class="w-full flex justify-end pr-6 ">
           <svg id="tick" class="w-[20px] h-[20px] hidden"
           xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -522,7 +522,7 @@
        
         <label
             for="Photo"
-            class="border border-Danger-500 h-24 w-24 rounded-full flex justify-center items-center cursor-pointer bg-Grey-100"
+            class="border border-danger-500 h-24 w-24 rounded-full flex justify-center items-center cursor-pointer bg-grey-100"
             >
             <input type="file" id="Photo" name="Photo" class="hidden" />
             <span class="text-xs text-center"
@@ -530,19 +530,19 @@
             Photo</span
             >
         </label>
-        <div class="w-full flex flex-col items-center gap-1  md:w-full md:flex md:flex-col md:gap-3 lg:gap-2 border-b-2 border-Danger-300 py-4 ">
+        <div class="w-full flex flex-col items-center gap-1  md:w-full md:flex md:flex-col md:gap-3 lg:gap-2 border-b-2 border-danger-300 py-4 ">
             <div class="flex flex-col gap-1 md:gap-3 lg:gap-2">
-                <p class="font-bold text-lg text-Gray-400 md:text-xl lg:text-xl">
+                <p class="font-bold text-lg text-gray-400 md:text-xl lg:text-xl">
                   Nakato Karen
                 </p>
-                <p class="text-Gray-400 text-sm md:text-2xl lg:text-xl">
+                <p class="text-gray-400 text-sm md:text-2xl lg:text-xl">
                   Faculty of Sceince and Technology
                 </p>
-                <p class="text-Gray-400 text-sm md:text-2xl lg:text-xl">Year:2 Sem:2</p>
+                <p class="text-gray-400 text-sm md:text-2xl lg:text-xl">Year:2 Sem:2</p>
             </div>
       </div>
       
-        <button class="w-24 h-12 bg-Success-500 hover:bg-Popup1-100 hover:text-Popup1-600 text-lg font-bold rounded-lg text-Grey-300">
+        <button class="w-24 h-12 bg-success-500 hover:bg-popup1-100 hover:text-popup1-600 text-lg font-bold rounded-lg text-grey-300">
             vote
         </button>
     </div>
