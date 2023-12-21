@@ -352,92 +352,81 @@
           </div>
         </main>
       </div>
-      
-          <h3
-          class="text-lg font-semibold relative md:text-3xl md:font-bold md:mt-3 "
-        >
-          CREATE ELECTION
-        </h3>
-        
-        
-      
-        <div class="w-full h-full overflow-y-auto overflow-x-hidden lg:w-3/5 border border-danger-500">
-            <div class=" w-full flex flex-col gap-2 lg:w-[430px]">
-                <label class="font-semibold text-lg">Tittle</label>
-                <input  class="w-full rounded-md px-2 py-2 cursor-pointer border border-black-500 outline-success-500 md:text-lg" type="text" placeholder="Enter the tittle here">
+            <!-- New form -->
+            <div class="py-8 flex flex-col gap-8 h-screen">
+              <h3 class="text-lg font-semibold  md:text-3xl md:font-bold md:mt-3">CREATE ELECTION</h3>
+              <div class=" w-full flex flex-col gap-2 lg:w-[430px]">
+                <label class="font-semibold text-lg">Title</label>
+                <input  class="w-full rounded-md px-2 py-2 cursor-pointer border border-black-500 outline-success-500 md:text-lg" type="text" placeholder="Enter the title here">
               </div>
-          
-            
-              <div class="w-full flex flex-col  text-lg ">
+              <div class="
+               flex flex-col text-lg">
                 <label  class="font-semibold lg:text-lg">Faculty</label>
-                    <select  class="w-full  rounded-md px-2 py-2 cursor-pointer border border-black-500 outline-success-500 md:text-lg "
+                <select  class="w-full  rounded-md px-2 py-2 cursor-pointer border border-black-500 md:text-lg"
                       name="orientation"
                       id="orientation"
                       class="p-2 w-48 text-sm border border-gray bg-white"
-                     
                     >
                       <option value="Science and Technology">Science and Technology</option>
-                       <option value="Education and Humanities">Education and Humanities</option>
-                        <option value="Business Adminstration">Business Adminstration</option>
-                         <option value="Engering">Engering</option>
-                         <option value="All">All</option>
-                    </select>
-            </div>
-              
-              <div class="w-full flex flex-col  text-lg  ">
-                <label   class="font-semibold text-lg">Department</label>
-                <select  class="w-full rounded-md px-2 py-2 cursor-pointer border border-black-500 outline-success-500   md:text-lg"
-                  name="orientation"
-                  id="orientation"
-                  class="p-2 w-48 text-sm border border-gray bg-white"
-                >
-                  <option value="Computing">Computing</option>
-                  <option value="Computing">Computing</option>
-                  <option value="Computing">Computing</option>
-                  <option value="Computing">Computing</option>
-                  <option value="Computing">Computing</option>
-                  <option value="Computing">All</option>
-                </select>
-              </div>
-              <div class="w-full flex flex-col  text-lg">
-                <label  class="font-semibold text-lg">Year of study</label>
-                    <select  class="w-full  rounded-md px-2 py-2 cursor-pointer border border-black-500 outline-success-500 md:text-lg"
-                      name="orientation"
-                      id="orientation">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="1 & 2">1 & 2</option>
-                      <option value="1 & 3">1 & 3</option>
-                      <option value="1 & 4">1 & 4</option>
-                      <option value="2 & 1">2 & 1</option>
-                      <option value="2 & 3">2 & 3</option>
-                      <option value="2 & 4">2 & 4</option>
-                      <option value="3 & 1">3 & 1</option>
-                      <option value="3 & 2">3 & 2</option>
-                      <option value="3 & 4">3 & 4</option>
-                      <option value="4 & 1">4 & 1</option>
-                      <option value="4 & 2">4 & 2</option>
-                      <option value="4 & 3">4 & 3</option>
+                      <option value="Education and Humanities">Education and Humanities</option>
+                      <option value="Business Adminstration">Business Administration</option>
+                      <option value="Engering">Engineering</option>
                       <option value="All">All</option>
-                    </select>
-              </div>
-              <div class="w-full flex flex-col  text-lg">
+                </select>
+               </div>
+               <div class="w-full flex flex-col text-lg">
+                  <label   class="font-semibold text-lg">Department</label>
+                  <select  class="w-full rounded-md px-2 py-2 cursor-pointer border border-black-500 outline-success-500   md:text-lg"
+                    name="orientation"
+                    id="orientation"
+                    class="p-2 w-48 text-sm border border-gray bg-white"
+                    >
+                    <option value="Computing">Computing</option>
+                    <option value="Computing">Computing</option>
+                    <option value="Computing">Computing</option>
+                    <option value="Computing">Computing</option>
+                    <option value="Computing">Computing</option>
+                    <option value="Computing">All</option>
+                  </select>
+               </div>
+               <div class="w-full flex flex-col  text-lg">
+                <label  class="font-semibold text-lg">Year of study</label>
+                <select  class="w-full  rounded-md px-2 py-2 cursor-pointer border border-black-500 outline-success-500 md:text-lg"
+                    name="orientation"
+                    id="orientation">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="1 & 2">1 & 2</option>
+                    <option value="1 & 3">1 & 3</option>
+                    <option value="1 & 4">1 & 4</option>
+                    <option value="2 & 1">2 & 1</option>
+                    <option value="2 & 3">2 & 3</option>
+                    <option value="2 & 4">2 & 4</option>
+                    <option value="3 & 1">3 & 1</option>
+                    <option value="3 & 2">3 & 2</option>
+                    <option value="3 & 4">3 & 4</option>
+                    <option value="4 & 1">4 & 1</option>
+                    <option value="4 & 2">4 & 2</option>
+                    <option value="4 & 3">4 & 3</option>
+                    <option value="All">All</option>
+                  </select>
+               </div>
+               <div class="w-full flex flex-col  text-lg">
                 <label  class="font-semibold text-lg">Semester</label>
                 <select  class="w-full rounded-md px-2 py-2 cursor-pointer  border border-black-500 outline-success-500 md:text-lg"
                   name=""
                   id=""
                   class="p-2 w-48 text-sm border border-gray bg-white"
-                >
+                  >
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="All">All</option>
-                 
                 </select>
               </div>
               <div class="flex flex-col  text-lg lg:w-[430px] gap-2">
-                <label  class="font-semibold text-lg">Position Appling for</label>
+                <label  class="font-semibold text-lg">Position Appling For</label>
                 <select  class="w-full rounded-md px-2 py-2 cursor-pointer border border-black-500 outline-success-500 md:text-lg"
                   name=""
                   id=""
@@ -447,7 +436,6 @@
                   <option value="GRC">GRC</option>
                   <option value="Hall Representative">Hall Representative</option>
                 </select>
-
               </div>
               <div class=" w-full flex flex-col gap-2   lg:w-[430px]">
                 <label class="font-semibold text-lg">Start Time</label>
