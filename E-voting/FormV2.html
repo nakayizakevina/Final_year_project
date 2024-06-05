@@ -13,11 +13,36 @@
         <div class="w-full h-full border border-green-700 overflow-y-scroll">
          <div>
             <h3>Personal Details</h3>
-            <fieldset>
+            <fieldset class="w-full flex flex-col  gap-4">
                 <input type="text" placeholder="First Name" required class="w-full h-10 pl-3 border border-black-900">
                 <input type="text" placeholder="First Name" required class="w-full h-10 pl-3 border border-black-900">
                 <input type="number" placeholder="National ID Number"   required class="w-full h-10 pl-3 border border-black-900">
                 <input type="number" placeholder="University ID Number"   required class="w-full h-10 pl-3 border border-black-900">
+            </fieldset>
+
+            <h3>Faculty Details</h3>
+            <fieldset class="w-full flex flex-col  gap-4">
+                <select name="faculty" required class="w-full h-10 border border-black-900">
+                    <option value="" disabled selected hidden>Faculty</option>
+                    <option value="science_technology">Faculty of Science & Technology</option>
+                    <option value="education_humanities">Faculty of Education & Humanities</option>
+                    <option value="business_administration">Faculty of Business Administration</option>
+                </select>
+
+                <input type="text" placeholder="Department"   required class="w-full h-10 pl-3 border border-black-900">
+
+                <select name="semester" required class="w-full h-10 border border-black-900">
+                    <option value="" disabled selected hidden>Semester</option>
+                    <option value="One">One</option>
+                    <option value="Two">Two</option>
+                </select>
+
+                <select name="year" required class="w-full h-10 border border-black-900">
+                    <option value="" disabled selected hidden>Year of study</option>
+                    <option value="One">One</option>
+                    <option value="Two">Two</option>
+                    <option value="Three">Three</option>
+                </select>
             </fieldset>
          </div>
         </div>
