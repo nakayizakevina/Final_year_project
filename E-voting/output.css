@@ -1071,6 +1071,10 @@ video {
   width: 100vw;
 }
 
+.w-40 {
+  width: 10rem;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -2155,6 +2159,11 @@ video {
 .bg-grey-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(217 220 222 / var(--tw-bg-opacity));
+}
+
+.bg-grey-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(170 172 173 / var(--tw-bg-opacity));
 }
 
 .bg-popup1-100 {
